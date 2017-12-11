@@ -1,16 +1,19 @@
 # 9Liners & Notepad
-by: [Chief Wiggum](https://forums.bistudio.com/profile/926664-chief_wiggum/)
+by: [Chief Wiggum](https://forums.bistudio.com/profile/926664-chief_wiggum/)  
 BI Forum: https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/
-![9Liner & Notepad](http://i.imgur.com/GOC07EV.png)
+<a href="http://i.imgur.com/GOC07EV.png">
+	<img
+		src="http://i.imgur.com/GOC07EV.png"
+		title="9Liner &amp; Notepad"
+		style="display: block; margin: 0 auto;">
+</a>
 
 ## Requirements
 [CBA_A3](https://github.com/CBATeam/CBA_A3)
 
 ## Downloads
-[Github Releases](https://github.com/Saborknight/9liner-and-notepad/releases/latest)
-[Dropbox](https://www.dropbox.com/s/dbfwz3pmy71tnks/%40CW_Ninliner_and_Notepad_031.zip?dl=0)
-[Armaholic](http://www.armaholic.com/page.php?id=28180)
-[PlayWithSix](http://play.withsix.com/Arma-3/mods/_RMcu9kszkavJ4TkfKjhgQ/9Liners-and-Notepad)
+- [Github Releases](https://github.com/Saborknight/9liner-and-notepad/releases/latest)
+- [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1210050323)
 
 ## What is it?
 9Liners & Notepad is a client-side mod, that allows you to open a couple of documents, like a notepad or CAS-9Liner directly ingame.
@@ -19,27 +22,71 @@ Once you save a page, it will be bound to your profile, which means, that even i
 
 9Liners & Notepad brings the following documents to your game:
 - CAS 9Liner sheet:
-![CAS 9Lines sheet](http://img4.fotos-hochladen.net/thumbnail/20150301000060xuhlm7os_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/uploads/20150301000060xuhlm7os.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/20150301000060xuhlm7os_thumb.jpg"
+			title="CAS 9Lines sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Medivac 9Liner sheet:
-![Medivac 9Liner sheet](http://img4.fotos-hochladen.net/thumbnail/201503010000znxfrm23et_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000znxfrm23et.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/201503010000znxfrm23et_thumb.jpg"
+			title="Medivac 9Liner sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Notepad:
-![Notepad](http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi_thumb.jpg"
+			title="Notepad"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Gunship Call-For-Fire 5Liner sheet:
-![Gunship Call-For-Fire 5Liner sheet](http://img4.fotos-hochladen.net/thumbnail/2015030100008ah3y146wf_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/thumbnail/2015030100008ah3y146wf.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/2015030100008ah3y146wf_thumb.jpg"
+			title="Gunship Call-For-Fire 5Liner sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - CAS Check-In Briefing sheet:
-![CAS Check-In Briefing sheet](http://img4.fotos-hochladen.net/thumbnail/201503010000jny20przcs_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000jny20przcs.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/201503010000jny20przcs_thumb.jpg"
+			title="CAS Check-In Briefing sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Adjust-Fire-Mission sheet:
-![Adjust-Fire-Mission sheet](http://img4.fotos-hochladen.net/thumbnail/201503010000u7rl3bog2s_thumb.jpg)
-- Fire-For-Effect-Mission sheet
-![Fire-For-Effect-Mission sheet](http://img4.fotos-hochladen.net/thumbnail/201503010000iv4axcflqg_thumb.jpg)
+	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000u7rl3bog2s_thumb.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/201503010000u7rl3bog2s_thumb.jpg"
+			title="Adjust-Fire-Mission sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
+- Fire-For-Effect-Mission sheet:
+	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000iv4axcflqg_thumb.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/thumbnail/201503010000iv4axcflqg_thumb.jpg"
+			title="Fire-For-Effect-Mission sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Marking-Mission sheet:
-![Marking-Mission sheet](http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg)
+	<a href="http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg"
+			title="Marking-Mission sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 - Target-Location-Methods Help sheet (no interaction):
-![Target-Location-Methods Help sheet](http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg)
+	<a href="http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg">
+		<img
+			src="http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg"
+			title="Target-Location-Methods Help sheet"
+			style="display: block; height: 100px; width: auto;">
+	</a>
 
 ## How does it work?
 ### Usage as player
-
 First off, you have to press ESC and navigate to: `Options\Controls\Configure Addons\9Liners&Notepad`
 Here you have to assign a hotkey for each document. Also make sure to assign the 'Disable Controls' hotkey. You'll need it later.
 
@@ -50,19 +97,18 @@ Each document works the following way:
 - Pressing the right arrow opens the next page
 - Pressing 'SAVE' saves the current page.
 - Pressing 'CLEAR PAGE' clears the current page
-- Pressing 'CLEAR ALL' clears all pages
+- Pressing 'CLEAR ALL' clears all pages  
 	**Note**: There isn't any kind of "Do you really want to..." selection if you press "CLEAR PAGE/ALL". So think before you press it!
-- Do a single click next to the document will enable controls.
-	You'll be able to control you character/vehicle, use TFAR and everything else while the document is shown.
+- Do a single click next to the document will enable controls.  
+	You'll be able to control you character/vehicle, use TFAR and everything else while the document is shown.  
 	In order to release the controls of your character/vehicle and edit the document, simply press your 'Disable Controls' Hotkey that you've assigned earlier.
-- Do a double click next to the document will close it.
+- Do a double click next to the document will close it.  
 	You can also close it by pressing ESC.
 
 Each document will open at the page where you previously closed it.
 
 ### Usage as mission maker
-This mod uses the `profileNamespace` command to save the pages text.
-Each page has its own variable in `profileNamespace`.
+This mod uses the `profileNamespace` command to save the pages text. Each page has its own variable in `profileNamespace`.
 
 If you want so set each users text on page 1 of their notepads to "I MADE THIS MISSION!", simply add this to your init.sqf:
 
@@ -77,15 +123,15 @@ Hope you like it,
 
 ~ Chief Wiggum
 
-**Note:**
-I'm not liable for any damages/crashes...etc. at your system or yourself!
-[![Arma Public Licence](https://www.bistudio.com/assets/img/licenses/APL-SA.png)](https://www.bistudio.com/community/licenses/arma-public-license-share-alike)
+**Note:** I'm not liable for any damages/crashes...etc. at your system or yourself!  
+[![Arma Public Licence](https://www.bistudio.com/assets/img/licenses/APL-SA.png)](https://www.bistudio.com/community/licenses/arma-public-license-share-alike)  
 This work is licensed under the Arma Public License - Share Alike
 
 # For Developers
 Send in your [Pull Requests](https://github.com/Saborknight/9liner-and-notepad/pulls) for any changes you would like to be made to the mod. Any and all help in the development of this mod is very welcome.
 
 Currently the build system is being worked on. Once done, this will allow for easy building of the mod for use in Arma 3.
+
 The build system will require:
 - Python 3.6 or higher
 - Arma 3 Tools on Steam
