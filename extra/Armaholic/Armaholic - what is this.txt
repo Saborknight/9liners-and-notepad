@@ -1,0 +1,3 @@
+This file is required for a future addition to our website. Please do not remove it.
+
+Included is an encryped xml file which contains some data about the included pbo files.
