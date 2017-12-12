@@ -5,7 +5,7 @@ BI Forum: https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad
 	<a href="http://i.imgur.com/GOC07EV.png">
 		<img
 			src="http://i.imgur.com/GOC07EV.png"
-			title="9Liner &amp; Notepad">
+			title="9Liners &amp; Notepad">
 	</a>
 </center>
 
@@ -13,7 +13,7 @@ BI Forum: https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad
 [CBA_A3](https://github.com/CBATeam/CBA_A3)
 
 ## Downloads
-- [Github Releases](https://github.com/Saborknight/9liner-and-notepad/releases/latest)
+- [Github Releases](https://github.com/Saborknight/9liners-and-notepad/releases/latest)
 - [Steam Workshop](http://steamcommunity.com/sharedfiles/filedetails/?id=1210050323)
 
 ## What is it?
@@ -27,7 +27,7 @@ Once you save a page, it will be bound to your profile, which means, that even i
 	<a href="http://img4.fotos-hochladen.net/uploads/20150301000060xuhlm7os.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/20150301000060xuhlm7os_thumb.jpg"
-			title="CAS 9Lines sheet"
+			title="CAS 9Liner sheet"
 			height="100"
 			width="auto">
 	</a>
@@ -45,7 +45,7 @@ Once you save a page, it will be bound to your profile, which means, that even i
 	<a href="http://img4.fotos-hochladen.net/uploads/201503010000zr6ag2yvoi.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi_thumb.jpg"
-			title="Notepad"
+			title="Notepad sheet"
 			height="100"
 			width="auto">
 	</a>
@@ -106,7 +106,7 @@ Once you save a page, it will be bound to your profile, which means, that even i
 
 ## How does it work?
 ### Usage as player
-First off, you have to press ESC and navigate to: `Options\Controls\Configure Addons\9Liners&Notepad`.  
+First off, you have to press ESC and navigate to: `Options\Controls\Configure Addons\9Liners & Notepad`.  
 Here you have to assign a hotkey for each document. Also make sure to assign the 'Disable Controls' hotkey. You'll need it later.
 
 Once you've assigned your hotkeys, you're able to open the documents by pressing the hotkeys.
@@ -147,15 +147,28 @@ Hope you like it,
 This work is licensed under the Arma Public License - Share Alike
 
 ## Issues
-Have any issues? Feature requests? Want to add on any more sheets? [Submit an issue](https://github.com/Saborknight/9liner-and-notepad/issues/new)!
+Have any issues? Feature requests? Want to add on any more sheets? [Submit an issue](https://github.com/Saborknight/9liners-and-notepad/issues/new)!
 
 # For Developers
-Send in your [Pull Requests](https://github.com/Saborknight/9liner-and-notepad/pulls) for any changes you would like to be made to the mod. Any and all help in the development of this mod is very welcome.
+Send in your [Pull Requests](https://github.com/Saborknight/9liners-and-notepad/pulls) for any changes you would like to be made to the mod. Any and all help in the development of this mod is very welcome.
 
+## Install
 Currently the build system is being worked on. Once done, this will allow for easy building of the mod for use in Arma 3.
 
 The build system will require:
-- Python 3.6 or higher
+- Python 3
 - Arma 3 Tools on Steam
 
+## Naming conventions
+There are a few ways this mod has been named in the past (9liners_and_notepad, 9liner_and_notepad, 9Liners_and_Notepad, 9Liner_and_Notepad, nineliner_and_notepad, etc.)
+
+To normalise these names, and make them less likely to run into problems in the future regarding the inclusion of a number in the name:
+- for code: nineliners_and_notepad
+- for urls: 9liners-and-notepad
+- for presentation: 9Liners & Notepad
+
+### Prefixes
+The prefix `nln_` should be used where appropriate to avoid any potential name clashes with other mods.
+
+## Contact
 For any questions, contact Saborknight (Arend) on the [BI Forums](https://forums.bistudio.com/profile/1135269-arend-the-bastard/) or the 7th Air Assault Brigade's [Discord](http://bit.ly/7aa-join-discord).

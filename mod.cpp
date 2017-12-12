@@ -1,5 +1,13 @@
-name = "9Liners and Notepad";
+name = "9Liners & Notepad";
 picture = "mod.paa";
-actionName = "Feedback";
-action = "http://forums.bistudio.com/member.php?237335-AWC_Chief_Wiggum";
-description = "Version: 0.3.2";
+actionName = "Website";
+action = "https://github.com/Saborknight/9liners-and-notepad/";
+description = "Version: 0.3.2<br>Issue & Feature requests: https://github.com/Saborknight/9liners-and-notepad/issues";
+logo = "mod.paa";
+logoOver = "mod.paa";
+tooltip = "9Liners & Notepad";
+overview = "9Liners & Notepad brings Pre-formatted and Notepad style pages to your game. With this you can note down details and then view them during an operation without having to leave the game or give away control of your character or vehicle.";
+author = "Chief Wiggum";
+overviewPicture = "mod.paa";
+overviewText = "Community Base Addons overviewText";
+overviewFootnote = "<br /><br /><t color='#999999'>This content is under Arma Public \"Share Alike\" Licence.";
