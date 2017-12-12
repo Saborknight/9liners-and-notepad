@@ -1,12 +1,13 @@
 # 9Liners & Notepad
 by: [Chief Wiggum](https://forums.bistudio.com/profile/926664-chief_wiggum/)  
 BI Forum: https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/
-<a href="http://i.imgur.com/GOC07EV.png">
-	<img
-		src="http://i.imgur.com/GOC07EV.png"
-		title="9Liner &amp; Notepad"
-		style="display: block; margin: 0 auto;">
-</a>
+<center>
+	<a href="http://i.imgur.com/GOC07EV.png">
+		<img
+			src="http://i.imgur.com/GOC07EV.png"
+			title="9Liner &amp; Notepad">
+	</a>
+</center>
 
 ## Requirements
 [CBA_A3](https://github.com/CBATeam/CBA_A3)
@@ -22,77 +23,95 @@ Once you save a page, it will be bound to your profile, which means, that even i
 
 9Liners & Notepad brings the following documents to your game:
 - CAS 9Liner sheet:
-	<a href="http://img4.fotos-hochladen.net/uploads/20150301000060xuhlm7os.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/20150301000060xuhlm7os.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/20150301000060xuhlm7os_thumb.jpg"
 			title="CAS 9Lines sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Medivac 9Liner sheet:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000znxfrm23et.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/201503010000znxfrm23et.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000znxfrm23et_thumb.jpg"
 			title="Medivac 9Liner sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Notepad:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/201503010000zr6ag2yvoi.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000zr6ag2yvoi_thumb.jpg"
 			title="Notepad"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Gunship Call-For-Fire 5Liner sheet:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/2015030100008ah3y146wf.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/2015030100008ah3y146wf.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/2015030100008ah3y146wf_thumb.jpg"
 			title="Gunship Call-For-Fire 5Liner sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - CAS Check-In Briefing sheet:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000jny20przcs.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/201503010000jny20przcs.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000jny20przcs_thumb.jpg"
 			title="CAS Check-In Briefing sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Adjust-Fire-Mission sheet:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000u7rl3bog2s_thumb.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/201503010000u7rl3bog2s_thumb.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000u7rl3bog2s_thumb.jpg"
 			title="Adjust-Fire-Mission sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Fire-For-Effect-Mission sheet:
-	<a href="http://img4.fotos-hochladen.net/thumbnail/201503010000iv4axcflqg_thumb.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/201503010000iv4axcflqg_thumb.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/thumbnail/201503010000iv4axcflqg_thumb.jpg"
 			title="Fire-For-Effect-Mission sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Marking-Mission sheet:
-	<a href="http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/uploads/2015030100004acqjyrhl3.jpg"
 			title="Marking-Mission sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 - Target-Location-Methods Help sheet (no interaction):
-	<a href="http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg">
+	<br>
+	<a href="http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg" target="_blank">
 		<img
 			src="http://img4.fotos-hochladen.net/uploads/2015030100008dbc25764k.jpg"
 			title="Target-Location-Methods Help sheet"
-			style="display: block; height: 100px; width: auto;">
+			height="100"
+			width="auto">
 	</a>
 
 ## How does it work?
 ### Usage as player
-First off, you have to press ESC and navigate to: `Options\Controls\Configure Addons\9Liners&Notepad`
+First off, you have to press ESC and navigate to: `Options\Controls\Configure Addons\9Liners&Notepad`.  
 Here you have to assign a hotkey for each document. Also make sure to assign the 'Disable Controls' hotkey. You'll need it later.
 
 Once you've assigned your hotkeys, you're able to open the documents by pressing the hotkeys.
-Each document works the following way:
 
+Each document works the following way:
 - Pressing the left arrow opens the previous page
 - Pressing the right arrow opens the next page
 - Pressing 'SAVE' saves the current page.
@@ -127,6 +146,9 @@ Hope you like it,
 [![Arma Public Licence](https://www.bistudio.com/assets/img/licenses/APL-SA.png)](https://www.bistudio.com/community/licenses/arma-public-license-share-alike)  
 This work is licensed under the Arma Public License - Share Alike
 
+## Issues
+Have any issues? Feature requests? Want to add on any more sheets? [Submit an issue](https://github.com/Saborknight/9liner-and-notepad/issues/new)!
+
 # For Developers
 Send in your [Pull Requests](https://github.com/Saborknight/9liner-and-notepad/pulls) for any changes you would like to be made to the mod. Any and all help in the development of this mod is very welcome.
 
@@ -136,10 +158,4 @@ The build system will require:
 - Python 3.6 or higher
 - Arma 3 Tools on Steam
 
-For any questions, contact Saborknight (Arend) on the 7th Air Assault Brigade's [Discord](http://bit.ly/7aa-join-discord).
-
-## Feature Requests
-1. Implement Navigation bar for navigating between pre-formatted pages and the notepad [Source](https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/?do=findComment&comment=2817361)
-1. Integrate ACE Interaction for selection of sheets. This should provide a second, more fluid method of navigation than above [Source](https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/?do=findComment&comment=2839202)
-1. Allow sharing of sheets (through ACE? Like the "Copy Map" function) [Source](https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/?do=findComment&comment=2807610)
-1. Implement "Open PlayerX's 9Liner/Notepad" [Source](https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/?do=findComment&comment=2807605)
+For any questions, contact Saborknight (Arend) on the [BI Forums](https://forums.bistudio.com/profile/1135269-arend-the-bastard/) or the 7th Air Assault Brigade's [Discord](http://bit.ly/7aa-join-discord).
