@@ -1,3 +1,6 @@
+
+//Seems to be irrelevant to the mod - no includes found! TODO: remove file or reformat it
+
 class CW_9LINER_CAS
 {
 	idd = -1;

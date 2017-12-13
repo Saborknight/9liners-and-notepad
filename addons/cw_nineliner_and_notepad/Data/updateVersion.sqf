@@ -210,7 +210,6 @@ If (isNil {profileNamespace getVariable "CW_9Liners_and_Notepad_Version_03_USED"
 	profileNamespace setVariable ["cw_noteblock_pageText_49", nil];
 	profileNamespace setVariable ["cw_noteblock_pageText_50", nil];
 	
-	profileNamespace setVariable ["cw_noteblock_pageText_50", "                 CHANGELOG                              28.02.2015 - V0.3                                                    -added: Target-Location-Methods-Help sheet      -added: Fire-For-Effect sheet                   -added: Adjust-Fire-Mission sheet               -added: Marking-Mission sheet                  -added: View Document while moving Function   -changed: Removed all items. So it's a client-            side mod now!              -changed: some textbox stuff                  -changed: Medivac 9Liner doesn't saves after             clearing a page anymore.             -changed: New ReadMe in the forum post!:      http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad"];
-	HINT FORMAT ["Hey %1!\nThanks for installing version 0.3 of my 9Liners & Notepad mod!\nIf you've already used this mod in an other version before, all saved pages have been cleared.\nThis had to be done, because there were some changes with the textboxes of some sheets.\nI'm sorry for all your lost notes!\nIf this is your first time using this mod, make sure to take a look at the BI-Forums post of the mod.\nThe newest changelog was added to page 50 of your Notepad.\n\nEnjoy the new Version,\n~Chief Wiggum", profileName];
+	profileNamespace setVariable ["cw_noteblock_pageText_50", (["STR_cw_nineliner_and_notepad_Scripts_changelogV0"] call BIS_fnc_localize)];
+	hint format [(["STR_cw_nineliner_and_notepad_Scripts_updateVersionNotice"] call BIS_fnc_localize), profileName];
 };
-

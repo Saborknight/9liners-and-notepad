@@ -8,5 +8,5 @@ cw_cas_check_in_fnc_open =
 	cw_cas_check_in_currentPage = _lastpage;
 	[_pagetext] call cw_cas_check_in_fnc_fill;
 	profileNamespace setVariable ["cw_cas_check_in_lastPage", cw_cas_check_in_currentPage];
-	hint format ["PAGE %1/20", cw_cas_check_in_currentPage];
+	hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageStep"] call BIS_fnc_localize), cw_cas_check_in_currentPage];
 };

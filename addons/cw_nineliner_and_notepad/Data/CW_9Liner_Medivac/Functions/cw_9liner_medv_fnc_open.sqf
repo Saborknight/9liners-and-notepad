@@ -8,5 +8,5 @@ cw_9liner_medv_fnc_open =
 	cw_9liner_medv_currentPage = _lastpage;
 	[_pagetext] call cw_9liner_medv_fnc_fill;
 	profileNamespace setVariable ["cw_9liner_medv_lastPage", cw_9liner_medv_currentPage];
-	hint format ["PAGE %1/20", cw_9liner_medv_currentPage];
+	hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageStep"] call BIS_fnc_localize), cw_9liner_medv_currentPage];
 };

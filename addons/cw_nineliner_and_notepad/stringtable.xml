@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8">
+<Project name="cw_nineliner_and_notepad">
+    <Package name="cw_nineliner_and_notepad">
+        <Container name="Credentials">
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindCategory">
+                <Original>Notepad & 9-Liner</Original>
+            </Key>
+        </Container>
+        <Container name="Scripts">
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_changelogV0.3">
+                <Original>                 CHANGELOG                              28.02.2015 - V0.3                                                    -added: Target-Location-Methods-Help sheet      -added: Fire-For-Effect sheet                   -added: Adjust-Fire-Mission sheet               -added: Marking-Mission sheet                  -added: View Document while moving Function   -changed: Removed all items. So it's a client-            side mod now!              -changed: some textbox stuff                  -changed: Medivac 9Liner doesn't saves after             clearing a page anymore.             -changed: New ReadMe in the forum post!:      http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</Original>
+                <English>                 CHANGELOG                              28.02.2015 - V0.3                                                    -added: Target-Location-Methods-Help sheet      -added: Fire-For-Effect sheet                   -added: Adjust-Fire-Mission sheet               -added: Marking-Mission sheet                  -added: View Document while moving Function   -changed: Removed all items. So it's a client-            side mod now!              -changed: some textbox stuff                  -changed: Medivac 9Liner doesn't saves after             clearing a page anymore.             -changed: New ReadMe in the forum post!:      http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</English>
+                <German>                 Veränderungen:                              28.02.2015 - v0.3                                                    -hinzugefügt: Zielort-Methoden Blatt      -hinzugefügt: Fire-For-Effect Blatt                   -hinzugefügt: Adjust-Fire-Mission Blatt               -hinzugefügt: Marking-Mission Blatt                  -hinzugefügt: Dokument anschauen während des Verschiebens   -verändert: Alle zugehörigen Items wurden entfernt, sodass es eine Client Mod ist.              -verändert: ein paar Textboxen                  -verändert: MEDEVAC 9-Liner speichert nun wieder, nachdem eine Seite gelöscht wurde             -verändert: Beschreibung im BI Forum wurde verändert: http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_updateVersionNotice">
+                <Original>Hey %1!\nThanks for installing version 0.3 of my 9Liners & Notepad mod!\nIf you've already used this mod in an other version before, all saved pages have been cleared.\nThis had to be done, because there were some changes with the textboxes of some sheets.\nI'm sorry for all your lost notes!\nIf this is your first time using this mod, make sure to take a look at the BI-Forums post of the mod.\nThe newest changelog was added to page 50 of your Notepad.\n\nEnjoy the new Version,\n~Chief Wiggum</Original>
+                <English>Hey %1!\nThanks for installing version 0.3 of my 9Liners & Notepad mod!\nIf you've already used this mod in an other version before, all saved pages have been cleared.\nThis had to be done, because there were some changes with the textboxes of some sheets.\nI'm sorry for all your lost notes!\nIf this is your first time using this mod, make sure to take a look at the BI-Forums post of the mod.\nThe newest changelog was added to page 50 of your Notepad.\n\nEnjoy the new Version,\n~Chief Wiggum</English>
+                <German>Hallo %1!\nDanke, dass du meine 9-Liner & Notepad (v0.3) installiert hast!\nSolltest du diese Mod bereits vor dieser Version genutzt haben, so sind alle deine Notizen gelöscht, da es ein paar Änderungen an den Textboxen gab.\nWenn du diese Mod das erste mal nutzt, dann schaue ab-und-zu in das BI Forum, um keine Updates oder Veränderungen zu verpassen.\nAuf Seite 50 ist übrigens der Changelog dieser Version angehängt.\nViel Spaß mit der neuen Version,\n~Chief Wiggum & TheMysteriousVincent</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenNotepad">
+                <Original>Open Notepad</Original>
+                <English>Open Notepad</English>
+                <German>Notizbuch öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpen9LinerCAS">
+                <Original>Open CAS 9-Liner</Original>
+                <English>Open CAS 9-Liner</English>
+                <German>CAS 9-Liner öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpen9LinerMEDEVAC">
+                <Original>Open MEDEVAC 9-Liner</Original>
+                <English>Open MEDEVAC 9-Liner</English>
+                <German>MEDEVAC 9-Liner öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpen5LinerGunship">
+                <Original>Open Gunship 5-Liner</Original>
+                <English>Open Gunship 5-Liner</English>
+                <German>Gunship 5-Liner öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenCASCheckInBriefing">
+                <Original>Open CAS Check-in briefing</Original>
+                <English>Open CAS Check-in briefing</English>
+                <German>CAS Check-in Anweisungen öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenTargetLocationMethods">
+                <Original>Open target location methods</Original>
+                <English>Open target location methods</English>
+                <German>Zielort-Methoden Blatt öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenFireForEffect">
+                <Original>Open Fire-For-Effect sheet</Original>
+                <English>Open Fire-For-Effect sheet</English>
+                <German>Fire-For-Effect Blatt öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenMarkingMission">
+                <Original>Open Marking-Misison sheet</Original>
+                <English>Open Marking-Misison sheet</English>
+                <German>Marking-Mission Blatt öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindOpenAdjustFireMission">
+                <Original>Open Adjust-Fire-Mission sheet</Original>
+                <English>Open Adjust-Fire-Mission sheet</English>
+                <German>Adjust-Fire-Mission Blatt öffnen</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_keybindDisableControls">
+                <Original>Disable controls</Original>
+                <English>Disable controls</English>
+                <German>Steuerung ausschalten</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PagesAllCleared">
+                <Original>All pages where cleared and saved.</Original>
+                <English>All pages where cleared and saved.</English>
+                <German>Alle Seiten wurden entfernt.</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PageClearedNotSaved">
+                <Original>Page %1 cleared\nNote: The page was cleared, but not saved!</Original>
+                <English>Page %1 cleared\nNote: The page was cleared, but not saved!</English>
+                <German>Seite %1 wurde entfernt\nHinweis: Die Seite wurde entfernt, aber nicht gespeichert!</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PageStep">
+                <Original>Page %1/20</Original>
+                <English>Page %1/20</English>
+                <German>Seite %1/20</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PageStep50">
+                <Original>Page %1/50</Original>
+                <English>Page %1/50</English>
+                <German>Seite %1/50</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PageSpaceFull">
+                <Original>No more page slots left.</Original>
+                <English>No more page slots left.</English>
+                <German>Du hast keine Seiten mehr übrig.</German>
+            </Key>
+            <Key name="STR_cw_nineliner_and_notepad_Scripts_PageSaved">
+                <Original>Page %1 saved.</Original>
+                <English>Page %1 saved.</English>
+                <German>Seite %1 gespeichert.</German>
+            </Key>
+            <Key name="STR_cw_nineline_and_notepad_Scripts_PageNotAvailable">
+                <Original>This page does not exist anymore.</Original>
+                <English>This page does not exist anymore.</English>
+                <German>Diese Seite existiert nicht mehr.</German>
+            </Key>
+            <Key name="STR_cw_nineline_and_notepad_Scripts_CloseSheetFirst">
+                <Original>You have to close the current sheet first.</Original>
+                <English>You have to close the current sheet first.</English>
+                <German>Du musst das Blatt vorher schließen.</German>
+            </Key>
+        </Container>
+        <Container name="Config">
+            <Key name="STR_cw_nineliner_and_notepad_Config_controlTooltip">
+                <Original>CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE</Original>
+                <English>CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE</English>
+                <German>Klick: Steuerung einschalten | Doppelklick: Schliessen</German>
+            </Key>
+        </Container>
+    </Package>
+</Project>
