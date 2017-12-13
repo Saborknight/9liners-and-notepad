@@ -1,1 +1,0 @@
-execVM "\cw_nineliner_and_notepad\Data\CW_TargetLocationMethods\Functions\functions.sqf";

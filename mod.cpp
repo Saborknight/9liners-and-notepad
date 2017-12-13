@@ -9,5 +9,5 @@ tooltip = "9Liners & Notepad";
 overview = "9Liners & Notepad brings Pre-formatted and Notepad style pages to your game. With this you can note down details and then view them during an operation without having to leave the game or give away control of your character or vehicle.";
 author = "Chief Wiggum";
 overviewPicture = "mod.paa";
-overviewText = "Community Base Addons overviewText";
-overviewFootnote = "<br /><br /><t color='#999999'>This content is under Arma Public \"Share Alike\" Licence.";
+overviewText = "9Liners & Notepad overviewText";
+overviewFootnote = '<br /><br /><t color="#999999">This content is under Arma Public "Share Alike" Licence.';
