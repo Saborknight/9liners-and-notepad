@@ -3,5 +3,5 @@ cw_mm_fnc_clearPage =
 _emptySheet = ["","","","","","","","","","","","","","","","","","","",""];
 [_emptySheet] call cw_mm_fnc_fill;
 
-hint format ["PAGE %1 CLEARED\nNote: The page was cleared, but not saved!", cw_mm_currentPage];
+hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageClearedNotSaved"] call BIS_fnc_localize), cw_mm_currentPage];
 };

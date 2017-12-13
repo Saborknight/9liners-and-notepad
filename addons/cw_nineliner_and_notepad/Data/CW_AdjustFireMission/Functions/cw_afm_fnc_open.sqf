@@ -8,5 +8,5 @@ cw_afm_fnc_open =
 	cw_afm_currentPage = _lastpage;
 	[_pagetext] call cw_afm_fnc_fill;
 	profileNamespace setVariable ["cw_afm_lastPage", cw_afm_currentPage];
-	hint format ["PAGE %1/20", cw_afm_currentPage];
+	hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageStep"] call BIS_fnc_localize), cw_afm_currentPage];
 };

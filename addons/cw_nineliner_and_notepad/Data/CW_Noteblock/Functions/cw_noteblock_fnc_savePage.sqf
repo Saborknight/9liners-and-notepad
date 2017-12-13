@@ -6,5 +6,5 @@ _text = ctrlText 1400;
 
 profileNamespace setVariable [_varname, _text];
 
-hint format ["PAGE %1 SAVED", cw_noteblock_currentPage];
+hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageSaved"] call BIS_fnc_localize), cw_noteblock_currentPage];
 };

@@ -9,5 +9,5 @@ cw_noteblock_fnc_open =
 	ctrlSetText [1400, _pagetext];
 	ctrlSetText [1000, cw_noteblock_currentPage];
 	profileNamespace setVariable ["cw_noteblock_lastPage", cw_noteblock_currentPage];
-	hint format ["PAGE %1/50", cw_noteblock_currentPage];
+	hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageStep50"] call BIS_fnc_localize), cw_noteblock_currentPage];
 };

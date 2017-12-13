@@ -28,5 +28,5 @@ _pagetext = profileNamespace setVariable
 	]
 ];
 
-hint format ["PAGE %1 SAVED", cw_9liner_cas_currentPage];
+hint format [(["STR_cw_nineliner_and_notepad_Scripts_PageSaved"] call BIS_fnc_localize), cw_9liner_cas_currentPage];
 };
