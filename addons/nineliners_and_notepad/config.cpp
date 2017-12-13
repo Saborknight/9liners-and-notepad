@@ -4776,5 +4776,6 @@ class RscTitles
 };
 class Extended_PostInit_EventHandlers
 {
-	nln_nineliners_and_notepad_PostInit="call compile preprocessFile '\nln_nineliner_and_notepad\data\init.sqf'";
+	// This is broken, init.sqf cannot be found by arma when loading into a mission
+	nln_nineliners_and_notepad_PostInit="call compile preprocessFile '\nineliners_and_notepad\data\init.sqf'";
 };
