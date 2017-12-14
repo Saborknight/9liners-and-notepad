@@ -1,1 +1,0 @@
-call compile preprocessFile "\nln_nineliner_and_notepad\data\nln_gunship_call_for_fire\functions\functions.sqf";

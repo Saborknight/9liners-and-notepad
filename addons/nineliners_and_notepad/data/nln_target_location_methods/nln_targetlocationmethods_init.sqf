@@ -1,1 +1,0 @@
-execVM "\nln_nineliner_and_notepad\data\nln_target_location_methods\functions\functions.sqf";
