@@ -143,8 +143,7 @@ Hope you like it,
 ~ Chief Wiggum
 
 **Note:** I'm not liable for any damages/crashes...etc. at your system or yourself!  
-[![Arma Public Licence](https://www.bistudio.com/assets/img/licenses/APL-SA.png)](https://www.bistudio.com/community/licenses/arma-public-license-share-alike)  
-This work is licensed under the Arma Public License - Share Alike
+
 
 ## Issues
 Have any issues? Feature requests? Want to add on any more sheets? [Submit an issue](https://github.com/Saborknight/9liners-and-notepad/issues/new)!
