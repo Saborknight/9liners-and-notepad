@@ -3,3 +3,4 @@ temp/
 archives/
 *.pbo
 *texHeaders.bin
+.vscode
