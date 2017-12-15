@@ -7,7 +7,9 @@ class nln
     {
         file = "\x\nln\addons\nineliners_and_notepad\functions";
         class addPage {};
+        class getNextPage {};
         class getPage {};
+        class getPreviousPage {};
         class removePage {};
         class setPage {};
         class sharePage {};

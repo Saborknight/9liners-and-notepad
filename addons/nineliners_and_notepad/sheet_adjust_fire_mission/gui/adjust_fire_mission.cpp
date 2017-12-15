@@ -3,6 +3,7 @@ class nln_adjust_fire_mission
 {
     idd = -1;
     movingenable = "true";
+
     class Controls
     {
         class nln_adjustfiremission_background : nln_afm_picture
