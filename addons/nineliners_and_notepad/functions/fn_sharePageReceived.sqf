@@ -1,3 +1,24 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_sharePageReceived
+
+Description:
+    The destination function for the function nln_fnc_sharePage.
+	Is called by execution from another player.
+
+Parameters:
+	_unit - the sender player <OBJNULL>
+	_type - a predefined type <STRING>
+    _values - values to append to a sheet variable <ARRAY>
+
+Returns:
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_unit", objNull, [objNull]],

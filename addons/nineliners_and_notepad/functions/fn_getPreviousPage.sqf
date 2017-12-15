@@ -1,5 +1,23 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_getPreviousPage
 
-//ids = [0, 2, _id, 5, 7]; previous values are left values
+Description:
+    Get the next left element to a given base uid.
+
+Parameters:
+    _type - a predefined type <STRING>
+	_id - a given start uid <NUMBER>
+
+Returns:
+	Next left page uid. If it not exists it returns -1. <NUMBER>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_type", "", [""]],

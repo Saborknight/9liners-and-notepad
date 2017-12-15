@@ -1,3 +1,23 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_getPagePosition
+
+Description:
+    Get the current position of a page and the amount of entries of a sheet.
+
+Parameters:
+    _type - a predefined type <STRING>
+	_id - uid to get position for <NUMBER>
+
+Returns:
+	Array containing the page position and the amount of entries of the sheet <ARRAY>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_type", "", [""]],

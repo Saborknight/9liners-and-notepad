@@ -1,3 +1,23 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_removePage
+
+Description:
+    Removes a single page of a sheet.
+
+Parameters:
+    _type - a predefined type <STRING>
+    _id - uid to remove <NUMBER>
+
+Returns:
+	Remove status <BOOLEAN>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
     ["_type", "", [""]],

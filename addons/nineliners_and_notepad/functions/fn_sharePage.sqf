@@ -1,3 +1,24 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_sharePage
+
+Description:
+    Shares a single page to another player (Multiplayer only).
+
+Parameters:
+	_target - the affected target player <OBJNULL>
+    _type - a predefined type <STRING>
+    _id - uid to remove <NUMBER>
+    _copy - copy files to the target instead of removing it on the local player machine <BOOL>
+
+Returns:
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
     ["_target", objNull, [objNull]],

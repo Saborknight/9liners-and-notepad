@@ -1,4 +1,6 @@
-
+/*
+------------
+*/
 switch (nln_nineliners_and_notepad_currentResource) do
 {
 

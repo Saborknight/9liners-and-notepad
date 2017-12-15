@@ -1,3 +1,26 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_addPage
+
+Description:
+    Adds a page to a predefined sheet environment.
+
+Parameters:
+    _type - a predefined type <STRING>
+    _values - an array containing neccessary information <ARRAY>
+
+Returns:
+    Unique id of page entry <NUMBER>
+
+Examples:
+    (begin example)
+    //add a new page
+    private _uid = (["adjust_fire_mission", ["test"]] call nln_fnc_addPage);
+    //_uid ==> number > -1
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
     ["_type", "", [""]],

@@ -1,3 +1,22 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_getLastPage
+
+Description:
+    Returns the last page added to a sheet.
+
+Parameters:
+    _type - a predefined type <STRING>
+
+Returns:
+    Unique id of page entry <NUMBER>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_type", "", [""]]

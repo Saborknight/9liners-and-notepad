@@ -1,3 +1,22 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_removeAllPages
+
+Description:
+    Removes all pages of a specific sheet.
+
+Parameters:
+    _type - a predefined type <STRING>
+
+Returns:
+	Remove status <BOOLEAN>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_type", "", [""]]

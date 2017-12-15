@@ -1,3 +1,24 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_setPage
+
+Description:
+    Sets the values of a sheet page.
+
+Parameters:
+    _type - a predefined type <STRING>
+    _id - uid to remove <NUMBER>
+    _values - values to set <ARRAY>
+
+Returns:
+	Set staus <BOOLEAN>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
     ["_type", "", [""]],

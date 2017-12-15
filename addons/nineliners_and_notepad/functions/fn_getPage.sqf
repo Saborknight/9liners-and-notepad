@@ -1,3 +1,23 @@
+/* ----------------------------------------------------------------------------
+Function: nln_fnc_getPage
+
+Description:
+    Returns the values of a given page uid.
+
+Parameters:
+    _type - a predefined type <STRING>
+	_id - uid to get values for <NUMBER>
+
+Returns:
+	Array containing pair values of _id <ARRAY>
+
+Examples:
+    (begin example)
+    (end)
+
+Author:
+    TheMysteriousVincent
+---------------------------------------------------------------------------- */
 
 params [
 	["_type", "", [""]],
