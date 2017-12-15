@@ -4,3 +4,5 @@ archives/
 *.pbo
 *texHeaders.bin
 .vscode
+*.log
+.editorconfig
