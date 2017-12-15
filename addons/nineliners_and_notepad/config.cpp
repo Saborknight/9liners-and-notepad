@@ -25,12 +25,12 @@ class CfgFunctions
 #include "sheet_adjust_fire_mission\gui\adjust_fire_mission.cpp"
 #include "sheet_cas_checkin\gui\cas_checkin.cpp"
 #include "sheet_cas_nineliner\gui\cas_nineliner.cpp"
-#include "sheet_cas_fire_for_effect\gui\cas_fire_for_effect.cpp"
-#include "sheet_cas_gunship_cff\gui\cas_gunship_cff.cpp"
-#include "sheet_cas_marking_mission\gui\cas_marking_mission.cpp"
-#include "sheet_cas_medevac_nineliner\gui\cas_medevac_nineliner.cpp"
-#include "sheet_cas_noteblock\gui\cas_noteblock.cpp"
-#include "sheet_cas_target_location_methods\gui\cas_target_location_methods.cpp"
+#include "sheet_fire_for_effect\gui\fire_for_effect.cpp"
+#include "sheet_gunship_cff\gui\gunship_cff.cpp"
+#include "sheet_marking_mission\gui\marking_mission.cpp"
+#include "sheet_medevac_nineliner\gui\medevac_nineliner.cpp"
+#include "sheet_noteblock\gui\noteblock.cpp"
+#include "sheet_target_location_methods\gui\target_location_methods.cpp"
 
 //include all title displays
 class RscTitles
@@ -38,12 +38,12 @@ class RscTitles
     #include "sheet_adjust_fire_mission\gui\RscTitles.cpp"
     #include "sheet_cas_checkin\gui\RscTitles.cpp"
     #include "sheet_cas_nineliner\gui\RscTitles.cpp"
-    #include "sheet_cas_fire_for_effect\gui\RscTitles.cpp"
-    #include "sheet_cas_gunship_cff\gui\RscTitles.cpp"
-    #include "sheet_cas_marking_mission\gui\RscTitles.cpp"
-    #include "sheet_cas_medevac_nineliner\gui\RscTitles.cpp"
-    #include "sheet_cas_noteblock\gui\RscTitles.cpp"
-    #include "sheet_cas_target_location_methods\gui\RscTitles.cpp"
+    #include "sheet_fire_for_effect\gui\RscTitles.cpp"
+    #include "sheet_gunship_cff\gui\RscTitles.cpp"
+    #include "sheet_marking_mission\gui\RscTitles.cpp"
+    #include "sheet_medevac_nineliner\gui\RscTitles.cpp"
+    #include "sheet_noteblock\gui\RscTitles.cpp"
+    #include "sheet_target_location_methods\gui\RscTitles.cpp"
 };
 
 class Extended_PreInit_EventHandlers
