@@ -28,4 +28,4 @@ remoteExec
 	_target
 ];
 
-hint (format["You gave %1 a page.", (profileName _target)]);
+hint (format["You gave %1 a page.", (name _target)]);

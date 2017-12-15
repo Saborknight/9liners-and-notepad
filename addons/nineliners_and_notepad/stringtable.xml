@@ -2,7 +2,7 @@
 <Project name="nln_nineliner_and_notepad">
     <Package name="nln_nineliner_and_notepad">
         <Container name="Credentials">
-            <Key name="STR_nln_nineliner_and_notepad_Scripts_keybindCategory">
+            <Key name="STR_nln_nineliner_and_notepad_Scripts_category">
                 <Original>9Liners & Notepad</Original>
                 <English>9Liners & Notepad</English>
                 <German>9Liner & Notizbuch</German>

@@ -3,13 +3,14 @@ class nln_adjust_fire_mission
 {
     idd = -1;
     movingenable = "true";
+    onUnload = "call nln_adjust_fire_mission_fnc_onUnload;";
 
     class Controls
     {
         class nln_adjustfiremission_background : nln_afm_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\images\adjustfiremission.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_adjust_fire_mission\data\ui\adjustfiremission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
@@ -24,9 +25,9 @@ class nln_adjust_fire_mission
             y = "-0.126756 * safezoneH + safezoneY";
             w = "1.75885 * safezoneW";
             h = "2.562 * safezoneH";
-            onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
+            /*onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
             onMouseButtonDblClick = "closeDialog 0;";
-            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
+            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";*/
             tooltipColorText[] = {1, 0, 0, 1};
         };
 
@@ -37,9 +38,9 @@ class nln_adjust_fire_mission
             y = "-0.148747 * safezoneH + safezoneY";
             w = "1.65573 * safezoneW";
             h = "2.69395 * safezoneH";
-            onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
+            /*onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
             onMouseButtonDblClick = "closeDialog 0;";
-            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
+            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";*/
             tooltipColorText[] = {1, 0, 0, 1};
         };
 
@@ -50,9 +51,9 @@ class nln_adjust_fire_mission
             y = "-2.44685 * safezoneH + safezoneY";
             w = "1.65573 * safezoneW";
             h = "2.69395 * safezoneH";
-            onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
+            /*onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
             onMouseButtonDblClick = "closeDialog 0;";
-            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
+            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";*/
             tooltipColorText[] = {1, 0, 0, 1};
         };
 
@@ -63,9 +64,9 @@ class nln_adjust_fire_mission
             y = "0.983811 * safezoneH + safezoneY";
             w = "1.65573 * safezoneW";
             h = "2.69395 * safezoneH";
-            onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
+            /*onMouseButtonClick = "execVM '\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\scripts\createResource.sqf';";
             onMouseButtonDblClick = "closeDialog 0;";
-            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
+            tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";*/
             tooltipColorText[] = {1, 0, 0, 1};
         };
 
@@ -273,7 +274,7 @@ class nln_adjust_fire_mission
             y = "0.42303 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1201] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1201] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_2 : nln_afm_button
@@ -283,7 +284,7 @@ class nln_adjust_fire_mission
             y = "0.42303 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1202] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1202] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_3 : nln_afm_button
@@ -293,7 +294,7 @@ class nln_adjust_fire_mission
             y = "0.42303 * safezoneH + safezoneY";
             w = "0.0171875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1203] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1203] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_3_2 : nln_afm_button
@@ -303,7 +304,7 @@ class nln_adjust_fire_mission
             y = "0.445021 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1203] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1203] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_4 : nln_afm_button
@@ -313,7 +314,7 @@ class nln_adjust_fire_mission
             y = "0.445021 * safezoneH + safezoneY";
             w = "0.0744792 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1204] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1204] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_5 : nln_afm_button
@@ -323,7 +324,7 @@ class nln_adjust_fire_mission
             y = "0.467013 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1205] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1205] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_6 : nln_afm_button
@@ -333,7 +334,7 @@ class nln_adjust_fire_mission
             y = "0.467013 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1206] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1206] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_6_2 : nln_afm_button
@@ -343,7 +344,7 @@ class nln_adjust_fire_mission
             y = "0.489004 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1206] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1206] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_7 : nln_afm_button
@@ -353,7 +354,7 @@ class nln_adjust_fire_mission
             y = "0.489004 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1207] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1207] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_ringle_8 : nln_afm_button
@@ -363,7 +364,7 @@ class nln_adjust_fire_mission
             y = "0.489004 * safezoneH + safezoneY";
             w = "0.0916667 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1208] call nln_afm_fnc_show_or_hide_ringle;";
+            action = "[1208] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
         class nln_afm_btn_previousPage : nln_afm_button
@@ -373,7 +374,7 @@ class nln_adjust_fire_mission
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_afm_fnc_previousPage;";
+            action = "call nln_adjust_fire_mission_fnc_previousPage;";
         };
 
         class nln_afm_btn_nextPage : nln_afm_button
@@ -383,7 +384,7 @@ class nln_adjust_fire_mission
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_afm_fnc_nextPage;";
+            action = "call nln_adjust_fire_mission_fnc_nextPage;";
         };
 
         class nln_afm_btn_clearThis : nln_afm_button
@@ -393,7 +394,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_afm_fnc_clearPage;";
+            action = "";
         };
 
         class nln_afm_btn_save : nln_afm_button
@@ -403,7 +404,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_afm_fnc_savePage;";
+            action = "call nln_adjust_fire_mission_fnc_savePage;"; //TODO: add save function
         };
 
         class nln_afm_btn_clearAll : nln_afm_button
@@ -413,7 +414,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_afm_fnc_clearall;";
+            action = ""; //TODO: add clearall function
         };
     };
 };

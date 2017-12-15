@@ -18,6 +18,11 @@ class CfgFunctions
     #include "sheet_target_location_methods\CfgFunctions.cpp"
 };
 
+class CfgVehicles
+{
+    #include "CfgVehicles.cpp"
+};
+
 //include used defines
 #include "gui\RscDefines.cpp"
 

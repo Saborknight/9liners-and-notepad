@@ -13,7 +13,7 @@
 ["nineliners & Notepad","nln_disable_controls_key", "DISABLE CONTROLS", {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
 
 
-if (isNil {profileNamespace getVariable "nln_nineiners_and_notepad_version_03_used"}) exitWith
+if (isNil {profileNamespace getVariable "nln_nineiners_and_notepad_version_03_used"}) then
 {
 	profileNamespace setVariable ["nln_nineliners_and_notepad_version_03_used", true];
 
@@ -229,3 +229,107 @@ if (isNil {profileNamespace getVariable "nln_nineiners_and_notepad_version_03_us
 };
 
 nln_nineliners_and_notepad_currentResource = "";
+
+nln_availableTypes = [
+	"adjust_fire_mission",
+	"cas_checkin",
+	"cas_nineliner",
+	"fire_for_effect",
+	"gunship_cff",
+	"marking_mission",
+	"medevac_nineliner",
+	"noteblock",
+	"target_location_methods"
+];
+
+//create activation/deactivation settings of each sheet
+[
+	"nln_adjust_fire_mission_enable",
+	"CHECKBOX",
+	"Disable adjust fire mission sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_cas_checkin_enable",
+	"CHECKBOX",
+	"Disable CAS check-in sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_cas_nineliner_enable",
+	"CHECKBOX",
+	"Disable CAS nineliner sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_fire_for_effect_enable",
+	"CHECKBOX",
+	"Disable fire for effect sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_gunship_cff_enable",
+	"CHECKBOX",
+	"Disable gunship call for fire sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_marking_mission_enable",
+	"CHECKBOX",
+	"Disable mission marking sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_medevac_nineliner_enable",
+	"CHECKBOX",
+	"Disable MedEvac nineliner sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_noteblock_enable",
+	"CHECKBOX",
+	"Disable noteblock",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+[
+	"nln_target_location_methods_enable",
+	"CHECKBOX",
+	"Disable target location methods sheet",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;
+
+//should dialogs closed be converted to a background display?
+[
+	"nln_dialogToDisplay_enable",
+	"CHECKBOX",
+	"Enable background window after closing edit fields",
+	"STR_nln_nineliner_and_notepad_Scripts_category",
+	true,
+	1
+] call CBA_Settings_fnc_init;

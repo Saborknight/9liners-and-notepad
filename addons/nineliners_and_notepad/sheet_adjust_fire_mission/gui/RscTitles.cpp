@@ -1,18 +1,20 @@
 
-class nln_adjust_fire_mission_resource
+class nln_adjust_fire_mission
 {
     idd = -1;
-    onUnload = "uiNamespace setVariable ['nln_afm_resource', nil]; hint '';";
-    duration = 0.100000;
+    onUnload = "uiNamespace setVariable ['nln_adjust_fire_mission', nil];";
+    duration = 9999999999999e10;
     fadein = 0;
-    name = "nln_adjust_fire_mission_resource";
-    onLoad = "uiNamespace setVariable ['nln_afm_resource', _this select 0];call nln_nineliner_cas_fnc_hotkey;";
+    fadeout = 0;
+    name = "nln_adjust_fire_mission";
+    onLoad = "uiNamespace setVariable ['nln_adjust_fire_mission', (_this select 0)];";
+
     class Controls
     {
         class nln_adjustfiremission_background : nln_afm_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_adjust_fire_mission\images\adjustfiremission.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_adjust_fire_mission\data\ui\adjustfiremission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
