@@ -8,7 +8,7 @@ class nln_target_location_methods
         class nln_targetlocationmethods_background : nln_targetlocationmethods_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_target_location_methods\images\targetlocationmethods.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_target_location_methods\data\ui\target_location_methods.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.429688 * safezoneW";
@@ -16,7 +16,7 @@ class nln_target_location_methods
             moving = 1;
         };
 
-        class nln_targetlocationmethods_enableControls_1 : nln_targetlocationmethods_button
+        /*class nln_targetlocationmethods_enableControls_1 : nln_targetlocationmethods_button
         {
             idc = 1600;
             x = "0.29375 * safezoneW + safezoneX";
@@ -66,6 +66,6 @@ class nln_target_location_methods
             onMouseButtonDblClick = "closeDialog 0;";
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
-        };
+        };*/
     };
 };

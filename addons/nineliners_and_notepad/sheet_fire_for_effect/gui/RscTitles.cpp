@@ -1,19 +1,19 @@
 
-class nln_fire_for_effect_resource
+class nln_fire_for_effect
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_ffe_resource', nil]; hint '';";
-	duration = 0.100000;
-	fadein = 0;
-	name = "nln_fire_for_effect_resource";
-	onLoad = "uiNamespace setVariable ['nln_ffe_resource', _this select 0];call nln_nineliner_cas_fnc_hotkey;";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_fire_for_effect";
+	onLoad = "uiNamespace setVariable ['nln_fire_for_effect', (_this select 0)];";
 
 	class Controls
 	{
 		class nln_targetlocationmethods_background : nln_ffe_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_fire_for_effect\images\fireforeffect.paa";
+			text = "\x\nln\addons\nineliners_and_notepad\sheet_fire_for_effect\data\ui\fire_for_effect.paa";
 			x = "-0.0614581 * safezoneW + safezoneX";
 			y = "0.236103 * safezoneH + safezoneY";
 			w = "0.423958 * safezoneW";

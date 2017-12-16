@@ -1,19 +1,19 @@
 
-class nln_nineliner_medevac_resource
+class nln_medevac_nineliner
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_nineliner_medv_resource', nil]; hint '';";
-	duration = 1;
-	fadein = 0;
-	name = "nln_nineliner_medevac_resource";
-	onLoad = "uiNamespace setVariable ['nln_nineliner_medv_resource', _this select 0];";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_medevac_nineliner";
+	onLoad = "uiNamespace setVariable ['nln_medevac_nineliner', (_this select 0)];";
 	
 	class Controls
 	{
 		class nln_nineliner_medv_background : nln_nineliner_medv_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_nineliner_medevac\images\nineliner_medevac.paa";
+			text = "\x\nln\addons\nineliners_and_notepad\sheet_medevac_nineliner\data\ui\medevac_nineliner.paa";
 			x = "-0.0213542 * safezoneW + safezoneX";
 			y = "0.247099 * safezoneH + safezoneY";
 			w = "0.4125 * safezoneW";

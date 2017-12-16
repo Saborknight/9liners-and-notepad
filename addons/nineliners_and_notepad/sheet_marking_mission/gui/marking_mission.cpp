@@ -3,12 +3,14 @@ class nln_marking_mission
 {
     idd = -1;
     movingenable = "true";
+    onUnload = "call nln_marking_mission_fnc_onUnload;";
+
     class Controls
     {
         class nln_mm_background : nln_mm_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_marking_mission\images\markingmission.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_marking_mission\data\ui\marking_mission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
@@ -16,7 +18,7 @@ class nln_marking_mission
             moving = 1;
         };
 
-        class nln_mm_enableControls_1 : nln_mm_button
+        /*class nln_mm_enableControls_1 : nln_mm_button
         {
             idc = 1600;
             x = "0.29375 * safezoneW + safezoneX";
@@ -66,7 +68,7 @@ class nln_marking_mission
             onMouseButtonDblClick = "closeDialog 0;";
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
-        };
+        };*/
 
         class nln_mm_edit_line0_1 : nln_mm_edit
         {
@@ -184,7 +186,7 @@ class nln_marking_mission
             y = "0.401039 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1201] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1201] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_2 : nln_mm_button
@@ -194,7 +196,7 @@ class nln_marking_mission
             y = "0.401039 * safezoneH + safezoneY";
             w = "0.0171875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1202] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1202] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_3 : nln_mm_button
@@ -204,7 +206,7 @@ class nln_marking_mission
             y = "0.401039 * safezoneH + safezoneY";
             w = "0.0744792 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1203] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1203] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_4 : nln_mm_button
@@ -214,7 +216,7 @@ class nln_marking_mission
             y = "0.401039 * safezoneH + safezoneY";
             w = "0.103125 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1204] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1204] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_5 : nln_mm_button
@@ -224,7 +226,7 @@ class nln_marking_mission
             y = "0.434026 * safezoneH + safezoneY";
             w = "0.0572917 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1205] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1205] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_previousPage : nln_mm_button
@@ -234,7 +236,7 @@ class nln_marking_mission
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_mm_fnc_previousPage;";
+            action = "call nln_marking_mission_fnc_previousPage;";
         };
 
         class nln_mm_btn_nextPage : nln_mm_button
@@ -244,7 +246,7 @@ class nln_marking_mission
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_mm_fnc_nextPage;";
+            action = "call nln_marking_mission_fnc_nextPage;";
         };
 
         class nln_mm_btn_clearThis : nln_mm_button
@@ -254,7 +256,7 @@ class nln_marking_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_mm_fnc_clearPage;";
+            action = "call nln_marking_mission_fnc_clearPage;";
         };
 
         class nln_mm_btn_save : nln_mm_button
@@ -264,7 +266,7 @@ class nln_marking_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_mm_fnc_savePage;";
+            action = "call nln_marking_mission_fnc_savePage;";
         };
 
         class nln_mm_btn_clearAll : nln_mm_button
@@ -274,7 +276,7 @@ class nln_marking_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_mm_fnc_clearall;";
+            action = "call nln_marking_mission_fnc_clearAllPages;";
         };
 
         class nln_mm_ringle_5 : nln_mm_picture
@@ -356,7 +358,7 @@ class nln_marking_mission
             y = "0.434026 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1206] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1206] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_7 : nln_mm_button
@@ -366,7 +368,7 @@ class nln_marking_mission
             y = "0.434026 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1207] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1207] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_7_2 : nln_mm_button
@@ -376,7 +378,7 @@ class nln_marking_mission
             y = "0.456017 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1207] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1207] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_8 : nln_mm_button
@@ -386,7 +388,7 @@ class nln_marking_mission
             y = "0.456017 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1208] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1208] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_9 : nln_mm_button
@@ -396,7 +398,7 @@ class nln_marking_mission
             y = "0.489004 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1209] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1209] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_10 : nln_mm_button
@@ -406,7 +408,7 @@ class nln_marking_mission
             y = "0.489004 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1210] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1210] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_10_2 : nln_mm_button
@@ -416,7 +418,7 @@ class nln_marking_mission
             y = "0.5 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1210] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1210] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_11 : nln_mm_button
@@ -426,7 +428,7 @@ class nln_marking_mission
             y = "0.5 * safezoneH + safezoneY";
             w = "0.0572917 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1211] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1211] call nln_marking_mission_fnc_action_ringle;";
         };
 
         class nln_mm_btn_ringle_12 : nln_mm_button
@@ -436,7 +438,7 @@ class nln_marking_mission
             y = "0.5 * safezoneH + safezoneY";
             w = "0.0916667 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1212] call nln_mm_fnc_show_or_hide_ringle;";
+            action = "[1212] call nln_marking_mission_fnc_action_ringle;";
         };
     };
 };

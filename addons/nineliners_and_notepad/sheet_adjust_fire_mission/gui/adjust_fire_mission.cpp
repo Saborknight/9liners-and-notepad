@@ -394,7 +394,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "";
+            action = "call nln_adjust_fire_mission_fnc_clearPage;";
         };
 
         class nln_afm_btn_save : nln_afm_button
@@ -414,7 +414,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = ""; //TODO: add clearall function
+            action = "call nln_adjust_fire_mission_fnc_clearAllPages;"; //TODO: add clearall function
         };
     };
 };

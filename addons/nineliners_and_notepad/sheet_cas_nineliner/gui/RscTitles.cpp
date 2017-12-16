@@ -1,19 +1,19 @@
 
-class nln_nineliner_cas_resource
+class nln_cas_nineliner
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_cas_nineliner_resource', nil]; hint '';";
-	duration = 0.100000;
-	fadein = 0;
-	name = "nln_nineliner_cas_resource";
-	onLoad = "uiNamespace setVariable ['nln_cas_nineliner_resource', _this select 0];call nln_nineliner_cas_fnc_hotkey;";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_cas_nineliner";
+	onLoad = "uiNamespace setVariable ['nln_cas_nineliner', _this select 0];";
 
 	class Controls
 	{
 		class nln_nineliner_cas_background : nln_nineliner_cas_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_nineliner_cas\images\nineliner_cas.paa";
+			text = "\x\nln\addons\nineliner_and_notepad\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
 			x = "-0.0786458 * safezoneW + safezoneX";
 			y = "0.26909 * safezoneH + safezoneY";
 			w = "0.452604 * safezoneW";

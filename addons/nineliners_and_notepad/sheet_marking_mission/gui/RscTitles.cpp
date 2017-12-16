@@ -1,17 +1,17 @@
-class nln_marking_mission_resource
+class nln_marking_mission
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_mm_resource', nil]; hint '';";
-	duration = 0.100000;
-	fadein = 0;
-	name = "nln_marking_mission_resource";
-	onLoad = "uiNamespace setVariable ['nln_mm_resource', _this select 0];call nln_nineliner_cas_fnc_hotkey;";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_marking_mission";
+	onLoad = "uiNamespace setVariable ['nln_marking_mission', (_this select 0)];";
 	class Controls
 	{
 		class nln_mm_background : nln_mm_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_marking_mission\images\markingmission.paa";
+			text = "\x\nln\addons\nineliners_and_notepad\sheet_marking_mission\data\ui\marking_mission.paa";
 			x = "-0.0614583 * safezoneW + safezoneX";
 			y = "0.236103 * safezoneH + safezoneY";
 			w = "0.423958 * safezoneW";

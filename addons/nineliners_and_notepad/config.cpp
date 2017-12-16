@@ -14,7 +14,7 @@ class CfgFunctions
     #include "sheet_gunship_cff\CfgFunctions.cpp"
     #include "sheet_marking_mission\CfgFunctions.cpp"
     #include "sheet_medevac_nineliner\CfgFunctions.cpp"
-    #include "sheet_noteblock\CfgFunctions.cpp"
+    #include "sheet_notepad\CfgFunctions.cpp"
     #include "sheet_target_location_methods\CfgFunctions.cpp"
 };
 
@@ -34,7 +34,7 @@ class CfgVehicles
 #include "sheet_gunship_cff\gui\gunship_cff.cpp"
 #include "sheet_marking_mission\gui\marking_mission.cpp"
 #include "sheet_medevac_nineliner\gui\medevac_nineliner.cpp"
-#include "sheet_noteblock\gui\noteblock.cpp"
+#include "sheet_notepad\gui\notepad.cpp"
 #include "sheet_target_location_methods\gui\target_location_methods.cpp"
 
 //include all title displays
@@ -47,7 +47,7 @@ class RscTitles
     #include "sheet_gunship_cff\gui\RscTitles.cpp"
     #include "sheet_marking_mission\gui\RscTitles.cpp"
     #include "sheet_medevac_nineliner\gui\RscTitles.cpp"
-    #include "sheet_noteblock\gui\RscTitles.cpp"
+    #include "sheet_notepad\gui\RscTitles.cpp"
     #include "sheet_target_location_methods\gui\RscTitles.cpp"
 };
 

@@ -1,19 +1,19 @@
 
-class nln_cas_check_in_resource
+class nln_cas_checkin
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_cas_check_in_resource', nil]; hint '';";
-	duration = 0.100000;
-	fadein = 0;
-	name = "nln_cas_check_in_resource";
-	onLoad = "uiNamespace setVariable ['nln_cas_check_in_resource', _this select 0];";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_cas_checkin";
+	onLoad = "uiNamespace setVariable ['nln_cas_checkin', (_this select 0)];";
 
 	class Controls
 	{
 		class nln_cas_checkIn_background : nln_cas_check_in_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_cas_check_in\images\cas_check_in.paa";
+			text = "\x\nln\addons\nineliners_and_notepad\sheet_cas_checkin\data\ui\cas_check_in.paa";
 			x = "-0.0843753 * safezoneW + safezoneX";
 			y = "0.225107 * safezoneH + safezoneY";
 			w = "0.492708 * safezoneW";

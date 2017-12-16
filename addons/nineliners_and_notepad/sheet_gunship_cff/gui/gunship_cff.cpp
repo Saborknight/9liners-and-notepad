@@ -1,15 +1,16 @@
 
-class nln_gunship_call_for_fire
+class nln_gunship_cff
 {
     idd = -1;
     movingenable = "true";
+    onUnload = "call nln_gunship_cff_fnc_onUnload;";
 
     class Controls
     {
         class nln_gcff_background : nln_fiveliner_gcff_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_gunship_call_for_fire\images\gunshipcallforfire.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_gunship_cff\data\ui\gunship_cff.paa";
             x = "-0.0843753 * safezoneW + safezoneX";
             y = "0.225107 * safezoneH + safezoneY";
             w = "0.492708 * safezoneW";
@@ -87,7 +88,7 @@ class nln_gunship_call_for_fire
             y = "0.950824 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0329871 * safezoneH";
-            action = "call nln_fiveliner_gcff_fnc_previousPage;";
+            action = "call nln_gunship_cff_fnc_previousPage;";
         };
 
         class nln_gcff_btn_nextPage : nln_fiveliner_gcff_button
@@ -97,7 +98,7 @@ class nln_gunship_call_for_fire
             y = "0.950824 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0329871 * safezoneH";
-            action = "call nln_fiveliner_gcff_fnc_nextPage;";
+            action = "call nln_gunship_cff_fnc_nextPage;";
         };
 
         class nln_gcff_btn_clearPage : nln_fiveliner_gcff_button
@@ -107,7 +108,7 @@ class nln_gunship_call_for_fire
             y = "0.950824 * safezoneH + safezoneY";
             w = "0.0744792 * safezoneW";
             h = "0.0329871 * safezoneH";
-            action = "call nln_fiveliner_gcff_fnc_clearPage;";
+            action = "call nln_gunship_cff_fnc_clearPage;";
         };
 
         class nln_gcff_btn_save : nln_fiveliner_gcff_button
@@ -117,7 +118,7 @@ class nln_gunship_call_for_fire
             y = "0.950824 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0329871 * safezoneH";
-            action = "call nln_fiveliner_gcff_fnc_savePage;";
+            action = "call nln_gunship_cff_fnc_savePage;";
         };
 
         class nln_gcff_btn_clearAll : nln_fiveliner_gcff_button
@@ -127,10 +128,10 @@ class nln_gunship_call_for_fire
             y = "0.950824 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0329871 * safezoneH";
-            action = "call nln_fiveliner_gcff_fnc_clearall;";
+            action = "call nln_gunship_cff_fnc_clearAllPages;";
         };
 
-        class nln_gcff_btn_enableControls_1 : nln_fiveliner_gcff_button
+        /*class nln_gcff_btn_enableControls_1 : nln_fiveliner_gcff_button
         {
             idc = 1605;
             x = "0.316667 * safezoneW + safezoneX";
@@ -180,6 +181,6 @@ class nln_gunship_call_for_fire
             onMouseButtonDblClick = "closeDialog 0;";
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
-        };
+        };*/
     };
 };

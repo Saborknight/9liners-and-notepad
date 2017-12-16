@@ -1,18 +1,18 @@
 
-class nln_target_location_methods_resource
+class nln_target_location_methods
 {
     idd = -1;
-    onUnload = "uiNamespace setVariable ['nln_tlm_resource', nil]; hint '';";
-    duration = 0.100000;
+    duration = 9999999999999e10;
     fadein = 0;
-    name = "nln_target_location_methods_resource";
-    onLoad = "uiNamespace setVariable ['nln_tlm_resource', _this select 0];";
+    fadeout = 0;
+    name = "nln_target_location_methods";
+    onLoad = "uiNamespace setVariable ['nln_target_location_methods', (_this select 0)];";
     class Controls
     {
         class nln_targetlocationmethods_background : nln_targetlocationmethods_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_target_location_methods\images\targetlocationmethods.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_target_location_methods\data\ui\target_location_methods.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.429688 * safezoneW";

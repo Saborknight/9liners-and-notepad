@@ -1,15 +1,16 @@
 
-class nln_nineliner_cas
+class nln_cas_nineliner
 {
     idd = -1;
     movingenable = "true";
-    onUnload = "hint '';";
+    onUnload = "call nln_cas_nineliner_fnc_onUnload;";
+
     class Controls
     {
         class nln_nineliner_cas_background : nln_nineliner_cas_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_nineliner_cas\images\nineliner_cas.paa";
+            text = "\x\nln\addons\nineliner_and_notepad\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
             x = "-0.0786458 * safezoneW + safezoneX";
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.452604 * safezoneW";
@@ -204,7 +205,7 @@ class nln_nineliner_cas
             y = "0.274 * safezoneH + safezoneY";
             w = "0.0610208 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_nineliner_cas_fnc_clearPage;";
+            action = "call nln_cas_nineliner_fnc_clearPage;";
         };
 
         class nln_nineliner_cas_btn_clearAll : nln_nineliner_cas_button
@@ -214,7 +215,7 @@ class nln_nineliner_cas
             y = "0.274 * safezoneH + safezoneY";
             w = "0.0488333 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_nineliner_cas_fnc_clearall;";
+            action = "call nln_cas_nineliner_fnc_clearAllPages;";
         };
 
         class nln_nineliner_cas_btn_save : nln_nineliner_cas_button
@@ -224,7 +225,7 @@ class nln_nineliner_cas
             y = "0.273 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_nineliner_cas_fnc_savePage;";
+            action = "call nln_cas_nineliner_fnc_savePage;";
         };
 
         class nln_nineliner_cas_btn_nextPage : nln_nineliner_cas_button
@@ -234,7 +235,7 @@ class nln_nineliner_cas
             y = "0.273 * safezoneH + safezoneY";
             w = "0.0401042 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_nineliner_cas_fnc_nextPage;";
+            action = "call nln_cas_nineliner_fnc_nextPage;";
         };
 
         class nln_nineliner_cas_btn_previousPage : nln_nineliner_cas_button
@@ -244,10 +245,10 @@ class nln_nineliner_cas
             y = "0.273 * safezoneH + safezoneY";
             w = "0.039 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_nineliner_cas_fnc_previousPage;";
+            action = "call nln_cas_nineliner_fnc_previousPage;";
         };
 
-        class nln_nineliner_cas_btn_enableControls_2 : nln_nineliner_cas_button
+        /*class nln_nineliner_cas_btn_enableControls_2 : nln_nineliner_cas_button
         {
             idc = 1606;
             x = "-2.27865 * safezoneW + safezoneX";
@@ -297,6 +298,6 @@ class nln_nineliner_cas
             onMouseButtonDblClick = "closeDialog 0;";
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
-        };
+        };*/
     };
 };

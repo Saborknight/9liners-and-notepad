@@ -7,6 +7,8 @@ class nln_adjust_fire_mission
     {
         file = "\x\nln\addons\nineliners_and_notepad\sheet_adjust_fire_mission\functions";
         class action_ringle {};
+        class clearAllPages {};
+        class clearPage {};
         class closeBackground {};
         class nextPage {};
         class onUnload {};

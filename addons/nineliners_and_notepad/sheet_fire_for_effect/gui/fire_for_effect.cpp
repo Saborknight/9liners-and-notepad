@@ -3,12 +3,14 @@ class nln_fire_for_effect
 {
     idd = -1;
     movingenable = "true";
+    onUnload = "call nln_fire_for_effect_fnc_onUnload;";
+
     class Controls
     {
         class nln_fire_for_effect_background : nln_ffe_picture
         {
             idc = 1200;
-            text = "\nln_nineliner_and_notepad\data\nln_fire_for_effect\images\fireforeffect.paa";
+            text = "\x\nln\addons\nineliners_and_notepad\sheet_fire_for_effect\data\ui\fire_for_effect.paa";
             x = "-0.0614581 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
@@ -16,7 +18,7 @@ class nln_fire_for_effect
             moving = 1;
         };
 
-        class nln_fire_for_effect_enableControls_1 : nln_ffe_button
+        /*class nln_fire_for_effect_enableControls_1 : nln_ffe_button
         {
             idc = 1600;
             x = "0.29375 * safezoneW + safezoneX";
@@ -66,7 +68,7 @@ class nln_fire_for_effect
             onMouseButtonDblClick = "closeDialog 0;";
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
-        };
+        };*/
 
         class nln_ffe_edit_line0_1 : nln_ffe_edit
         {
@@ -272,7 +274,7 @@ class nln_fire_for_effect
             y = "0.412034 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1201] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1201] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_2 : nln_ffe_button
@@ -282,7 +284,7 @@ class nln_fire_for_effect
             y = "0.412034 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1202] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1202] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_3 : nln_ffe_button
@@ -292,7 +294,7 @@ class nln_fire_for_effect
             y = "0.412034 * safezoneH + safezoneY";
             w = "0.0171875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1203] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1203] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_3_2 : nln_ffe_button
@@ -302,7 +304,7 @@ class nln_fire_for_effect
             y = "0.434026 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1203] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1203] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_4 : nln_ffe_button
@@ -312,7 +314,7 @@ class nln_fire_for_effect
             y = "0.434026 * safezoneH + safezoneY";
             w = "0.0744792 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1204] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1204] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_5 : nln_ffe_button
@@ -322,7 +324,7 @@ class nln_fire_for_effect
             y = "0.456017 * safezoneH + safezoneY";
             w = "0.06875 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1205] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1205] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_6 : nln_ffe_button
@@ -332,7 +334,7 @@ class nln_fire_for_effect
             y = "0.456017 * safezoneH + safezoneY";
             w = "0.034375 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1206] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1206] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_6_2 : nln_ffe_button
@@ -342,7 +344,7 @@ class nln_fire_for_effect
             y = "0.478009 * safezoneH + safezoneY";
             w = "0.0286458 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1206] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1206] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_7 : nln_ffe_button
@@ -352,7 +354,7 @@ class nln_fire_for_effect
             y = "0.478009 * safezoneH + safezoneY";
             w = "0.0572917 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1207] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1207] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_ringle_8 : nln_ffe_button
@@ -362,7 +364,7 @@ class nln_fire_for_effect
             y = "0.478009 * safezoneH + safezoneY";
             w = "0.0916667 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "[1208] call nln_ffe_fnc_show_or_hide_ringle;";
+            action = "[1208] call nln_fire_for_effect_fnc_action_ringle;";
         };
 
         class nln_ffe_btn_previousPage : nln_ffe_button
@@ -372,7 +374,7 @@ class nln_fire_for_effect
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.0401042 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_ffe_fnc_previousPage;";
+            action = "call nln_fire_for_effect_fnc_previousPage;";
         };
 
         class nln_ffe_btn_nextPage : nln_ffe_button
@@ -382,7 +384,7 @@ class nln_fire_for_effect
             y = "0.258094 * safezoneH + safezoneY";
             w = "0.0458333 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_ffe_fnc_nextPage;";
+            action = "call nln_fire_for_effect_fnc_nextPage;";
         };
 
         class nln_ffe_btn_clearThis : nln_ffe_button
@@ -392,7 +394,7 @@ class nln_fire_for_effect
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_ffe_fnc_clearPage;";
+            action = "call nln_fire_for_effect_fnc_clearPage;";
         };
 
         class nln_ffe_btn_save : nln_ffe_button
@@ -402,7 +404,7 @@ class nln_fire_for_effect
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_ffe_fnc_savePage;";
+            action = "call nln_fire_for_effect_fnc_savePage;";
         };
 
         class nln_ffe_btn_clearAll : nln_ffe_button
@@ -412,7 +414,7 @@ class nln_fire_for_effect
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_ffe_fnc_clearall;";
+            action = "call nln_fire_for_effect_fnc_clearAllPages;";
         };
     };
 };

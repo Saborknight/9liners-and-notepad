@@ -2,7 +2,6 @@
 class nln_adjust_fire_mission
 {
     idd = -1;
-    onUnload = "uiNamespace setVariable ['nln_adjust_fire_mission', nil];";
     duration = 9999999999999e10;
     fadein = 0;
     fadeout = 0;

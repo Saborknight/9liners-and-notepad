@@ -1,19 +1,19 @@
 
-class nln_gunship_call_for_fire_resource
+class nln_gunship_cff
 {
 	idd = -1;
-	onUnload = "uiNamespace setVariable ['nln_fiveliner_gcff_resource', nil]; hint '';";
-	duration = 0.100000;
-	fadein = 0;
-	name = "nln_gunship_call_for_fire_resource";
-	onLoad = "uiNamespace setVariable ['nln_fiveliner_gcff_resource', _this select 0];";
+    duration = 9999999999999e10;
+    fadein = 0;
+    fadeout = 0;
+	name = "nln_gunship_cff";
+	onLoad = "uiNamespace setVariable ['nln_gunship_cff', _this select 0];";
 
 	class Controls
 	{
 		class nln_gcff_background : nln_fiveliner_gcff_picture
 		{
 			idc = 1200;
-			text = "\nln_nineliner_and_notepad\data\nln_gunship_call_for_fire\images\gunshipcallforfire.paa";
+			text = "\x\nln\addons\nineliners_and_notepad\sheet_gunship_cff\data\ui\gunship_cff.paa";
 			x = "-0.0843753 * safezoneW + safezoneX";
 			y = "0.225107 * safezoneH + safezoneY";
 			w = "0.492708 * safezoneW";
