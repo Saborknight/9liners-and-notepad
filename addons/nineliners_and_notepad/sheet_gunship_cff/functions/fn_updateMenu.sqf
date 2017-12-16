@@ -4,7 +4,7 @@ params [
 ];
 
 private _values = (["gunship_cff", _id] call nln_fnc_getPage);
-if ((count _values) != 22) then
+if ((count _values) != 7) then
 {
 	_values = [profileName, "", "", "", "", "", ""];
 };

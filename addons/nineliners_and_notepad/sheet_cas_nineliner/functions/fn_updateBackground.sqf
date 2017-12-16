@@ -9,7 +9,7 @@ if (isNull _ui) exitWith {};
 
 private _values = (["cas_nineliner", _id] call nln_fnc_getPage);
 
-if ((count _values) != 22) then
+if ((count _values) != 21) then
 {
 	_values = [profileName, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
 };

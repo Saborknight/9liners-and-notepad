@@ -1,15 +1,15 @@
 
 #include "\a3\editor_f\data\scripts\dikCodes.h"
 
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_notepad_key", "OPEN NOTEPAD", { _this call nln_notepad_fnc_openMenu; }, {}, [DIK_N, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_nineliner_cas_key", "OPEN 9-Liner CAS", { _this call nln_cas_nineliner_fnc_openMenu; }, {}, [DIK_C, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_nineliner_medv_key", "OPEN 9-Liner MEDIVAC", { _this call nln_medevac_nineliner_fnc_openMenu; }, {}, [DIK_M, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_fiveliner_gcff_key", "OPEN 5-Liner GUNSHIP CALL FOR FIRE", { _this call nln_gunship_cff_fnc_openMenu; }, {}, [DIK_G, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_cas_check_in_key", "OPEN CAS CHECK-IN BREEFING", { _this call nln_cas_checkin_fnc_openMenu; }, {}, [DIK_B, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_sheet_tlm_key", "OPEN TARGET-LOCATION-METHODS SHEET", { _this call nln_target_location_methods_fnc_openMenu; }, {}, [DIK_T, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_sheet_ffe_key", "OPEN FIRE-FOR-EFFECT SHEET", { _this call nln_fire_for_effect_fnc_openMenu; }, {}, [DIK_F, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_sheet_mm_key", "OPEN MARKING-MISSION SHEET", { _this call nln_marking_mission_fnc_openMenu; }, {}, [DIK_J, [true, true, false]]] call CBA_fnc_addKeybind;
-[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_open_sheet_afm_key", "OPEN ADJUST-FIRE-MISSION SHEET", { _this call nln_adjust_fire_mission_fnc_openMenu; }, {}, [DIK_A, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_notepad_key", "OPEN NOTEPAD", { _this call nln_notepad_fnc_openMenu; }, {}, [DIK_N, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_nineliner_cas_key", "OPEN 9-Liner CAS", { _this call nln_cas_nineliner_fnc_openMenu; }, {}, [DIK_C, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_nineliner_medv_key", "OPEN 9-Liner MEDIVAC", { _this call nln_medevac_nineliner_fnc_openMenu; }, {}, [DIK_M, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_fiveliner_gcff_key", "OPEN 5-Liner GUNSHIP CALL FOR FIRE", { _this call nln_gunship_cff_fnc_openMenu; }, {}, [DIK_G, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_cas_check_in_key", "OPEN CAS CHECK-IN BREEFING", { _this call nln_cas_checkin_fnc_openMenu; }, {}, [DIK_B, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_sheet_tlm_key", "OPEN TARGET-LOCATION-METHODS SHEET", { _this call nln_target_location_methods_fnc_openMenu; }, {}, [DIK_T, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_sheet_ffe_key", "OPEN FIRE-FOR-EFFECT SHEET", { _this call nln_fire_for_effect_fnc_openMenu; }, {}, [DIK_F, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_sheet_mm_key", "OPEN MARKING-MISSION SHEET", { _this call nln_marking_mission_fnc_openMenu; }, {}, [DIK_J, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_nineliner_and_notepad_Scripts_category","nln_open_sheet_afm_key", "OPEN ADJUST-FIRE-MISSION SHEET", { _this call nln_adjust_fire_mission_fnc_openMenu; }, {}, [DIK_A, [true, true, false]]] call CBA_fnc_addKeybind;
 //[(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),"nln_disable_controls_key", "DISABLE CONTROLS", {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
 
 
@@ -242,12 +242,16 @@ nln_availableTypes = [
 	"target_location_methods"
 ];
 
+{
+	profileNamespace setVariable [(format["nln_pages_%1", _x]), ([[], []] call CBA_fnc_hashCreate)];
+} forEach nln_availableTypes;
+
 //create activation/deactivation settings of each sheet
 [
 	"nln_adjust_fire_mission_enable",
 	"CHECKBOX",
 	"Disable adjust fire mission sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -256,7 +260,7 @@ nln_availableTypes = [
 	"nln_cas_checkin_enable",
 	"CHECKBOX",
 	"Disable CAS check-in sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -265,7 +269,7 @@ nln_availableTypes = [
 	"nln_cas_nineliner_enable",
 	"CHECKBOX",
 	"Disable CAS nineliner sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -274,7 +278,7 @@ nln_availableTypes = [
 	"nln_fire_for_effect_enable",
 	"CHECKBOX",
 	"Disable fire for effect sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -283,7 +287,7 @@ nln_availableTypes = [
 	"nln_gunship_cff_enable",
 	"CHECKBOX",
 	"Disable gunship call for fire sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -292,7 +296,7 @@ nln_availableTypes = [
 	"nln_marking_mission_enable",
 	"CHECKBOX",
 	"Disable mission marking sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -301,7 +305,7 @@ nln_availableTypes = [
 	"nln_medevac_nineliner_enable",
 	"CHECKBOX",
 	"Disable MedEvac nineliner sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -310,7 +314,7 @@ nln_availableTypes = [
 	"nln_notepad_enable",
 	"CHECKBOX",
 	"Disable notepad",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -319,7 +323,7 @@ nln_availableTypes = [
 	"nln_target_location_methods_enable",
 	"CHECKBOX",
 	"Disable target location methods sheet",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -329,7 +333,7 @@ nln_availableTypes = [
 	"nln_dialogToDisplay_enable",
 	"CHECKBOX",
 	"Enable background window after closing edit fields",
-	(["STR_nln_nineliner_and_notepad_Scripts_category"] call BIS_fnc_localize),
+	"STR_nln_nineliner_and_notepad_Scripts_category",
 	true,
 	1
 ] call CBA_Settings_fnc_init;

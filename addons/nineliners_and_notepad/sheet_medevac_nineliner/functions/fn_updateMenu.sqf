@@ -4,7 +4,7 @@ params [
 ];
 
 private _values = (["marking_mission", _id] call nln_fnc_getPage);
-if ((count _values) != 22) then
+if ((count _values) != 38) then
 {
 	_values = [profileName, "", "", "", "", "", "", "", "", "", false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
 };
