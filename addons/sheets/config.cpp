@@ -53,5 +53,8 @@ class RscTitles
 
 class Extended_PreInit_EventHandlers
 {
-    clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheets\XEH_clientPreInit.sqf';";
+	class nln_sheets
+	{
+		clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheets\XEH_clientPreInit.sqf';";
+	};
 };
