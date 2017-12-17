@@ -741,6 +741,26 @@ class nln_afm_edit
 	shadow=1;
 };
 
+class nln_mm_picture
+{
+	access=0;
+	type=0;
+	idc=-1;
+	style=48;
+	colorBackground[]={0,0,0,0};
+	colorText[]={1,1,1,1};
+	font="TahomaB";
+	sizeEx=0;
+	lineSpacing=0;
+	text="";
+	fixedWidth=0;
+	shadow=0;
+	x=0;
+	y=0;
+	w=0.200000;
+	h=0.150000;
+};
+
 class nln_afm_picture
 {
 	access=0;
@@ -834,22 +854,3 @@ class nln_mm_edit
 	shadow=1;
 };
 
-class nln_mm_picture
-{
-	access=0;
-	type=0;
-	idc=-1;
-	style=48;
-	colorBackground[]={0,0,0,0};
-	colorText[]={1,1,1,1};
-	font="TahomaB";
-	sizeEx=0;
-	lineSpacing=0;
-	text="";
-	fixedWidth=0;
-	shadow=0;
-	x=0;
-	y=0;
-	w=0.200000;
-	h=0.150000;
-};

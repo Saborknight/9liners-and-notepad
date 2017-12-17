@@ -7,14 +7,6 @@ private _values = [
 	(ctrlText 1401),
 	(ctrlText 1402),
 	(ctrlText 1403),
-	(if ((ctrlText 1201) == "") then { false; } else { true; }),
-	(if ((ctrlText 1202) == "") then { false; } else { true; }),
-	(if ((ctrlText 1203) == "") then { false; } else { true; }),
-	(if ((ctrlText 1204) == "") then { false; } else { true; }),
-	(if ((ctrlText 1205) == "") then { false; } else { true; }),
-	(if ((ctrlText 1206) == "") then { false; } else { true; }),
-	(if ((ctrlText 1207) == "") then { false; } else { true; }),
-	(if ((ctrlText 1208) == "") then { false; } else { true; }),
 	(ctrlText 1404),
 	(ctrlText 1405),
 	(ctrlText 1406),
@@ -23,7 +15,15 @@ private _values = [
 	(ctrlText 1409),
 	(ctrlText 1410),
 	(ctrlText 1411),
-	(ctrlText 1412)
+	(ctrlText 1412),
+	(if ((ctrlText 1201) == "") then { false; } else { true; }),
+	(if ((ctrlText 1202) == "") then { false; } else { true; }),
+	(if ((ctrlText 1203) == "") then { false; } else { true; }),
+	(if ((ctrlText 1204) == "") then { false; } else { true; }),
+	(if ((ctrlText 1205) == "") then { false; } else { true; }),
+	(if ((ctrlText 1206) == "") then { false; } else { true; }),
+	(if ((ctrlText 1207) == "") then { false; } else { true; }),
+	(if ((ctrlText 1208) == "") then { false; } else { true; })
 ];
 
 if (_key <= -1) then
