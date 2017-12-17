@@ -1,0 +1,38 @@
+
+class Man;
+class CAManBase : Man
+{
+	class ACE_SelfActions
+	{
+		class nln_sheets
+		{
+			class fire_for_effect
+			{
+				displayName = ["STR_nln_Interaction_selfActionFireForEffect"] call BIS_fnc_localize;
+				condition = "nln_fire_for_effect_enable";
+				statement = "";
+
+				class edit
+				{
+					displayName = ["STR_nln_Interaction_selfActionEdit"] call BIS_fnc_localize;
+					condition = "nln_fire_for_effect_enable";
+					statement = "call nln_fire_for_effect_fnc_openMenu;";
+				};
+
+				class show
+				{
+					displayName = ["STR_nln_Interaction_selfActionShow"] call BIS_fnc_localize;
+					condition = "nln_fire_for_effect_enable && (isNull (uiNamespace getVariable ['nln_fire_for_effect', displayNull]))";
+					statement = "call nln_fire_for_effect_fnc_openBackground;";
+				};
+
+				class hide
+				{
+					displayName = ["STR_nln_Interaction_selfActionHide"] call BIS_fnc_localize;
+					condition = "nln_fire_for_effect_enable && !(isNull (uiNamespace getVariable ['nln_fire_for_effect', displayNull]))";
+					statement = "call nln_fire_for_effect_fnc_closeBackground;";
+				};
+			};
+		};
+	};
+};

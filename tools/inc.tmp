@@ -1,0 +1,1 @@
+*.p3d;*.pac;*.paa;*.rtm;*.sqf;*.sqs;*.bikb;*.fsm;*.wss;*.ogg;*.wav;*.fxy;*.csv;*.html;*.lip;*.txt;*.wrp;*.bisurf;*.xml;*.rvmat;*.hpp;*.jpg;*.h
