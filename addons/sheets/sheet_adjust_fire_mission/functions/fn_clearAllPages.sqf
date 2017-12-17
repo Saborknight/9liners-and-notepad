@@ -5,4 +5,4 @@ if (["adjust_fire_mission"] call nln_fnc_removeAllPages) then
 	profileNamespace setVariable ["nln_adjust_fire_mission_currentPage", -1];
 };
 
-call nln_adjust_fire_mission_fnc_updateMenu;
+[(profileNamespace getVariable ["nln_adjust_fire_mission_currentPage", -1])] call nln_marking_mission_fnc_updateMenu;

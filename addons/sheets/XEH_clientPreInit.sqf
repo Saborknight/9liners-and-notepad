@@ -333,7 +333,8 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 	private _uid = (["notepad"] call nln_fnc_getLastPage + 1);
 	[
 		"notepad",
-		(["STR_nln_General_authorAnnouncement"] call BIS_fnc_localize)
+		_uid,
+		([profileName, "", (["STR_nln_General_authorAnnouncement"] call BIS_fnc_localize)])
 	] call nln_fnc_setPage;
 	profileNamespace setVariable ["nln_notepad_currentPage", _uid];
 };

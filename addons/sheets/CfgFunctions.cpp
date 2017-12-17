@@ -12,6 +12,7 @@ class nln
         class getPage {};
         class getPagePosition {};
         class getPreviousPage {};
+		class removeAllPages {};
         class removePage {};
         class setPage {};
         class sharePage {};

@@ -5,4 +5,4 @@ if (["notepad"] call nln_fnc_removeAllPages) then
 	profileNamespace setVariable ["nln_notepad_currentPage", -1];
 };
 
-call nln_notepad_fnc_updateMenu;
+[(profileNamespace getVariable ["nln_notepad_currentPage", -1])] call nln_marking_mission_fnc_updateMenu;
