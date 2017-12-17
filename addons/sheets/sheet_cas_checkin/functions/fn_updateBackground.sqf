@@ -9,7 +9,7 @@ if (isNull _ui) exitWith {};
 
 private _values = (["cas_checkin", _id] call nln_fnc_getPage);
 
-if ((count _values) != 22) then
+if ((count _values) != 10) then
 {
 	_values = [profileName, "", "", "", "", "", "", "", "", ""];
 };

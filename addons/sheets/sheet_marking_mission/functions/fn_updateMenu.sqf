@@ -23,6 +23,6 @@ for "_i" from 9 to 20 do
 	}
 	else
 	{
-		ctrlSetText[(1992 + _i), ""];
+		ctrlSetText [(1992 + _i), ""];
 	};
 };

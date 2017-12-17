@@ -10,7 +10,7 @@ class nln_cas_nineliner
         class nln_nineliner_cas_background : nln_nineliner_cas_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\nineliner_and_notepad\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
+            text = "\x\nln\addons\sheets\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
             x = "-0.0786458 * safezoneW + safezoneX";
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.452604 * safezoneW";
@@ -260,7 +260,7 @@ class nln_cas_nineliner
             tooltip = "CLICK: ENABLE CONTROLS | DBL CLICK: CLOSE";
             tooltipColorText[] = {1, 0, 0, 1};
         };
-        
+
         class nln_nineliner_cas_btn_enableControls_1 : nln_nineliner_cas_button
         {
             idc = 1605;

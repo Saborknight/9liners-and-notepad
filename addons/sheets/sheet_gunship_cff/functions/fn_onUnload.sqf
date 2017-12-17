@@ -1,7 +1,7 @@
 
-call nln_cas_nineliner_fnc_savePage;
+call nln_gunship_cff_fnc_savePage;
 
 if (nln_dialogToDisplay_enable) then
 {
-	call nln_cas_nineliner_fnc_openBackground;
+	call nln_gunship_cff_fnc_openBackground;
 };

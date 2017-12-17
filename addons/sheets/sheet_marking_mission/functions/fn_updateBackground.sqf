@@ -28,6 +28,6 @@ for "_i" from 9 to 20 do
 	}
 	else
 	{
-		ctrlSetText[(1192 + _i), ""];
+		(_ui displayCtrl (1192 + _i)) ctrlSetText "";
 	};
 };
