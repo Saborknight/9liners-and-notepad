@@ -257,8 +257,8 @@ nln_availableTypes = [
 [
 	"nln_adjust_fire_mission_enable",
 	"CHECKBOX",
-	"Disable adjust fire mission sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_adjustFireMissionEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -266,8 +266,8 @@ nln_availableTypes = [
 [
 	"nln_cas_checkin_enable",
 	"CHECKBOX",
-	"Disable CAS check-in sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_casCheckInEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -275,8 +275,8 @@ nln_availableTypes = [
 [
 	"nln_cas_nineliner_enable",
 	"CHECKBOX",
-	"Disable CAS nineliner sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_casNinelinerEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -284,8 +284,8 @@ nln_availableTypes = [
 [
 	"nln_fire_for_effect_enable",
 	"CHECKBOX",
-	"Disable fire for effect sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_fireForEffectEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -293,8 +293,8 @@ nln_availableTypes = [
 [
 	"nln_gunship_cff_enable",
 	"CHECKBOX",
-	"Disable gunship call for fire sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_gunshipCallForFireEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -302,8 +302,8 @@ nln_availableTypes = [
 [
 	"nln_marking_mission_enable",
 	"CHECKBOX",
-	"Disable mission marking sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_missionMarkingEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -311,8 +311,8 @@ nln_availableTypes = [
 [
 	"nln_medevac_nineliner_enable",
 	"CHECKBOX",
-	"Disable MedEvac nineliner sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_medevacNinelinerEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -320,8 +320,8 @@ nln_availableTypes = [
 [
 	"nln_notepad_enable",
 	"CHECKBOX",
-	"Disable notepad",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_notepadEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -329,8 +329,8 @@ nln_availableTypes = [
 [
 	"nln_target_location_methods_enable",
 	"CHECKBOX",
-	"Disable target location methods sheet",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_targetLocationMethodsEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -339,8 +339,8 @@ nln_availableTypes = [
 [
 	"nln_dialogToDisplay_enable",
 	"CHECKBOX",
-	"Enable background window after closing edit fields",
-	"STR_nln_nineliner_and_notepad_Scripts_category",
+	["STR_nln_Settings_dialogToDisplayEnable"] call BIS_fnc_localize,
+	"STR_nln_Credentials_modName",
 	true,
 	1
 ] call CBA_Settings_fnc_init;
