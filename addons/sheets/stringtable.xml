@@ -2,23 +2,72 @@
 <Project name="nln_nineliner_and_notepad">
     <Package name="nln_nineliner_and_notepad">
         <Container name="Credentials">
-            <Key name="STR_nln_nineliner_and_notepad_Scripts_category">
+            <Key name="STR_nln_Credentials_modName">
                 <Original>9Liners & Notepad</Original>
                 <English>9Liners & Notepad</English>
                 <German>9Liner & Notizbuch</German>
             </Key>
         </Container>
+        <Container name="General">
+            <Key name="STR_nln_General_authorAnnouncement">
+                <Original>Greetings %1!\nThank you for adding 9Liners & Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners & Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</Original>
+                <English>Greetings %1!\nThank you for adding 9Liners & Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners & Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</English>
+                <German>Grüsse %1!\nVielen dank das ihr 9Liners & Notizbuch herunter geladen habt.\nDieser Mod hat neuerdings eine komplette umarbeitung unterzogen. Es gibt jezt unendliche Seiten, unter andere geniale dinge. Leider meint das dass alle euren alter Notizen waren jezt gelöscht. Wir enschuldigen uns für irgendwelche verlorene Notizen. Aber, wir hoffen das ihr 9Liners & Notepad liebt, so wie wir es geliebt haben, daran zu arbeiten!\nTschüss!\nTheMysteriousVincent and Arend</German>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key name="STR_nln_Settings_adjustFireMissionEnable">
+                <Original>Disable adjust fire mission sheet</Original>
+                <English>Disable adjust fire mission sheet</English>
+                <German>Feuer MissionsBlatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_casCheckInEnable">
+            	<Original>Disable CAS check-in sheet</Original>
+            	<English>Disable CAS check-in sheet</English>
+            	<German>CAS Check-in Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_casNinelinerEnable">
+            	<Original>Disable CAS 9-Liner sheet</Original>
+            	<English>Disable CAS 9-Liner sheet</English>
+            	<German>CAS 9-Liner Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_fireForEffectEnable">
+            	<Original>Disable fire for effect sheet</Original>
+            	<English>Disable fire for effect sheet</English>
+            	<German>Feuer für Effekt Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_gunshipCallForFireEnable">
+            	<Original>Disable gunship call for fire sheet</Original>
+            	<English>Disable gunship call for fire sheet</English>
+            	<German>Gunship Aufruf zu Feuer Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_missionMarkingEnable">
+            	<Original>Disable mission marking sheet</Original>
+            	<English>Disable mission marking sheet</English>
+            	<German>Missionmarkierungsblatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_medevacNinelinerEnable">
+            	<Original>Disable MedEvac 9-Liner sheet</Original>
+            	<English>Disable MedEvac 9-Liner sheet</English>
+            	<German>Medevac 9-Liner Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_notepadEnable">
+            	<Original>Disable notepad</Original>
+            	<English>Disable notepad</English>
+            	<German>Notizblock deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_targetLocationMethodsEnable">
+            	<Original>Disable target location methods sheet</Original>
+            	<English>Disable target location methods sheet</English>
+            	<German>Ziellokasierungsverfahren Blatt deaktivieren</German>
+            </Key>
+            <Key name="STR_nln_Settings_dialogToDisplayEnable">
+            	<Original>Enable background window after closing edit fields</Original>
+            	<English>Enable background window after closing edit fields</English>
+            	<German>Hintergrundfenster nach dem Schliessen der Eingabefelder aktivieren</German>
+            </Key>
+        </Container>
         <Container name="Scripts">
-            <Key name="STR_nln_nineliner_and_notepad_Scripts_changelogV0.3">
-                <Original>                 CHANGELOG                              28.02.2015 - V0.3                                                    -added: Target-Location-Methods-Help sheet      -added: Fire-For-Effect sheet                   -added: Adjust-Fire-Mission sheet               -added: Marking-Mission sheet                  -added: View Document while moving Function   -changed: Removed all items. So it's a client-            side mod now!              -changed: some textbox stuff                  -changed: Medivac 9Liner doesn't saves after             clearing a page anymore.             -changed: New ReadMe in the forum post!:      http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</Original>
-                <English>                 CHANGELOG                              28.02.2015 - V0.3                                                    -added: Target-Location-Methods-Help sheet      -added: Fire-For-Effect sheet                   -added: Adjust-Fire-Mission sheet               -added: Marking-Mission sheet                  -added: View Document while moving Function   -changed: Removed all items. So it's a client-            side mod now!              -changed: some textbox stuff                  -changed: Medivac 9Liner doesn't saves after             clearing a page anymore.             -changed: New ReadMe in the forum post!:      http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</English>
-                <German>                 Veränderungen:                              28.02.2015 - v0.3                                                    -hinzugefügt: Zielort-Methoden Blatt      -hinzugefügt: Fire-For-Effect Blatt                   -hinzugefügt: Adjust-Fire-Mission Blatt               -hinzugefügt: Marking-Mission Blatt                  -hinzugefügt: Dokument anschauen während des Verschiebens   -verändert: Alle zugehörigen Items wurden entfernt, sodass es eine Client Mod ist.              -verändert: ein paar Textboxen                  -verändert: MEDEVAC 9-Liner speichert nun wieder, nachdem eine Seite gelöscht wurde             -verändert: Beschreibung im BI Forum wurde verändert: http://forums.bistudio.com/showthread.php?188821-Ingame-9Liners-amp-Notepad</German>
-            </Key>
-            <Key name="STR_nln_nineliner_and_notepad_Scripts_updateVersionNotice">
-                <Original>Hey %1!\nThanks for installing version 0.3 of my 9Liners & Notepad mod!\nIf you've already used this mod in an other version before, all saved pages have been cleared.\nThis had to be done, because there were some changes with the textboxes of some sheets.\nI'm sorry for all your lost notes!\nIf this is your first time using this mod, make sure to take a look at the BI-Forums post of the mod.\nThe newest changelog was added to page 50 of your Notepad.\n\nEnjoy the new Version,\n~Chief Wiggum</Original>
-                <English>Hey %1!\nThanks for installing version 0.3 of my 9Liners & Notepad mod!\nIf you've already used this mod in an other version before, all saved pages have been cleared.\nThis had to be done, because there were some changes with the textboxes of some sheets.\nI'm sorry for all your lost notes!\nIf this is your first time using this mod, make sure to take a look at the BI-Forums post of the mod.\nThe newest changelog was added to page 50 of your Notepad.\n\nEnjoy the new Version,\n~Chief Wiggum</English>
-                <German>Hallo %1!\nDanke, dass du meine 9-Liner & Notepad (v0.3) installiert hast!\nSolltest du diese Mod bereits vor dieser Version genutzt haben, so sind alle deine Notizen gelöscht, da es ein paar Änderungen an den Textboxen gab.\nWenn du diese Mod das erste mal nutzt, dann schaue ab-und-zu in das BI Forum, um keine Updates oder Veränderungen zu verpassen.\nAuf Seite 50 ist übrigens der Changelog dieser Version angehängt.\nViel Spaß mit der neuen Version,\n~Chief Wiggum & TheMysteriousVincent</German>
-            </Key>
             <Key name="STR_nln_nineliner_and_notepad_Scripts_keybindOpenNotepad">
                 <Original>Open Notepad</Original>
                 <English>Open Notepad</English>
