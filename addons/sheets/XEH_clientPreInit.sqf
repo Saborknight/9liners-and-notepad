@@ -1,16 +1,16 @@
 
 #include "\a3\editor_f\data\scripts\dikCodes.h"
 
-["STR_nln_Credentials_modName","nln_open_notepad_key", "OPEN NOTEPAD", { _this call nln_notepad_fnc_openMenu; }, {}, [DIK_N, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_nineliner_cas_key", "OPEN 9-Liner CAS", { _this call nln_cas_nineliner_fnc_openMenu; }, {}, [DIK_C, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_nineliner_medv_key", "OPEN 9-Liner MEDIVAC", { _this call nln_medevac_nineliner_fnc_openMenu; }, {}, [DIK_M, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_fiveliner_gcff_key", "OPEN 5-Liner GUNSHIP CALL FOR FIRE", { _this call nln_gunship_cff_fnc_openMenu; }, {}, [DIK_G, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_cas_check_in_key", "OPEN CAS CHECK-IN BREEFING", { _this call nln_cas_checkin_fnc_openMenu; }, {}, [DIK_B, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_sheet_tlm_key", "OPEN TARGET-LOCATION-METHODS SHEET", { _this call nln_target_location_methods_fnc_openMenu; }, {}, [DIK_T, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_sheet_ffe_key", "OPEN FIRE-FOR-EFFECT SHEET", { _this call nln_fire_for_effect_fnc_openMenu; }, {}, [DIK_F, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_sheet_mm_key", "OPEN MARKING-MISSION SHEET", { _this call nln_marking_mission_fnc_openMenu; }, {}, [DIK_J, [true, true, false]]] call CBA_fnc_addKeybind;
-["STR_nln_Credentials_modName","nln_open_sheet_afm_key", "OPEN ADJUST-FIRE-MISSION SHEET", { _this call nln_adjust_fire_mission_fnc_openMenu; }, {}, [DIK_A, [true, true, false]]] call CBA_fnc_addKeybind;
-//[(["STR_nln_Credentials_modName"] call BIS_fnc_localize),"nln_disable_controls_key", "DISABLE CONTROLS", {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_notepad_key", ["STR_nln_Settings_keybindOpenNotepad"] call BIS_fnc_localize, { _this call nln_notepad_fnc_openMenu; }, {}, [DIK_N, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_nineliner_cas_key", ["STR_nln_Settings_keybindOpenNinelinerCAS"] call BIS_fnc_localize, { _this call nln_cas_nineliner_fnc_openMenu; }, {}, [DIK_C, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_nineliner_medv_key", ["STR_nln_Settings_keybindOpenNinelinerMedevac"] call BIS_fnc_localize, { _this call nln_medevac_nineliner_fnc_openMenu; }, {}, [DIK_M, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_fiveliner_gcff_key", ["STR_nln_Settings_keybindOpenFivelinerGunship"] call BIS_fnc_localize, { _this call nln_gunship_cff_fnc_openMenu; }, {}, [DIK_G, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_cas_check_in_key", ["STR_nln_Settings_keybindOpenCASCheckIn"] call BIS_fnc_localize, { _this call nln_cas_checkin_fnc_openMenu; }, {}, [DIK_B, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_sheet_tlm_key", ["STR_nln_Settings_keybindOpenTargetLocationMethods"] call BIS_fnc_localize, { _this call nln_target_location_methods_fnc_openMenu; }, {}, [DIK_T, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_sheet_ffe_key", ["STR_nln_Settings_keybindOpenFireForEffect"] call BIS_fnc_localize, { _this call nln_fire_for_effect_fnc_openMenu; }, {}, [DIK_F, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_sheet_mm_key", ["STR_nln_Settings_keybindOpenMarkingMission"] call BIS_fnc_localize, { _this call nln_marking_mission_fnc_openMenu; }, {}, [DIK_J, [true, true, false]]] call CBA_fnc_addKeybind;
+["STR_nln_Credentials_modName","nln_open_sheet_afm_key", ["STR_nln_Settings_keybindOpenAdjustFireMission"] call BIS_fnc_localize, { _this call nln_adjust_fire_mission_fnc_openMenu; }, {}, [DIK_A, [true, true, false]]] call CBA_fnc_addKeybind;
+//[(["STR_nln_Credentials_modName"] call BIS_fnc_localize),"nln_disable_controls_key", ["STR_nln_Settings_keybindDisableControls"] call BIS_fnc_localize, {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
 
 nln_availableTypes = [
 	"adjust_fire_mission",

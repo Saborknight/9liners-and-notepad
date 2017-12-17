@@ -49,4 +49,4 @@ remoteExec
 	_target
 ];
 
-hint (format["You gave %1 a page.", (name _target)]);
+hint (format[["STR_nln_Interaction_sharePageMessage"] call BIS_fnc_localize, (name _target)]);
