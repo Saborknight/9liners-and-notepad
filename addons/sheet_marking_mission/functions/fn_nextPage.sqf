@@ -5,7 +5,7 @@ private _nP = (["marking_mission", _lP] call nln_main_fnc_getNextPage);
 if (_nP <= -1) then
 {
 	private _pP = (["marking_mission", _lP] call nln_main_fnc_getPagePosition);
-	
+
 	if ((count _pP) > 0) then
 	{
 		hint (format["Page %1/%2", (_pP select 0) + 1, (_pP select 1)]);
@@ -13,6 +13,7 @@ if (_nP <= -1) then
 }
 else
 {
+	call nln_marking_mission_fnc_savePage;
 	private _pP = (["marking_mission", _nP] call nln_main_fnc_getPagePosition);
 	hint (format["Page %1/%2", (_pP select 0), (_pP select 1)]);
 };

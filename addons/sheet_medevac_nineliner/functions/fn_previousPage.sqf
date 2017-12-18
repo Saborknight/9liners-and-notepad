@@ -13,6 +13,7 @@ else
 
 if (_p > -1) then
 {
+	call nln_medevac_nineliner_fnc_savePage;
 	[_p] call nln_medevac_nineliner_fnc_updateMenu;
 	profileNamespace setVariable ["nln_medevac_nineliner_currentPage", _p];
 

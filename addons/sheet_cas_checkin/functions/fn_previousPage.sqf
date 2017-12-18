@@ -13,6 +13,7 @@ else
 
 if (_p > -1) then
 {
+	call nln_cas_checkin_fnc_savePage;
 	[_p] call nln_cas_checkin_fnc_updateMenu;
 	profileNamespace setVariable ["nln_cas_checkin_currentPage", _p];
 

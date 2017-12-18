@@ -13,6 +13,7 @@ else
 
 if (_p > -1) then
 {
+	call nln_fire_for_effect_fnc_savePage;
 	[_p] call nln_fire_for_effect_fnc_updateMenu;
 	profileNamespace setVariable ["nln_fire_for_effect_currentPage", _p];
 

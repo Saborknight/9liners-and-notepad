@@ -13,6 +13,7 @@ else
 
 if (_p > -1) then
 {
+	call nln_gunship_cff_fnc_savePage;
 	[_p] call nln_gunship_cff_fnc_updateMenu;
 	profileNamespace setVariable ["nln_gunship_cff_currentPage", _p];
 

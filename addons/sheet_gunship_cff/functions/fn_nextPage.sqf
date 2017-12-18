@@ -13,6 +13,7 @@ if (_nP <= -1) then
 }
 else
 {
+	call nln_gunship_cff_fnc_savePage;
 	private _pP = (["gunship_cff", _nP] call nln_main_fnc_getPagePosition);
 	hint (format["Page %1/%2", (_pP select 0), (_pP select 1)]);
 };

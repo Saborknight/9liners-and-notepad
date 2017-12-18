@@ -13,6 +13,7 @@ else
 
 if (_p > -1) then
 {
+	call nln_marking_mission_fnc_savePage;
 	[_p] call nln_marking_mission_fnc_updateMenu;
 	profileNamespace setVariable ["nln_marking_mission_currentPage", _p];
 
