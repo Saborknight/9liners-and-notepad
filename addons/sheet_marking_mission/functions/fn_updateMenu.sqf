@@ -14,7 +14,7 @@ for "_i" from 1 to 8 do
 	ctrlSetText [(1399 + _i), (_values select _i)];
 };
 
-private _sel = ["\x\nln\addons\marking_mission\data\ui\ringle.paa", ""];
+private _sel = ["", "\x\nln\addons\marking_mission\data\ui\ringle.paa"];
 for "_i" from 9 to 20 do
 {
 	ctrlSetText [(1192 + _i), (_sel select (_values select _i))];

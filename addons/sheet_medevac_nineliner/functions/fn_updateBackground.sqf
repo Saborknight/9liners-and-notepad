@@ -19,7 +19,7 @@ for "_i" from 1 to 9 do
 	(_ui displayCtrl (1399 + _i)) ctrlSetText (_values select _i);
 };
 
-private _sel = ["\x\nln\addons\medevac_nineliner\data\ui\cross.paa", ""];
+private _sel = ["", "\x\nln\addons\medevac_nineliner\data\ui\cross.paa"];
 for "_i" from 10 to 37 do
 {
 	(_ui displayCtrl (2790 + _i)) ctrlSetText (_sel select (_values select _i));

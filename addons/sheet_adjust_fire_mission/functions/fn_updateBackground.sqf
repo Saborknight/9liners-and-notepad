@@ -16,10 +16,10 @@ if ((count _values) != 22) then
 
 for "_i" from 1 to 13 do
 {
-	(_ui displayCtrl (1399 + _i)) ctrlSetText (_values select 1);
+	(_ui displayCtrl (1399 + _i)) ctrlSetText (_values select _i);
 };
 
-private _sel = ["\x\nln\addons\adjust_fire_mission\data\ui\ringle.paa", ""];
+private _sel = ["", "\x\nln\addons\adjust_fire_mission\data\ui\ringle.paa"];
 for "_i" from 14 to 21 do
 {
 	(_ui displayCtrl (1187 + _i)) ctrlSetText (_sel select (_values select _i));

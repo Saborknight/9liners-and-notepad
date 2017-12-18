@@ -14,12 +14,7 @@ if ((count _values) != 10) then
 	_values = [profileName, "", "", "", "", "", "", "", "", ""];
 };
 
-(_ui displayCtrl 1400) ctrlSetText (_values select 1);
-(_ui displayCtrl 1401) ctrlSetText (_values select 2);
-(_ui displayCtrl 1402) ctrlSetText (_values select 3);
-(_ui displayCtrl 1403)ctrlSetText (_values select 4);
-(_ui displayCtrl 1404) ctrlSetText (_values select 5);
-(_ui displayCtrl 1405) ctrlSetText (_values select 6);
-(_ui displayCtrl 1406) ctrlSetText (_values select 7);
-(_ui displayCtrl 1407) ctrlSetText (_values select 8);
-(_ui displayCtrl 1408) ctrlSetText (_values select 9);
+for "_i" from 1 to 9 do
+{
+	(_ui displayCtrl (1399 + _i)) ctrlSetText (_values select _i);
+};
