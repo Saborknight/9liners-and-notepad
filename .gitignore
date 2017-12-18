@@ -1,5 +1,6 @@
 build/
-temp/
+tools/tmp/
+tools/inc.tmp
 archives/
 *.pbo
 *texHeaders.bin
