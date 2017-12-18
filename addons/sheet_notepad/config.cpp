@@ -16,7 +16,7 @@ class CfgVehicles
 
 class nln_noteblock_picture;
 class nln_noteblock_edit;
-class nln_noteblock_button
+class nln_noteblock_button;
 
 #include "gui\notepad.cpp"
 
