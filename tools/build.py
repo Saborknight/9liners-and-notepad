@@ -21,12 +21,9 @@ if sys.platform == "win32":
 
 
 ######## GLOBALS #########
-MAINPREFIX = "n"
 PREFIX = "nln_"
-PRIVATEKEY = "D:\\Saborknight\\Projects\\Arma_3\\mods\\private_keys\\arend_nineline_and_notepad.biprivatekey"
 IMPORTANT_FILES = ["extra", "meta.cpp", "mod.cpp", "readme.md", "LICENSE.md"] # relative to projectpath
-VERSION_FILES = ["mod.cpp"]
-PROJECT_NAME = "nln_nineliners_and_notepad"
+PROJECT_NAME = "nineliners_and_notepad"
 PROJECT_VERSION = "1.0.0"
 ##########################
 
