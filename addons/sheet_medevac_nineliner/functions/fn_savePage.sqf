@@ -39,7 +39,8 @@ private _values = [
 	(if ((ctrlText 2824) == "") then { false; } else { true; }),
 	(if ((ctrlText 2825) == "") then { false; } else { true; }),
 	(if ((ctrlText 2826) == "") then { false; } else { true; }),
-	(if ((ctrlText 2827) == "") then { false; } else { true; })
+	(if ((ctrlText 2827) == "") then { false; } else { true; }),
+	(if ((ctrlText 2828) == "") then { false; } else { true; })
 ];
 
 if (_key <= -1) then
