@@ -1,5 +1,5 @@
-<? xml version="1.0" encoding="UTF-8" ?>
-<Project name="nineliner_and_notepad">
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project name="nineliners_and_notepad">
 	<Package name="nln_main">
 		<Container name="Credentials">
 			<Key ID="STR_nln_Credentials_modName">
@@ -16,100 +16,10 @@
 			</Key>
 		</Container>
 		<Container name="Settings">
-			<Key ID="STR_nln_Settings_adjustFireMissionEnable">
-				<Original>Disable adjust fire mission sheet</Original>
-				<English>Disable adjust fire mission sheet</English>
-				<German>Feuer MissionsBlatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_CASCheckInEnable">
-				<Original>Disable CAS check-in sheet</Original>
-				<English>Disable CAS check-in sheet</English>
-				<German>CAS Check-in Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_CASNinelinerEnable">
-				<Original>Disable CAS 9-Liner sheet</Original>
-				<English>Disable CAS 9-Liner sheet</English>
-				<German>CAS 9-Liner Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_fireForEffectEnable">
-				<Original>Disable fire for effect sheet</Original>
-				<English>Disable fire for effect sheet</English>
-				<German>Feuer für Effekt Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_gunshipCallForFireEnable">
-				<Original>Disable gunship call for fire sheet</Original>
-				<English>Disable gunship call for fire sheet</English>
-				<German>Gunship Aufruf zu Feuer Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_missionMarkingEnable">
-				<Original>Disable mission marking sheet</Original>
-				<English>Disable mission marking sheet</English>
-				<German>Missionmarkierungsblatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_medevacNinelinerEnable">
-				<Original>Disable MedEvac 9-Liner sheet</Original>
-				<English>Disable MedEvac 9-Liner sheet</English>
-				<German>Medevac 9-Liner Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_notepadEnable">
-				<Original>Disable notepad</Original>
-				<English>Disable notepad</English>
-				<German>Notizblock deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_targetLocationMethodsEnable">
-				<Original>Disable target location methods sheet</Original>
-				<English>Disable target location methods sheet</English>
-				<German>Ziellokasierungsverfahren Blatt deaktivieren</German>
-			</Key>
 			<Key ID="STR_nln_Settings_dialogToDisplayEnable">
 				<Original>Enable background window after closing edit fields</Original>
 				<English>Enable background window after closing edit fields</English>
 				<German>Hintergrundfenster nach dem Schliessen der Eingabefelder aktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenNotepad">
-				<Original>Open Notepad</Original>
-				<English>Open Notepad</English>
-				<German>Notizbuch öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenNinelinerCAS">
-				<Original>Open CAS 9-Liner</Original>
-				<English>Open CAS 9-Liner</English>
-				<German>CAS 9-Liner öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenNinelinerMedevac">
-				<Original>Open MEDEVAC 9-Liner</Original>
-				<English>Open MEDEVAC 9-Liner</English>
-				<German>MEDEVAC 9-Liner öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenFivelinerGunship">
-				<Original>Open Gunship 5-Liner</Original>
-				<English>Open Gunship 5-Liner</English>
-				<German>Gunship 5-Liner öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenCASCheckIn">
-				<Original>Open CAS Check-in briefing</Original>
-				<English>Open CAS Check-in briefing</English>
-				<German>CAS Check-in Anweisungen öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenTargetLocationMethods">
-				<Original>Open target location methods</Original>
-				<English>Open target location methods</English>
-				<German>Zielort-Methoden Blatt öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenFireForEffect">
-				<Original>Open Fire-For-Effect sheet</Original>
-				<English>Open Fire-For-Effect sheet</English>
-				<German>Fire-For-Effect Blatt öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenMarkingMission">
-				<Original>Open Marking-Misison sheet</Original>
-				<English>Open Marking-Misison sheet</English>
-				<German>Marking-Mission Blatt öffnen</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenAdjustFireMission">
-				<Original>Open Adjust-Fire-Mission sheet</Original>
-				<English>Open Adjust-Fire-Mission sheet</English>
-				<German>Adjust-Fire-Mission Blatt öffnen</German>
 			</Key>
 			<Key ID="STR_nln_Settings_keybindDisableControls">
 				<Original>Disable controls</Original>
@@ -117,83 +27,60 @@
 				<German>Steuerung ausschalten</German>
 			</Key>
 		</Container>
-		<Container name="Interaction">
-			<Key ID="STR_nln_Interaction_selfActionSheets">
+		<Container name="Interactions">
+			<Key ID="STR_nln_Interactions_selfActionSheets">
 				<Original>Sheets</Original>
 				<English>Sheets</English>
 				<German>Blätter</German>
 			</Key>
-			<Key ID="STR_nln_Interaction_selfActionEdit">
+			<Key ID="STR_nln_Interactions_selfActionEdit">
 				<Original>Edit</Original>
 				<English>Edit</English>
 				<German>Bearbeiten</German>
 			</Key>
-			<Key ID="STR_nln_Interaction_selfActionShow">
+			<Key ID="STR_nln_Interactions_selfActionShow">
 				<Original>Show</Original>
 				<English>Show</English>
 				<German>Anzeigen</German>
 			</Key>
-			<Key ID="STR_nln_Interaction_selfActionHide">
+			<Key ID="STR_nln_Interactions_selfActionHide">
 				<Original>Hide</Original>
 				<English>Hide</English>
 				<German>Verstecken</German>
 			</Key>
-			<Key ID="STR_nln_Interaction_selfActionAdjustFireMission">
-				<Original>Adjust fire missions</Original>
-				<English>Adjust fire missions</English>
-				<German>Feuer Missionen justieren</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionCASCheckIn">
-				<Original>CAS Check-in</Original>
-				<English>CAS Check-in</English>
-				<German>CAS Check-in</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionCASNineliner">
-				<Original>CAS 9-Liner</Original>
-				<English>CAS 9-Liner</English>
-				<German>CAS 9-Liner</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionFireForEffect">
-				<Original>Fire for effect</Original>
-				<English>Fire for effect</English>
-				<German>Feuer für Effekt</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionGunshipCallForFire">
-				<Original>Gunship call for fire</Original>
-				<English>Gunship call for fire</English>
-				<German>Gunship Aufruf zu Feuer</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionMarkingMission">
-				<Original>Marking mission</Original>
-				<English>Marking mission</English>
-				<German>Missionsmarkierung</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionMedevacNineliner">
-				<Original>Medevac 9-Liner</Original>
-				<English>Medevac 9-Liner</English>
-				<German>Medevac 9-Liner</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionNotepad">
-				<Original>Notepad</Original>
-				<English>Notepad</English>
-				<German>Notizbuch</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_selfActionTargetLocationMethods">
-				<Original>Target location methods</Original>
-				<English>Target location methods</English>
-				<German>Ziellokalisierungsmethoden</German>
-			</Key>
-			<Key ID="STR_nln_Interaction_sharePageMessage">
+			<Key ID="STR_nln_Interactions_sharePageHint">
 				<Original>You gave %1 a page.</Original>
 				<English>You gave %1 a page.</English>
 				<German>Ihr habt %1 eine Seite gegeben.</German>
 			</Key>
-			<Key ID="STR_nln_Interaction_sharePageReceivedMessage">
+			<Key ID="STR_nln_Interactions_sharePageReceivedHint">
 				<Original>You got a new page from %1.</Original>
 				<English>You got a new page from %1.</English>
 				<German>Ihr kriegt eine neue Seite von %1.</German>
 			</Key>
+			<Key ID="STR_nln_Interactions_clearAllPagesHint">
+				<Original>All pages were removed.</Original>
+				<English>All pages were removed.</English>
+				<German>Alle Seiten wurden entfernt.</German>
+			</Key>
+			<Key ID="STR_nln_Interactions_clearPageHint">
+				<Original>Page removed.</Original>
+				<English>Page removed.</English>
+				<German>Seite entfernt.</German>
+			</Key>
+			<Key ID="STR_nln_Interactions_pageCountHint">
+				<Original>Page %1/%2</Original>
+				<English>Page %1/%2</English>
+				<German>Seite %1/%2</German>
+			</Key>
+			<Key ID="STR_nln_Interactions_noPrevPagesHint">
+				<Original>No previous Pages.</Original>
+				<English>No previous Pages.</English>
+				<German>Keine bisherige Seiten.</German>
+			</Key>
 		</Container>
+
+
 		<Container name="Scripts">
 			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PagesAllCleared">
 				<Original>All pages where cleared and saved.</Original>

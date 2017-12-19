@@ -1,7 +1,7 @@
 
 if (["adjust_fire_mission"] call nln_main_fnc_removeAllPages) then
 {
-	hint "All pages were removed.";
+	hint ["STR_nln_Interactions_clearAllPagesHint"] call BIS_fnc_localize;
 	profileNamespace setVariable ["nln_adjust_fire_mission_currentPage", -1];
 };
 

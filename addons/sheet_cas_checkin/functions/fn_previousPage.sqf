@@ -18,9 +18,9 @@ if (_p > -1) then
 	profileNamespace setVariable ["nln_cas_checkin_currentPage", _p];
 
 	private _pP = (["cas_checkin", _p] call nln_main_fnc_getPagePosition);
-	hint format["Page %1/%2", (_pP select 0), (_pP select 1)];
+	hint format[["STR_nln_Interactions_pageCountHint"] call BIS_fnc_localize, (_pP select 0), (_pP select 1)];
 }
 else
 {
-	hint "No previous Pages.";
+	hint ["STR_nln_Interactions_noPrevPagesHint"] call BIS_fnc_localize;
 };

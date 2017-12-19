@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project name="nineliners_and_notepad">
+	<Package name="nln_sheet_adjust_fire_mission">
+		<Container name="Interactions">
+			<Key ID="STR_nln_Interactions_selfActionAdjustFireMission">
+				<Original>Adjust fire missions</Original>
+				<English>Adjust fire missions</English>
+				<German>Feuer Missionen justieren</German>
+			</Key>
+		</Container>
+		<Container name="Settings">
+			<Key ID="STR_nln_Settings_adjustFireMissionEnable">
+				<Original>Disable adjust fire mission sheet</Original>
+				<English>Disable adjust fire mission sheet</English>
+				<German>Feuer MissionsBlatt deaktivieren</German>
+			</Key>
+			<Key ID="STR_nln_Settings_keybindOpenAdjustFireMission">
+				<Original>Open Adjust-Fire-Mission sheet</Original>
+				<English>Open Adjust-Fire-Mission sheet</English>
+				<German>Adjust-Fire-Mission Blatt öffnen</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>

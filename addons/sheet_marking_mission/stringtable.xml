@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project name="nineliners_and_notepad">
+	<Package name="nln_sheet_marking_mission">
+		<Container name="Interactions">
+			<Key ID="STR_nln_Interactions_selfActionMarkingMission">
+				<Original>Marking mission</Original>
+				<English>Marking mission</English>
+				<German>Missionsmarkierung</German>
+			</Key>
+		</Container>
+		<Container name="Settings">
+			<Key ID="STR_nln_Settings_missionMarkingEnable">
+				<Original>Disable mission marking sheet</Original>
+				<English>Disable mission marking sheet</English>
+				<German>Missionmarkierungsblatt deaktivieren</German>
+			</Key>
+			<Key ID="STR_nln_Settings_keybindOpenMarkingMission">
+				<Original>Open Marking-Misison sheet</Original>
+				<English>Open Marking-Misison sheet</English>
+				<German>Marking-Mission Blatt öffnen</German>
+			</Key>
+		</Container>
+	</Package>
+</Project>

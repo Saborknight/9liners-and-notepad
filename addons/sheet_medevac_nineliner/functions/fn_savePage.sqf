@@ -47,7 +47,7 @@ if (_key <= -1) then
 	_key = (["medevac_nineliner", _values] call nln_main_fnc_addPage);
 	profileNamespace setVariable ["nln_medevac_nineliner_currentPage", _key];
 	private _pP = (["medevac_nineliner", _key] call nln_main_fnc_getPagePosition);
-	hint format["Page %1/%2", (_pP select 0), (_pP select 1)];
+	hint format[["STR_nln_Interactions_pageCountHint"] call BIS_fnc_localize, (_pP select 0), (_pP select 1)];
 }
 else
 {

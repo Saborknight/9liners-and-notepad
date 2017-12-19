@@ -30,5 +30,5 @@ if (isNull _unit || !isPlayer _unit) exitWith {};
 
 if ([_type, _values] call nln_main_fnc_addPage) then
 {
-	hint (format[["STR_nln_Interaction_sharePageReceivedMessage"] call BIS_fnc_localize, profileName]);
+	hint (format[["STR_nln_Interactions_sharePageReceivedHint"] call BIS_fnc_localize, profileName]);
 };

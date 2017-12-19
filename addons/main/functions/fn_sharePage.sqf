@@ -2,28 +2,28 @@
 Function: nln_main_fnc_sharePage
 
 Description:
-    Shares a single page to another player (Multiplayer only).
+	Shares a single page to another player (Multiplayer only).
 
 Parameters:
 	_target - the affected target player <OBJNULL>
-    _type - a predefined type <STRING>
-    _id - uid to remove <NUMBER>
-    _copy - copy files to the target instead of removing it on the local player machine <BOOL>
+	_type - a predefined type <STRING>
+	_id - uid to remove <NUMBER>
+	_copy - copy files to the target instead of removing it on the local player machine <BOOL>
 
 Returns:
 
 Examples:
-    (begin example)
-    (end)
+	(begin example)
+	(end)
 
 Author:
-    TheMysteriousVincent
+	TheMysteriousVincent
 ---------------------------------------------------------------------------- */
 
 params [
-    ["_target", objNull, [objNull]],
-    ["_type", "", [""]],
-    ["_id", -1, [0]],
+	["_target", objNull, [objNull]],
+	["_type", "", [""]],
+	["_id", -1, [0]],
 	["_copy", false, [false]]
 ];
 
@@ -49,4 +49,4 @@ remoteExec
 	_target
 ];
 
-hint (format[["STR_nln_Interaction_sharePageMessage"] call BIS_fnc_localize, (name _target)]);
+hint (format[["STR_nln_Interactions_sharePageHint"] call BIS_fnc_localize, (name _target)]);

@@ -1,7 +1,7 @@
 
 if (["notepad"] call nln_main_fnc_removeAllPages) then
 {
-	hint "All pages were removed.";
+	hint ["STR_nln_Interactions_clearAllPagesHint"] call BIS_fnc_localize;
 	profileNamespace setVariable ["nln_notepad_currentPage", -1];
 };
 
