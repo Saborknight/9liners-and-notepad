@@ -49,4 +49,4 @@ remoteExec
 	_target
 ];
 
-hint (format[["STR_nln_Interactions_sharePageHint"] call BIS_fnc_localize, (name _target)]);
+hint (format[("STR_nln_Interactions_sharePageHint" call BIS_fnc_localize), (name _target)]);

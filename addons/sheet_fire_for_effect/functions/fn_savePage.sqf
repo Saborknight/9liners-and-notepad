@@ -31,7 +31,7 @@ if (_key <= -1) then
 	_key = (["fire_for_effect", _values] call nln_main_fnc_addPage);
 	profileNamespace setVariable ["nln_fire_for_effect_currentPage", _key];
 	private _pP = (["fire_for_effect", _key] call nln_main_fnc_getPagePosition);
-	hint format[["STR_nln_Interactions_pageCountHint"] call BIS_fnc_localize, (_pP select 0), (_pP select 1)];
+	hint format[("STR_nln_Interactions_pageCountHint" call BIS_fnc_localize), (_pP select 0), (_pP select 1)];
 }
 else
 {

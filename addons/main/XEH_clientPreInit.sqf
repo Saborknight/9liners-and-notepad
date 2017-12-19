@@ -27,7 +27,7 @@ nln_availableTypes = [
 [
 	"nln_dialogToDisplay_enable",
 	"CHECKBOX",
-	["STR_nln_Settings_dialogToDisplayEnable"] call BIS_fnc_localize,
+	("STR_nln_Settings_dialogToDisplayEnable" call BIS_fnc_localize),
 	"STR_nln_Credentials_modName",
 	true,
 	1
@@ -336,7 +336,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 	[
 		"notepad",
 		_uid,
-		([profileName, "", (["STR_nln_General_authorAnnouncement"] call BIS_fnc_localize)])
+		([profileName, "", ("STR_nln_General_authorAnnouncement" call BIS_fnc_localize)])
 	] call nln_main_fnc_setPage;
 	profileNamespace setVariable ["nln_notepad_currentPage", _uid];
 };
