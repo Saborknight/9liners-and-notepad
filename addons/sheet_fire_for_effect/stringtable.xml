@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="nineliners_and_notepad">
-	<Package name="nln_sheet_fire_for_effect">
-		<Container name="Interactions">
-			<Key ID="STR_nln_Interactions_selfActionFireForEffect">
-				<Original>Fire for effect</Original>
-				<English>Fire for effect</English>
-				<German>Feuer für Effekt</German>
-			</Key>
-		</Container>
-		<Container name="Settings">
-			<Key ID="STR_nln_Settings_fireForEffectEnable">
-				<Original>Disable fire for effect sheet</Original>
-				<English>Disable fire for effect sheet</English>
-				<German>Feuer für Effekt Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenFireForEffect">
-				<Original>Open Fire-For-Effect sheet</Original>
-				<English>Open Fire-For-Effect sheet</English>
-				<German>Fire-For-Effect Blatt öffnen</German>
-			</Key>
-		</Container>
-	</Package>
+    <Package name="nln_sheet_fire_for_effect">
+        <Container name="Interactions">
+            <Key ID="STR_nln_Interactions_selfActionFireForEffect">
+                <Original>Fire for effect</Original>
+                <English>Fire for effect</English>
+                <German>Feuer für Effekt</German>
+                <Japanese>効力射</Japanese>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key ID="STR_nln_Settings_fireForEffectEnable">
+                <Original>Disable fire for effect sheet</Original>
+                <English>Disable fire for effect sheet</English>
+                <German>Feuer für Effekt Blatt deaktivieren</German>
+                <Japanese>効力射シートを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_Settings_keybindOpenFireForEffect">
+                <Original>Open Fire-For-Effect sheet</Original>
+                <English>Open Fire-For-Effect sheet</English>
+                <German>Fire-For-Effect Blatt öffnen</German>
+                <Japanese>効力射シートを開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
 </Project>

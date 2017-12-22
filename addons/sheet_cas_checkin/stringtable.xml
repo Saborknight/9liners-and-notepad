@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="nineliners_and_notepad">
-	<Package name="nln_sheet_cas_checkin">
-		<Container name="Interactions">
-			<Key ID="STR_nln_Interactions_selfActionCASCheckIn">
-				<Original>CAS Check-in</Original>
-				<English>CAS Check-in</English>
-				<German>CAS Check-in</German>
-			</Key>
-		</Container>
-		<Container name="Settings">
-			<Key ID="STR_nln_Settings_CASCheckInEnable">
-				<Original>Disable CAS check-in sheet</Original>
-				<English>Disable CAS check-in sheet</English>
-				<German>CAS Check-in Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenCASCheckIn">
-				<Original>Open CAS Check-in briefing</Original>
-				<English>Open CAS Check-in briefing</English>
-				<German>CAS Check-in Anweisungen öffnen</German>
-			</Key>
-		</Container>
-	</Package>
+    <Package name="nln_sheet_cas_checkin">
+        <Container name="Interactions">
+            <Key ID="STR_nln_Interactions_selfActionCASCheckIn">
+                <Original>CAS Check-in</Original>
+                <English>CAS Check-in</English>
+                <German>CAS Check-in</German>
+                <Japanese>CAS チェックイン</Japanese>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key ID="STR_nln_Settings_CASCheckInEnable">
+                <Original>Disable CAS check-in sheet</Original>
+                <English>Disable CAS check-in sheet</English>
+                <German>CAS Check-in Blatt deaktivieren</German>
+                <Japanese>CAS チェックインシートを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_Settings_keybindOpenCASCheckIn">
+                <Original>Open CAS Check-in briefing</Original>
+                <English>Open CAS Check-in briefing</English>
+                <German>CAS Check-in Anweisungen öffnen</German>
+                <Japanese>CAS チェックインブリーフィングを開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
 </Project>
