@@ -1,7 +1,7 @@
 
 class nln_medevac_nineliner
 {
-    idd = -1;
+    idd = 8887;
     movingenable = "true";
     onUnload = "call nln_medevac_nineliner_fnc_onUnload;";
 
@@ -10,7 +10,7 @@ class nln_medevac_nineliner
         class nln_nineliner_medv_background : nln_nineliner_medv_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\medevac_nineliner\data\ui\medevac_nineliner.paa";
+            text = "\x\nln\addons\medevac_nineliner\data\ui\events\christmas.paa";
             x = "-0.0213542 * safezoneW + safezoneX";
             y = "0.247099 * safezoneH + safezoneY";
             w = "0.4125 * safezoneW";

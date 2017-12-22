@@ -2,7 +2,7 @@
 private _key = (profileNamespace getVariable ["nln_cas_checkin_currentPage", -1]);
 
 private _values = [
-	profileName,
+	[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])],
 	(ctrlText 1400),
 	(ctrlText 1401),
 	(ctrlText 1402),

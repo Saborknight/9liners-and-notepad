@@ -1,7 +1,7 @@
 
 class nln_fire_for_effect
 {
-    idd = -1;
+    idd = 8884;
     movingenable = "true";
     onUnload = "call nln_fire_for_effect_fnc_onUnload;";
 

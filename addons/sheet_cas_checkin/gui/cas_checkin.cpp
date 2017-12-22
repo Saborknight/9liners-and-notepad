@@ -1,7 +1,7 @@
 
 class nln_cas_checkin
 {
-    idd = -1;
+    idd = 8882;
     movingenable = "true";
     onUnload = "call nln_cas_checkin_fnc_onUnload;";
 

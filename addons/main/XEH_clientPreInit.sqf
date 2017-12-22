@@ -28,7 +28,7 @@ nln_availableTypes = [
 	"nln_dialogToDisplay_enable",
 	"CHECKBOX",
 	("STR_nln_Settings_dialogToDisplayEnable" call BIS_fnc_localize),
-	"STR_nln_Credentials_modName",
+	("STR_nln_Credentials_modName" call BIS_fnc_localize),
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -50,7 +50,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"cas_nineliner",
-				([profileName] + _v)
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + _v)
 			] call nln_main_fnc_addPage);
 
 			private _lP = (profileNamespace getVariable ["cw_nineliner_cas_lastPage", -1]);
@@ -76,7 +76,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"medevac_nineliner",
-				([profileName] + [
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + [
 					(_v select 0),
 					(_v select 1),
 					(_v select 2),
@@ -139,7 +139,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"adjust_fire_mission",
-				([profileName] + [
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + [
 					(_v select 0),
 					(_v select 1),
 					(_v select 2),
@@ -186,7 +186,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"cas_checkin",
-				([profileName] + _v)
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + _v)
 			] call nln_main_fnc_addPage);
 
 			private _lP = (profileNamespace getVariable ["cw_cas_check_in_lastPage", -1]);
@@ -211,7 +211,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"fire_for_effect",
-				([profileName] + [
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + [
 					(_v select 0),
 					(_v select 1),
 					(_v select 2),
@@ -258,7 +258,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"gunship_cff",
-				([profileName] + _v)
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + _v)
 			] call nln_main_fnc_addPage);
 
 			private _lP = (profileNamespace getVariable ["cw_fiveliner_gcff_lastPage", -1]);
@@ -284,7 +284,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"marking_mission",
-				([profileName] + _v)
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + _v)
 			] call nln_main_fnc_addPage);
 
 			private _lP = (profileNamespace getVariable ["cw_mm_lastPage", -1]);
@@ -310,7 +310,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 		{
 			private _id = ([
 				"notepad",
-				([profileName] + ["", _v])
+				([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])]] + ["", _v])
 			] call nln_main_fnc_addPage);
 
 			private _lP = (profileNamespace getVariable ["cw_noteblock_LastPage", -1]);
@@ -336,7 +336,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 	[
 		"notepad",
 		_uid,
-		([profileName, "", ("STR_nln_General_authorAnnouncement" call BIS_fnc_localize)])
+		([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])], "", ("STR_nln_General_authorAnnouncement" call BIS_fnc_localize)])
 	] call nln_main_fnc_setPage;
 	profileNamespace setVariable ["nln_notepad_currentPage", _uid];
 };

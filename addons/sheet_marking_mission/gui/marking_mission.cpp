@@ -1,7 +1,7 @@
 
 class nln_marking_mission
 {
-    idd = -1;
+    idd = 8886;
     movingenable = "true";
     onUnload = "call nln_marking_mission_fnc_onUnload;";
 

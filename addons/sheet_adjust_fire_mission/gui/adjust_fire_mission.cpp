@@ -1,7 +1,7 @@
 
 class nln_adjust_fire_mission
 {
-    idd = -1;
+    idd = 8881;
     movingenable = "true";
     onUnload = "call nln_adjust_fire_mission_fnc_onUnload;";
 

@@ -1,7 +1,7 @@
 
 class nln_notepad
 {
-    idd = -1;
+    idd = 8888;
     movingenable = "true";
     onUnload = "call nln_notepad_fnc_onUnload;";
 

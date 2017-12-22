@@ -1,7 +1,7 @@
 
 class nln_cas_nineliner
 {
-    idd = -1;
+    idd = 8883;
     movingenable = "true";
     onUnload = "call nln_cas_nineliner_fnc_onUnload;";
 

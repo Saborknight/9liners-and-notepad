@@ -1,7 +1,7 @@
 
 class nln_gunship_cff
 {
-    idd = -1;
+    idd = 8885;
     movingenable = "true";
     onUnload = "call nln_gunship_cff_fnc_onUnload;";
 
