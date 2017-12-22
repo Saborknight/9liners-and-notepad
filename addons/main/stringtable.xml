@@ -1,134 +1,155 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="nineliners_and_notepad">
-	<Package name="nln_main">
-		<Container name="Credentials">
-			<Key ID="STR_nln_Credentials_modName">
-				<Original>9Liners &#38; Notepad</Original>
-				<English>9Liners &#38; Notepad</English>
-				<German>9Liner &#38; Notizbuch</German>
-			</Key>
-		</Container>
-		<Container name="General">
-			<Key ID="STR_nln_General_authorAnnouncement">
-				<Original>Greetings %1!\nThank you for adding 9Liners &#38; Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners &#38; Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</Original>
-				<English>Greetings %1!\nThank you for adding 9Liners &#38; Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners &#38; Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</English>
-				<German>Grüsse %1!\nVielen dank das ihr 9Liners &#38; Notizbuch herunter geladen habt.\nDieser Mod hat neuerdings eine komplette umarbeitung unterzogen. Es gibt jezt unendliche Seiten, unter andere geniale dinge. Leider meint das dass alle euren alter Notizen waren jezt gelöscht. Wir enschuldigen uns für irgendwelche verlorene Notizen. Aber, wir hoffen das ihr 9Liners &#38; Notepad liebt, so wie wir es geliebt haben, daran zu arbeiten!\nTschüss!\nTheMysteriousVincent and Arend</German>
-			</Key>
-		</Container>
-		<Container name="Settings">
-			<Key ID="STR_nln_Settings_dialogToDisplayEnable">
-				<Original>Enable background window after closing edit fields</Original>
-				<English>Enable background window after closing edit fields</English>
-				<German>Hintergrundfenster nach dem Schliessen der Eingabefelder aktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindDisableControls">
-				<Original>Disable controls</Original>
-				<English>Disable controls</English>
-				<German>Steuerung ausschalten</German>
-			</Key>
-		</Container>
-		<Container name="Interactions">
-			<Key ID="STR_nln_Interactions_selfActionSheets">
-				<Original>Sheets</Original>
-				<English>Sheets</English>
-				<German>Blätter</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_selfActionEdit">
-				<Original>Edit</Original>
-				<English>Edit</English>
-				<German>Bearbeiten</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_selfActionShow">
-				<Original>Show</Original>
-				<English>Show</English>
-				<German>Anzeigen</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_selfActionHide">
-				<Original>Hide</Original>
-				<English>Hide</English>
-				<German>Verstecken</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_sharePageHint">
-				<Original>You gave %1 a page.</Original>
-				<English>You gave %1 a page.</English>
-				<German>Ihr habt %1 eine Seite gegeben.</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_sharePageReceivedHint">
-				<Original>You got a new page from %1.</Original>
-				<English>You got a new page from %1.</English>
-				<German>Ihr kriegt eine neue Seite von %1.</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_clearAllPagesHint">
-				<Original>All pages were removed.</Original>
-				<English>All pages were removed.</English>
-				<German>Alle Seiten wurden entfernt.</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_clearPageHint">
-				<Original>Page removed.</Original>
-				<English>Page removed.</English>
-				<German>Seite entfernt.</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_pageCountHint">
-				<Original>Page %1/%2</Original>
-				<English>Page %1/%2</English>
-				<German>Seite %1/%2</German>
-			</Key>
-			<Key ID="STR_nln_Interactions_noPrevPagesHint">
-				<Original>No previous Pages.</Original>
-				<English>No previous Pages.</English>
-				<German>Keine bisherige Seiten.</German>
-			</Key>
-		</Container>
-
-
-		<Container name="Scripts">
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PagesAllCleared">
-				<Original>All pages where cleared and saved.</Original>
-				<English>All pages where cleared and saved.</English>
-				<German>Alle Seiten wurden entfernt.</German>
-			</Key>
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PageClearedNotSaved">
-				<Original>Page %1 cleared\nNote: The page was cleared, but not saved!</Original>
-				<English>Page %1 cleared\nNote: The page was cleared, but not saved!</English>
-				<German>Seite %1 wurde entfernt\nHinweis: Die Seite wurde entfernt, aber nicht gespeichert!</German>
-			</Key>
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PageStep">
-				<Original>Page %1/20</Original>
-				<English>Page %1/20</English>
-				<German>Seite %1/20</German>
-			</Key>
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PageStep50">
-				<Original>Page %1/50</Original>
-				<English>Page %1/50</English>
-				<German>Seite %1/50</German>
-			</Key>
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PageSpaceFull">
-				<Original>No more page slots left.</Original>
-				<English>No more page slots left.</English>
-				<German>Du hast keine Seiten mehr übrig.</German>
-			</Key>
-			<Key ID="STR_nln_nineliner_and_notepad_Scripts_PageSaved">
-				<Original>Page %1 saved.</Original>
-				<English>Page %1 saved.</English>
-				<German>Seite %1 gespeichert.</German>
-			</Key>
-			<Key ID="STR_nln_nineline_and_notepad_Scripts_PageNotAvailable">
-				<Original>This page does not exist anymore.</Original>
-				<English>This page does not exist anymore.</English>
-				<German>Diese Seite existiert nicht mehr.</German>
-			</Key>
-			<Key ID="STR_nln_nineline_and_notepad_Scripts_CloseSheetFirst">
-				<Original>You have to close the current sheet first.</Original>
-				<English>You have to close the current sheet first.</English>
-				<German>Du musst das Blatt vorher schließen.</German>
-			</Key>
-		</Container>
-		<Container name="Config">
-			<Key ID="STR_nln_nineliner_and_notepad_Config_controlTooltip">
-				<Original>Click: Enable Controls | Dbl Click: Close</Original>
-				<English>Click: Enable Controls | Dbl Click: Close</English>
-				<German>Klick: Steuerung einschalten | Doppelklick: Schliessen</German>
-			</Key>
-		</Container>
-	</Package>
+    <Package name="nln_main">
+        <Container name="Credentials">
+            <Key ID="STR_nln_Credentials_modName">
+                <Original>9Liners &amp; Notepad</Original>
+                <English>9Liners &amp; Notepad</English>
+                <German>9Liner &amp; Notizbuch</German>
+                <Japanese>9ライナー &amp; ノートパッド</Japanese>
+            </Key>
+        </Container>
+        <Container name="General">
+            <Key ID="STR_nln_General_authorAnnouncement">
+                <Original>Greetings %1!\nThank you for adding 9Liners &amp; Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners &amp; Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</Original>
+                <English>Greetings %1!\nThank you for adding 9Liners &amp; Notepad to your arsenal of crazy mods.\nThis mod has recently undergone a complete re-write. There are now unlimited pages, amongst other amazing things. Unfortunately this means that all your notes have been deleted. We apologise for any previous notes being lost. However, we hope you love 9Liners &amp; Notepad as much as we have loved working on it!\nEnjoy!\nTheMysteriousVincent and Arend</English>
+                <German>Grüsse %1!\nVielen dank das ihr 9Liners &amp; Notizbuch herunter geladen habt.\nDieser Mod hat neuerdings eine komplette umarbeitung unterzogen. Es gibt jezt unendliche Seiten, unter andere geniale dinge. Leider meint das dass alle euren alter Notizen waren jezt gelöscht. Wir enschuldigen uns für irgendwelche verlorene Notizen. Aber, wir hoffen das ihr 9Liners &amp; Notepad liebt, so wie wir es geliebt haben, daran zu arbeiten!\nTschüss!\nTheMysteriousVincent and Arend</German>
+                <Japanese>こんにちは %1！\nあなたの素晴らしいmod群に「9ライナー&amp;ノートパッド」を追加して下さり、ありがとうございます。\nこのmodは最近、一から作り直されました。それにより、もはや無制限にページを使用することができます。しかし悲しいことに、これは以前お使いいただいていたノートを削除した、という意味でもあります。失われてしまったノートをお使いいただいていた皆様にはお詫び申し上げます。さて、私たちがこのmodを作るのに頑張ってきた分、皆様も「9ライナー&amp;ノートパッド」を気に入ってくださることを願っています！\nどうぞ楽しんで！\nTheMysteriousVincentとArendより</Japanese>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key ID="STR_nln_Settings_dialogToDisplayEnable">
+                <Original>Enable background window after closing edit fields</Original>
+                <English>Enable background window after closing edit fields</English>
+                <German>Hintergrundfenster nach dem Schliessen der Eingabefelder aktivieren</German>
+                <Japanese>編集フィールドを閉じた後にバックグラウンドウィンドウを有効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_Settings_keybindDisableControls">
+                <Original>Disable controls</Original>
+                <English>Disable controls</English>
+                <German>Steuerung ausschalten</German>
+                <Japanese>操作を無効化する</Japanese>
+            </Key>
+        </Container>
+        <Container name="Interactions">
+            <Key ID="STR_nln_Interactions_selfActionSheets">
+                <Original>Sheets</Original>
+                <English>Sheets</English>
+                <German>Blätter</German>
+                <Japanese>シート</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_selfActionEdit">
+                <Original>Edit</Original>
+                <English>Edit</English>
+                <German>Bearbeiten</German>
+                <Japanese>編集</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_selfActionShow">
+                <Original>Show</Original>
+                <English>Show</English>
+                <German>Anzeigen</German>
+                <Japanese>表示</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_selfActionHide">
+                <Original>Hide</Original>
+                <English>Hide</English>
+                <German>Verstecken</German>
+                <Japanese>隠す</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_sharePageHint">
+                <Original>You gave %1 a page.</Original>
+                <English>You gave %1 a page.</English>
+                <German>Ihr habt %1 eine Seite gegeben.</German>
+                <Japanese>%1 に1ページ渡した。</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_sharePageReceivedHint">
+                <Original>You got a new page from %1.</Original>
+                <English>You got a new page from %1.</English>
+                <German>Ihr kriegt eine neue Seite von %1.</German>
+                <Japanese>%1 から1ページ受け取った。</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_clearAllPagesHint">
+                <Original>All pages were removed.</Original>
+                <English>All pages were removed.</English>
+                <German>Alle Seiten wurden entfernt.</German>
+                <Japanese>全てのページを破棄した。</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_clearPageHint">
+                <Original>Page removed.</Original>
+                <English>Page removed.</English>
+                <German>Seite entfernt.</German>
+                <Japanese>ページを破棄した。</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_pageCountHint">
+                <Original>Page %1/%2</Original>
+                <English>Page %1/%2</English>
+                <German>Seite %1/%2</German>
+                <Japanese>ページ %1/%2</Japanese>
+            </Key>
+            <Key ID="STR_nln_Interactions_noPrevPagesHint">
+                <Original>No previous Pages.</Original>
+                <English>No previous Pages.</English>
+                <German>Keine bisherige Seiten.</German>
+                <Japanese>最初のページ。</Japanese>
+            </Key>
+        </Container>
+        <Container name="Scripts">
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PagesAllCleared">
+                <Original>All pages where cleared and saved.</Original>
+                <English>All pages where cleared and saved.</English>
+                <German>Alle Seiten wurden entfernt.</German>
+                <Japanese>全てのページを削除し、保存した。</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PageClearedNotSaved">
+                <Original>Page %1 cleared\nNote: The page was cleared, but not saved!</Original>
+                <English>Page %1 cleared\nNote: The page was cleared, but not saved!</English>
+                <German>Seite %1 wurde entfernt\nHinweis: Die Seite wurde entfernt, aber nicht gespeichert!</German>
+                <Japanese>ページ %1 を削除した\n注意:ページは削除されたが、保存はされていない！</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PageStep">
+                <Original>Page %1/20</Original>
+                <English>Page %1/20</English>
+                <German>Seite %1/20</German>
+                <Japanese>ページ %1/20</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PageStep50">
+                <Original>Page %1/50</Original>
+                <English>Page %1/50</English>
+                <German>Seite %1/50</German>
+                <Japanese>ページ %1/50</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PageSpaceFull">
+                <Original>No more page slots left.</Original>
+                <English>No more page slots left.</English>
+                <German>Du hast keine Seiten mehr übrig.</German>
+                <Japanese>もうページのスロットが残っていない。</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineliner_and_notepad_Scripts_PageSaved">
+                <Original>Page %1 saved.</Original>
+                <English>Page %1 saved.</English>
+                <German>Seite %1 gespeichert.</German>
+                <Japanese>ページ %1 保存。</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineline_and_notepad_Scripts_PageNotAvailable">
+                <Original>This page does not exist anymore.</Original>
+                <English>This page does not exist anymore.</English>
+                <German>Diese Seite existiert nicht mehr.</German>
+                <Japanese>このページはもう存在しない。</Japanese>
+            </Key>
+            <Key ID="STR_nln_nineline_and_notepad_Scripts_CloseSheetFirst">
+                <Original>You have to close the current sheet first.</Original>
+                <English>You have to close the current sheet first.</English>
+                <German>Du musst das Blatt vorher schließen.</German>
+                <Japanese>まず現在のシートを閉じる必要がある。</Japanese>
+            </Key>
+        </Container>
+        <Container name="Config">
+            <Key ID="STR_nln_nineliner_and_notepad_Config_controlTooltip">
+                <Original>Click: Enable Controls | Dbl Click: Close</Original>
+                <English>Click: Enable Controls | Dbl Click: Close</English>
+                <German>Klick: Steuerung einschalten | Doppelklick: Schliessen</German>
+                <Japanese>クリック: 操作有効化 | ダブルクリック: 閉じる</Japanese>
+            </Key>
+        </Container>
+    </Package>
 </Project>

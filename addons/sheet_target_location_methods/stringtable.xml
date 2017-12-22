@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="nineliners_and_notepad">
-	<Package name="nln_sheet_target_location_methods">
-		<Container name="Interactions">
-			<Key ID="STR_nln_Interactions_selfActionTargetLocationMethods">
-				<Original>Target location methods</Original>
-				<English>Target location methods</English>
-				<German>Ziellokalisierungsmethoden</German>
-			</Key>
-		</Container>
-		<Container name="Settings">
-			<Key ID="STR_nln_Settings_targetLocationMethodsEnable">
-				<Original>Disable target location methods sheet</Original>
-				<English>Disable target location methods sheet</English>
-				<German>Ziellokasierungsverfahren Blatt deaktivieren</German>
-			</Key>
-			<Key ID="STR_nln_Settings_keybindOpenTargetLocationMethods">
-				<Original>Open target location methods</Original>
-				<English>Open target location methods</English>
-				<German>Zielort-Methoden Blatt öffnen</German>
-			</Key>
-		</Container>
-	</Package>
+    <Package name="nln_sheet_target_location_methods">
+        <Container name="Interactions">
+            <Key ID="STR_nln_Interactions_selfActionTargetLocationMethods">
+                <Original>Target location methods</Original>
+                <English>Target location methods</English>
+                <German>Ziellokalisierungsmethoden</German>
+                <Japanese>ターゲット位置伝達手段</Japanese>
+            </Key>
+        </Container>
+        <Container name="Settings">
+            <Key ID="STR_nln_Settings_targetLocationMethodsEnable">
+                <Original>Disable target location methods sheet</Original>
+                <English>Disable target location methods sheet</English>
+                <German>Ziellokasierungsverfahren Blatt deaktivieren</German>
+                <Japanese>ターゲット位置伝達手段シートを無効化する</Japanese>
+            </Key>
+            <Key ID="STR_nln_Settings_keybindOpenTargetLocationMethods">
+                <Original>Open target location methods</Original>
+                <English>Open target location methods</English>
+                <German>Zielort-Methoden Blatt öffnen</German>
+                <Japanese>ターゲット位置伝達手段を開く</Japanese>
+            </Key>
+        </Container>
+    </Package>
 </Project>
