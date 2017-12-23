@@ -15,13 +15,16 @@ import json
 import configparser
 import shutil
 import ntpath
+import time
 
 if sys.platform == "win32":
     import winreg
 
 
 ######## GLOBALS #########
-PREFIX = "nln_"
+PREFIX = "x"
+MODPREFIX = "nln"
+FILEPREFIX = "nln_"
 IMPORTANT_FILES = ["extra", "meta.cpp", "mod.cpp", "readme.md", "LICENSE.md"] # relative to projectpath
 PROJECT_NAME = "nineliners_and_notepad"
 PROJECT_VERSION = "1.0.0"
@@ -49,7 +52,7 @@ def mod_time(path):
 
 
 def check_for_changes(addonspath, module):
-    if not os.path.exists(os.path.join(addonspath, "{}{}.pbo".format(PREFIX,module))):
+    if not os.path.exists(os.path.join(addonspath, "{}{}.pbo".format(FILEPREFIX,module))):
         return True
     return mod_time(os.path.join(addonspath, module)) > mod_time(os.path.join(addonspath, "{}{}.pbo".format(PREFIX,module)))
 
@@ -78,6 +81,7 @@ def find_bi_tools():
     cfgconvertpath = os.path.join(arma3toolspath, "CfgConvert", "CfgConvert.exe")
 
     if os.path.isfile(addonbuilderpath) and os.path.isfile(dssignfilepath) and os.path.isfile(dscreatekeypath) and os.path.isfile(cfgconvertpath):
+        print("    Successfully found your Arma 3 Tools")
         return [addonbuilderpath, dssignfilepath, dscreatekeypath, cfgconvertpath]
     else:
         raise Exception("BadTools", "Arma 3 Tools are not installed correctly")
@@ -132,18 +136,24 @@ def sign_files(dssignfile, builtaddonspath, keypaths):
     os.chdir(workingdir)
 
 
-def copy(srcpath, dstpath):
+def copy(srcpath, dstpath, suppress_output = False):
     src = ntpath.basename(srcpath)
-    print("  Copying \{} ...".format(src), srcpath, dstpath)
+
+    if not suppress_output:
+        print("# Copying \{} ...".format(src))
 
     if os.path.isfile(srcpath):
+        if not os.path.isdir(dstpath):
+            os.mkdir(dstpath)
+
         shutil.copy2(srcpath, dstpath)
     else:
         shutil.copytree(srcpath, dstpath)
 
     if os.path.isfile(os.path.join(dstpath, src)) or os.path.isdir(os.path.join(dstpath)):
-        print("  Successfully copied {}.".format(src))
-    else: print("  Failed to copy {}.".format(src))
+        print("    Successfully copied {}.".format(src))
+    else:
+        print("    Failed to copy {}.".format(src))
 
 
 def clean(paths):
@@ -165,7 +175,9 @@ def main():
     addonspath = os.path.join(projectpath, "addons")
     buildpath = os.path.join(projectpath, "build")
     temppath = os.path.join(projectpath, "tools\\temp")
-    includepath = os.path.dirname(scriptpath) + "\includes.txt"
+    includepath = os.path.dirname(scriptpath) + "\\includes.txt"
+
+    addonsprefix = "{}\\{}\\addons".format(PREFIX, MODPREFIX)
 
     tools = find_bi_tools()
     addonbuilder = tools[0]
@@ -182,12 +194,14 @@ def main():
 
     clean([os.path.join(buildpath, "@" + PROJECT_NAME), temppath])
 
-    print("\n# Copying important files...")
+    print("\n")
 
     for src in IMPORTANT_FILES:
         srcpath = os.path.join(projectpath, src)
         dstpath = os.path.join(buildpath, "@" + PROJECT_NAME)
         copy(srcpath, dstpath)
+
+    print("\n")
 
     for file in os.listdir(addonspath):
         if os.path.isfile(file):
@@ -197,6 +211,7 @@ def main():
                 os.remove(file)
 
     for p in os.listdir(addonspath):
+        temppbo = os.path.join(temppath, "nln_" + p.replace("sheet_", ""))
         path = os.path.join(addonspath, p)
         if not os.path.isdir(path):
             continue
@@ -204,28 +219,35 @@ def main():
             continue
         if not check_for_changes(addonspath, p):
             skipped += 1
-            print("  Skipping {}.".format(p))
+            print("# Skipping {}.".format(p))
             continue
 
         print("# Making {} ...".format(p))
 
+        # Copy to temp
         try:
-            subprocess.check_output([
-                addonbuilder,
-                "{}\\{}".format(addonspath, p),
-                "{}\\@{}\\addons".format(buildpath, PROJECT_NAME),
-                "-temp={}".format(temppath),
-                # "-prefix=".format(PREFIX),
-                "-project={}".format(projectpath),
-                "-include={}".format(includepath)
-            ], stderr=subprocess.STDOUT)
-        except subprocess.CalledProcessError as e:
-            failed += 1
-
-            print("  Failed to make {}.".format(p))
+            copy(path, temppbo, True)
+        except:
+            print("    Failed to copy {} to temporary directory.".format(p))
         else:
-            made += 1
-            print("  Successfully made {}.".format(p))
+            # Make into PBO
+            try:
+                subprocess.check_output([
+                    addonbuilder,
+                    temppbo,
+                    "{}\\@{}\\addons".format(buildpath, PROJECT_NAME),
+                    "-temp={}".format(temppath),
+                    "-prefix={}\\{}".format(addonsprefix, p.replace("sheet_", "")),
+                    "-project={}".format(projectpath),
+                    "-include={}".format(includepath)
+                ], stderr=subprocess.STDOUT)
+            except subprocess.CalledProcessError as e:
+                failed += 1
+
+                print("    Failed to make {}.".format(p))
+            else:
+                made += 1
+                print("    Successfully made {}.".format(p))
 
     print("\n# PBOs compiled.")
     print("  Made {}, skipped {}, removed {}, failed to make {}.".format(made, skipped, removed, failed))
@@ -235,12 +257,14 @@ def main():
     sign_files(dssignfile, "{}\\@{}\\addons".format(buildpath, PROJECT_NAME), keypaths)
 
     if keypaths:
-        print("")
+        print("\n")
         copy(keypaths[1], "{}\\@{}\\key".format(buildpath, PROJECT_NAME))
 
     # Purge the evidence!
     print("\n# Cleaning up")
     clean([temppath])
+
+    print("## Build completed at {}.".format(time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())))
 
 if __name__ == "__main__":
     sys.exit(main())
