@@ -6,10 +6,8 @@ class nln_main
     requiredVersion = 1.76;
     requiredAddons[] = {
         "cba_keybinding",
-        "cba_settings",
-        "ace_interact_menu",
-        "ace_interaction"
-    }; //later, we will add ace addon(s)
+        "cba_settings"
+    };
     author[] = {
         "~Chief Wiggum",
         "Saborknight",
