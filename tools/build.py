@@ -25,10 +25,24 @@ if sys.platform == "win32":
 PREFIX = "x"
 MODPREFIX = "nln"
 FILEPREFIX = "nln_"
+NON_SHEET_PACKAGES = ["main", "ui_fonts"]
 IMPORTANT_FILES = ["extra", "meta.cpp", "mod.cpp", "readme.md", "LICENSE.md"] # relative to projectpath
 PROJECT_NAME = "nineliners_and_notepad"
 PROJECT_VERSION = "1.0.0"
 ##########################
+
+
+def copytree(src, dst, symlinks=False, ignore=None):
+    if not os.path.exists(dst):
+        os.makedirs(dst)
+    for item in os.listdir(src):
+        s = os.path.join(src, item)
+        d = os.path.join(dst, item)
+        if os.path.isdir(s):
+            copytree(s, d, symlinks, ignore)
+        else:
+            if not os.path.exists(d) or os.stat(s).st_mtime - os.stat(d).st_mtime > 1:
+                shutil.copy2(s, d)
 
 
 def parse_config():
@@ -51,17 +65,27 @@ def mod_time(path):
     return maxi
 
 
-def check_for_changes(addonspath, module):
-    if not os.path.exists(os.path.join(addonspath, "{}{}.pbo".format(FILEPREFIX,module))):
+def check_for_changes(addonspath, addonsbuildpath, module):
+    if not os.path.exists(os.path.join(addonsbuildpath, "{}{}.pbo".format(FILEPREFIX,module.replace("sheet_", "")))):
         return True
-    return mod_time(os.path.join(addonspath, module)) > mod_time(os.path.join(addonspath, "{}{}.pbo".format(PREFIX,module)))
+    return mod_time(os.path.join(addonspath, module)) > mod_time(os.path.join(addonsbuildpath, "{}{}.pbo".format(FILEPREFIX,module.replace("sheet_", ""))))
 
 
 def check_for_obsolete_pbos(addonspath, file):
-    module = file[len(PREFIX):-4]
+    module = package_dir(file)
     if not os.path.exists(os.path.join(addonspath, module)):
         return True
     return False
+
+
+def package_dir(file):
+    basefile = file.replace("nln_", "").replace(".pbo", "")
+    if not basefile in NON_SHEET_PACKAGES:
+        directory = "sheet_" + basefile
+    else:
+        directory = basefile
+
+    return directory;
 
 
 def find_bi_tools():
@@ -112,15 +136,17 @@ def create_key_pair(dscreatekey, temppath):
     return keypaths
 
 
-def sign_files(dssignfile, builtaddonspath, keypaths):
+def sign_files(dssignfile, addonsbuildpath, keypaths):
     print("\n# Signing PBOs")
     workingdir = os.getcwd()
-    os.chdir(builtaddonspath)
+    os.chdir(addonsbuildpath)
 
     if not keypaths:
         print("  Failed to find the public key.")
 
-    for pbo in os.listdir(builtaddonspath):
+    for pbo in os.listdir(addonsbuildpath):
+        if ".bisign" in pbo:
+            continue
 
         try:
             subprocess.check_output([
@@ -148,7 +174,7 @@ def copy(srcpath, dstpath, suppress_output = False):
 
         shutil.copy2(srcpath, dstpath)
     else:
-        shutil.copytree(srcpath, dstpath)
+        copytree(srcpath, dstpath)
 
     if os.path.isfile(os.path.join(dstpath, src)) or os.path.isdir(os.path.join(dstpath)):
         print("    Successfully copied {}.".format(src))
@@ -158,9 +184,13 @@ def copy(srcpath, dstpath, suppress_output = False):
 
 def clean(paths):
     for p in paths:
-        if os.path.isfile(p) or os.path.isdir(p):
-            print("\n# Deleting files from {}...".format(p))
+        if os.path.isfile(p):
+            os.remove(p)
+            print("# Deleting file {}...".format(p))
+        elif os.path.isdir(p):
             shutil.rmtree(p)
+            print("# Deleting directory tree {}...".format(p))
+    print("\n")
 
 
 def main():
@@ -174,6 +204,7 @@ def main():
     projectpath = os.path.dirname(os.path.dirname(scriptpath))
     addonspath = os.path.join(projectpath, "addons")
     buildpath = os.path.join(projectpath, "build")
+    addonsbuildpath = os.path.join(buildpath, "@" + PROJECT_NAME, "addons")
     temppath = os.path.join(projectpath, "tools\\temp")
     includepath = os.path.dirname(scriptpath) + "\\includes.txt"
 
@@ -192,9 +223,16 @@ def main():
     skipped = 0
     removed = 0
 
-    clean([os.path.join(buildpath, "@" + PROJECT_NAME), temppath])
+    expanded_important_files = []
+    for item in os.listdir(os.path.join(buildpath, "@" + PROJECT_NAME)):
+        if item == "addons":
+            continue
 
-    print("\n")
+        itempath = os.path.join(buildpath, "@" + PROJECT_NAME, item)
+        expanded_important_files = expanded_important_files + [itempath]
+
+    clean(expanded_important_files + [temppath])
+    os.mkdir(temppath)
 
     for src in IMPORTANT_FILES:
         srcpath = os.path.join(projectpath, src)
@@ -203,12 +241,12 @@ def main():
 
     print("\n")
 
-    for file in os.listdir(addonspath):
-        if os.path.isfile(file):
-            if check_for_obsolete_pbos(addonspath, file):
+    if os.path.exists(addonsbuildpath):
+        for file in os.listdir(addonsbuildpath):
+            if check_for_obsolete_pbos(addonspath, file) and file.endswith(".pbo"):
                 removed += 1
-                print("  Removing obsolete file => " + file)
-                os.remove(file)
+                print("# Removing obsolete file => " + file)
+                os.remove(os.path.join(addonsbuildpath, file))
 
     for p in os.listdir(addonspath):
         temppbo = os.path.join(temppath, "nln_" + p.replace("sheet_", ""))
@@ -217,10 +255,12 @@ def main():
             continue
         if p[0] == ".":
             continue
-        if not check_for_changes(addonspath, p):
-            skipped += 1
-            print("# Skipping {}.".format(p))
-            continue
+
+        if os.path.exists(os.path.join(addonsbuildpath, "nln_{}.pbo".format(p.replace("sheet_", "")))):
+            if not check_for_changes(addonspath, addonsbuildpath, p):
+                skipped += 1
+                print("# Skipping {}.".format(p))
+                continue
 
         print("# Making {} ...".format(p))
 
@@ -235,7 +275,7 @@ def main():
                 subprocess.check_output([
                     addonbuilder,
                     temppbo,
-                    "{}\\@{}\\addons".format(buildpath, PROJECT_NAME),
+                    addonsbuildpath,
                     "-temp={}".format(temppath),
                     "-prefix={}\\{}".format(addonsprefix, p.replace("sheet_", "")),
                     "-project={}".format(projectpath),
@@ -254,7 +294,8 @@ def main():
 
     keypaths = create_key_pair(dscreatekey, temppath)
 
-    sign_files(dssignfile, "{}\\@{}\\addons".format(buildpath, PROJECT_NAME), keypaths)
+    if made > 0:
+        sign_files(dssignfile, addonsbuildpath, keypaths)
 
     if keypaths:
         print("\n")
