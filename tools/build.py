@@ -2,13 +2,33 @@
 
 # The MIT License
 # Copyright 2017 Saborknight
-# Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
-__version__ = "0.1"
+__version__ = "0.2"
 
 import sys
+
+
+if sys.version_info[0] == 2:
+    print("Python 3 is required.")
+    sys.exit(1)
+
+
 import os
 import subprocess
 import json
@@ -16,19 +36,23 @@ import configparser
 import shutil
 import ntpath
 import time
+import re
+import fileinput
 
 if sys.platform == "win32":
     import winreg
 
 
 ######## GLOBALS #########
+RELEASE = False
 PREFIX = "x"
 MODPREFIX = "nln"
 FILEPREFIX = "nln_"
 NON_SHEET_PACKAGES = ["main", "ui_fonts"]
 IMPORTANT_FILES = ["extra", "meta.cpp", "mod.cpp", "readme.md", "LICENSE.md"] # relative to projectpath
 PROJECT_NAME = "nineliners_and_notepad"
-PROJECT_VERSION = "1.0.0"
+PROJECT_VERSION = "0.3.2"
+VERSION_FILES = ["mod.cpp"]
 ##########################
 
 
@@ -162,6 +186,26 @@ def sign_files(dssignfile, addonsbuildpath, keypaths):
     os.chdir(workingdir)
 
 
+# Change version numbers mentioned in files
+# Should only be used when building for release
+def change_version(projectpath, files = VERSION_FILES, newVersion = PROJECT_VERSION, pattern = r"\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\b"):
+    oldDir = os.getcwd()
+    os.chdir(projectpath)
+
+    with fileinput.input(files, inplace = True) as f:
+        for line in f:
+            versionFound = re.findall(pattern, line)
+
+            if (versionFound != [newVersion]) and versionFound:
+                sys.stdout.write(line.replace(versionFound[0], newVersion))
+                sys.stderr.write("\n# Changing version {} => {} in {}:{}".format(versionFound[0], newVersion, fileinput.filename(), fileinput.filelineno()))
+            else:
+                sys.stdout.write(line)
+
+    print("\n")
+    os.chdir(oldDir)
+
+
 def copy(srcpath, dstpath, suppress_output = False):
     src = ntpath.basename(srcpath)
 
@@ -222,6 +266,9 @@ def main():
     failed = 0
     skipped = 0
     removed = 0
+
+    if RELEASE:
+        change_version(projectpath)
 
     expanded_important_files = []
     for item in os.listdir(os.path.join(buildpath, "@" + PROJECT_NAME)):
