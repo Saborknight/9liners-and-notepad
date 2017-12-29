@@ -21,7 +21,7 @@ nln_availableTypes = [
 	};
 } forEach nln_availableTypes;
 
-//[(["STR_nln_Credentials_modName"] call BIS_fnc_localize),"nln_disable_controls_key", ["STR_nln_Settings_keybindDisableControls"] call BIS_fnc_localize, {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
+//[("STR_nln_Credentials_modName" call BIS_fnc_localize),"nln_disable_controls_key", "STR_nln_Settings_keybindDisableControls" call BIS_fnc_localize, {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
 
 //should dialogs closed be converted to a background display?
 [
