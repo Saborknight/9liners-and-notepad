@@ -1,5 +1,16 @@
+
 #!/usr/bin/env python3
 
+# Saborknight Arma 3 Mod build tools #
+######################################
+
+# This build script was built for normalising the build process for Arma 3
+# mods (co-)developed by Saborknight.
+#
+# See "build.cfg" to modify the configurations of the build script for the
+# project.
+#
+#
 # The MIT License
 # Copyright 2017 Saborknight
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -19,7 +30,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-__version__ = "0.2"
+__version__ = "0.3"
 
 import sys
 
@@ -38,24 +49,154 @@ import ntpath
 import time
 import re
 import fileinput
+import argparse
+import glob
 
 if sys.platform == "win32":
     import winreg
 
 
-######## GLOBALS #########
-RELEASE = False
-PREFIX = "x"
-MODPREFIX = "nln"
-FILEPREFIX = "nln_"
-NON_SHEET_PACKAGES = ["main", "ui_fonts"]
-IMPORTANT_FILES = ["extra", "meta.cpp", "mod.cpp", "readme.md", "LICENSE.md"] # relative to projectpath
-PROJECT_NAME = "nineliners_and_notepad"
-PROJECT_VERSION = "0.3.2"
-VERSION_FILES = ["mod.cpp"]
-##########################
+######## CONFIG FUNCTIONS #########
+def define_config():
+    defaults = {
+        "mode" : "development",
+        "name" : "",
+        "version" : False,
+        "mainprefix" : "x",
+        "prefix" : "",
+        "core_packages" : "main,ui_fonts",
+        "support_files" : "meta.cpp,mod.cpp",
+        "version_files" : "mod.cpp:",
+        "includes" : False,
+        "build_dir" : "build"
+    }
+
+    config = parse_config_file(defaults)
+    defaults.update(config)
+
+    if len(sys.argv) > 1:
+        params = parse_params(defaults)
+        defaults.update(params)
+
+    # Parse lists
+    for variable in defaults:
+        arrayed_variables = [
+            "core_packages",
+            "support_files",
+            "version_files"
+        ]
+
+        if variable in arrayed_variables:
+            defaults[variable] = defaults[variable].split(",")
+
+    return defaults
 
 
+def parse_config_file(defaults):
+    toolspath = os.path.dirname(os.path.realpath(__file__))
+    cfg = configparser.ConfigParser();
+    try:
+        read = cfg.read(os.path.join(toolspath, "build.cfg"))
+    except:
+        raise
+        print_error("build.cfg could not be parsed.")
+    else:
+        data = dict(cfg.items("DEFAULT"))
+        return data
+
+
+def parse_params(defaults):
+    paramFlags = {
+        "version" : (
+            ("-v", "--version"),
+            {
+                "action" : "version",
+                "version" : "{} v{}".format("build.py", __version__)
+            }
+        ),
+        "clean" : (
+            ("-c", "--clean"),
+            {
+                "action" : "store_true",
+                "help" : "Just clean up anything resulting from past processing."
+            }
+        ),
+        "mode" : (
+            ("-m", "--mode"),
+            {
+                "default" : defaults["mode"],
+                "choices" : ["development", "d", "release", "r"],
+                "help" : "set <mode> to development or release. Default = {}".format(defaults["mode"])
+            }
+        ),
+        "name" : (
+            ("-n", "--name"),
+            {
+                "default" : defaults["name"],
+                "help" : "set <name> which will be used with \"@\" prepended. Default = {}".format(defaults["name"])
+            }
+        ),
+        "versionNumber" : (
+            ("-V", "--mod-version"),
+            {
+                "default" : defaults["version"],
+                "help" : "set mod <version> which will replace existing version numbers in <version_files>. Default = {}".format(defaults["version"]),
+                "dest" : "version"
+            }
+        ),
+        "prefix" : (
+            ("-p", "--prefix"),
+            {
+                "default" : defaults["prefix"],
+                "help" : "set <prefix> which defines the mod prefix. Default = {}".format(defaults["prefix"])
+            }
+        ),
+        "corePackages" : (
+            ("-cP", "--core-packages"),
+            {
+                "default" : defaults["core_packages"],
+                "help" : "set <core_packages>, a comma(,) separated list defining files/directories that are not sheet packages. Default = {}".format(defaults["core_packages"])
+            }
+        ),
+        "supportFiles" : (
+            ("-sF", "--support-files"),
+            {
+                "default" : defaults["support_files"],
+                "help" : "set <support_files>, a comma(,) separated list defining files/directories to copy. Default = {}".format(defaults["support_files"])
+            }
+        ),
+        "versionFiles" : (
+            ("-vF", "--version-files"),
+            {
+                "default" : defaults["version_files"],
+                "help" : "set <version_files>, a comma(,) separated list defining which files to replace versions in. Default = {}".format(defaults["version_files"])
+            }
+        ),
+        "includes" : (
+            ("-i", "--includes"),
+            {
+                "default" : defaults["includes"],
+                "help" : "set <includes>, a semi-colon(;) separated list of wildcards defining which filetypes get copied directly into the .pbo packages. Default contained in file \"includes.txt\""
+            }
+        )
+    }
+
+    parser = argparse.ArgumentParser(
+        description="Saborknight Arma 3 Mod [SAM] build tools - let's build something awesome! This build script was built for normalising the build process for Saborknight mods.",
+        epilog="The defaults for this build script are defined in \"build.cfg\"."
+    )
+
+    for param, values in paramFlags.items():
+        parser.add_argument(*values[0], **values[1])
+
+    params = vars(parser.parse_args())
+    return params
+
+
+CONFIG = define_config()
+
+
+######## BUILD FUNCTIONS #########
 def copytree(src, dst, symlinks=False, ignore=None):
     if not os.path.exists(dst):
         os.makedirs(dst)
@@ -69,15 +210,12 @@ def copytree(src, dst, symlinks=False, ignore=None):
                 shutil.copy2(s, d)
 
 
-def parse_config():
-    tools_path = os.getcwd()
-    cfg = configparser.ConfigParser();
-    try:
-        read = cfg.read(os.path.join(tools_path, "build.cfg"))
-        print("{}, {}".format(cfg.items("DEFAULT"), tools_path))
-    except:
-        raise
-        print_error("build.cfg could not be parsed.")
+def make_includes_file(path):
+    file = open(path, "w+")
+    file.seek(0)
+    file.truncate()
+    file.write(CONFIG["includes"])
+    file.close()
 
 
 def mod_time(path):
@@ -90,9 +228,9 @@ def mod_time(path):
 
 
 def check_for_changes(addonspath, addonsbuildpath, module):
-    if not os.path.exists(os.path.join(addonsbuildpath, "{}{}.pbo".format(FILEPREFIX,module.replace("sheet_", "")))):
+    if not os.path.exists(os.path.join(addonsbuildpath, "{}_{}.pbo".format(CONFIG["prefix"], module.replace("sheet_", "")))):
         return True
-    return mod_time(os.path.join(addonspath, module)) > mod_time(os.path.join(addonsbuildpath, "{}{}.pbo".format(FILEPREFIX,module.replace("sheet_", ""))))
+    return mod_time(os.path.join(addonspath, module)) > mod_time(os.path.join(addonsbuildpath, "{}_{}.pbo".format(CONFIG["prefix"], module.replace("sheet_", ""))))
 
 
 def check_for_obsolete_pbos(addonspath, file):
@@ -104,7 +242,7 @@ def check_for_obsolete_pbos(addonspath, file):
 
 def package_dir(file):
     basefile = file.replace("nln_", "").replace(".pbo", "")
-    if not basefile in NON_SHEET_PACKAGES:
+    if not basefile in CONFIG["core_packages"]:
         directory = "sheet_" + basefile
     else:
         directory = basefile
@@ -130,6 +268,7 @@ def find_bi_tools():
 
     if os.path.isfile(addonbuilderpath) and os.path.isfile(dssignfilepath) and os.path.isfile(dscreatekeypath) and os.path.isfile(cfgconvertpath):
         print("    Successfully found your Arma 3 Tools")
+        print()
         return [addonbuilderpath, dssignfilepath, dscreatekeypath, cfgconvertpath]
     else:
         raise Exception("BadTools", "Arma 3 Tools are not installed correctly")
@@ -139,21 +278,22 @@ def create_key_pair(dscreatekey, temppath):
     print("\n# Generating Private/Public key pair")
     workingdir = os.getcwd()
     os.chdir(temppath)
+    version = CONFIG["version"] if CONFIG["version"] else "0"
 
     try:
         subprocess.check_output([
             dscreatekey,
-            "{}.{}".format(PROJECT_NAME, PROJECT_VERSION)
+            "{}.{}".format(CONFIG["name"], version)
         ], stderr=subprocess.STDOUT)
     except:
         print("  Failed to generate key pair")
         keypaths = False
     else:
         print("  Successfully generated key pair\n  DO NOT distribute the private key!")
-        if os.path.isfile("{}.{}.biprivatekey".format(PROJECT_NAME, PROJECT_VERSION)):
+        if os.path.isfile("{}.{}.biprivatekey".format(CONFIG["name"], version)):
             keypaths = [
-                os.path.join(temppath, "{}.{}.biprivatekey".format(PROJECT_NAME, PROJECT_VERSION)),
-                os.path.join(temppath, "{}.{}.bikey".format(PROJECT_NAME, PROJECT_VERSION))
+                os.path.join(temppath, "{}.{}.biprivatekey".format(CONFIG["name"], version)),
+                os.path.join(temppath, "{}.{}.bikey".format(CONFIG["name"], version))
             ]
 
     os.chdir(workingdir)
@@ -186,28 +326,39 @@ def sign_files(dssignfile, addonsbuildpath, keypaths):
     os.chdir(workingdir)
 
 
-# Change version numbers mentioned in files
-# Should only be used when building for release
-def change_version(projectpath, files = VERSION_FILES, newVersion = PROJECT_VERSION, pattern = r"\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\b"):
+def change_version(projectpath, files=CONFIG["version_files"], newVersion=CONFIG["version"], pattern=r"\b([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\b"):
+    if not re.match(r"(?<!.)(?:[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})(?!.)", newVersion):
+        print("# Incorrect version number given. No version changes made.")
+        print()
+        return False
+
     oldDir = os.getcwd()
     os.chdir(projectpath)
+    changed = 0
 
-    with fileinput.input(files, inplace = True) as f:
+    with fileinput.input(files, inplace=True) as f:
         for line in f:
             versionFound = re.findall(pattern, line)
 
             if (versionFound != [newVersion]) and versionFound:
                 sys.stdout.write(line.replace(versionFound[0], newVersion))
-                sys.stderr.write("\n# Changing version {} => {} in {}:{}".format(versionFound[0], newVersion, fileinput.filename(), fileinput.filelineno()))
+                sys.stderr.write("# Changing version {} => {} in {}:{}\n".format(versionFound[0], newVersion, fileinput.filename(), fileinput.filelineno()))
+                changed += 1
             else:
                 sys.stdout.write(line)
 
-    print("\n")
+    if changed <= 0:
+        print("# No version changes made.")
+    else:
+        print("\n    {} mentions of old version numbers have been changed.".format(changed))
+
+    print()
     os.chdir(oldDir)
 
 
-def copy(srcpath, dstpath, suppress_output = False):
-    src = ntpath.basename(srcpath)
+def copy(srcpath, dstpath, suppress_output=False):
+    projectpath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    src = os.path.relpath(srcpath, start=projectpath)
 
     if not suppress_output:
         print("# Copying \{} ...".format(src))
@@ -221,38 +372,49 @@ def copy(srcpath, dstpath, suppress_output = False):
         copytree(srcpath, dstpath)
 
     if os.path.isfile(os.path.join(dstpath, src)) or os.path.isdir(os.path.join(dstpath)):
-        print("    Successfully copied {}.".format(src))
+        print("    Successfully copied \{}.".format(src))
     else:
-        print("    Failed to copy {}.".format(src))
+        print("    Failed to copy \{}.".format(src))
 
 
 def clean(paths):
+    projectpath = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     for p in paths:
-        if os.path.isfile(p):
-            os.remove(p)
-            print("# Deleting file {}...".format(p))
-        elif os.path.isdir(p):
-            shutil.rmtree(p)
-            print("# Deleting directory tree {}...".format(p))
-    print("\n")
+        if "*" in p:
+            for item in glob.glob(p):
+                if os.path.isfile(item):
+                    os.remove(item)
+                    print("# Deleting item \{}...".format(os.path.relpath(item, start=projectpath)))
+        else:
+            if os.path.isdir(p):
+                shutil.rmtree(p)
+                print("# Deleting directory tree \{}...".format(os.path.relpath(p, start=projectpath)))
+            elif os.path.isfile(p):
+                os.remove(p)
+                print("# Deleting file \{}...".format(os.path.relpath(p, start=projectpath)))
+
+    print()
+    return
 
 
+######## MAIN PROCESS #########
 def main():
     print("""
-      #################################
-      # 9Liners & Notepad Debug Build #
-      #################################
+      #############################
+      # 9Liners & Notepad Builder #
+      #############################
     """)
 
     scriptpath = os.path.realpath(__file__)
-    projectpath = os.path.dirname(os.path.dirname(scriptpath))
+    toolspath = os.path.dirname(scriptpath)
+    projectpath = os.path.dirname(toolspath)
     addonspath = os.path.join(projectpath, "addons")
-    buildpath = os.path.join(projectpath, "build")
-    addonsbuildpath = os.path.join(buildpath, "@" + PROJECT_NAME, "addons")
-    temppath = os.path.join(projectpath, "tools\\temp")
-    includepath = os.path.dirname(scriptpath) + "\\includes.txt"
+    buildpath = os.path.join(projectpath, CONFIG["build_dir"])
+    addonsbuildpath = os.path.join(buildpath, "@" + CONFIG["name"], "addons")
+    temppath = os.path.join(toolspath, "temp")
+    includespath = make_includes_file(os.path.join(temppath, "includes.txt")) if CONFIG["includes"] else (os.path.join(toolspath, "includes.txt"))
 
-    addonsprefix = "{}\\{}\\addons".format(PREFIX, MODPREFIX)
+    addonsprefix = "{}\\{}\\addons".format(CONFIG["mainprefix"], CONFIG["prefix"])
 
     tools = find_bi_tools()
     addonbuilder = tools[0]
@@ -267,23 +429,31 @@ def main():
     skipped = 0
     removed = 0
 
-    if RELEASE:
+    if CONFIG["version"]:
         change_version(projectpath)
+        clean([os.path.join(addonsbuildpath, "*.bisign")])
 
-    expanded_important_files = []
-    for item in os.listdir(os.path.join(buildpath, "@" + PROJECT_NAME)):
-        if item == "addons":
-            continue
+    if CONFIG.get("clean", False):
+        clean([buildpath, temppath])
+        sys.exit(1)
 
-        itempath = os.path.join(buildpath, "@" + PROJECT_NAME, item)
-        expanded_important_files = expanded_important_files + [itempath]
+    if os.path.isdir(os.path.join(buildpath, "@" + CONFIG["name"])):
+        expanded_support_files = []
+        for item in os.listdir(os.path.join(buildpath, "@" + CONFIG["name"])):
+            if item == "addons":
+                continue
 
-    clean(expanded_important_files + [temppath])
+            itempath = os.path.join(buildpath, "@" + CONFIG["name"], item)
+            expanded_support_files.append(itempath)
+
+        clean(expanded_support_files + [temppath])
+    else:
+        clean([temppath])
     os.mkdir(temppath)
 
-    for src in IMPORTANT_FILES:
+    for src in CONFIG["support_files"]:
         srcpath = os.path.join(projectpath, src)
-        dstpath = os.path.join(buildpath, "@" + PROJECT_NAME)
+        dstpath = os.path.join(buildpath, "@" + CONFIG["name"])
         copy(srcpath, dstpath)
 
     print("\n")
@@ -326,7 +496,7 @@ def main():
                     "-temp={}".format(temppath),
                     "-prefix={}\\{}".format(addonsprefix, p.replace("sheet_", "")),
                     "-project={}".format(projectpath),
-                    "-include={}".format(includepath)
+                    "-include={}".format(includespath)
                 ], stderr=subprocess.STDOUT)
             except subprocess.CalledProcessError as e:
                 failed += 1
@@ -341,12 +511,12 @@ def main():
 
     keypaths = create_key_pair(dscreatekey, temppath)
 
-    if made > 0:
+    if made > 0 or CONFIG["version"]:
         sign_files(dssignfile, addonsbuildpath, keypaths)
 
     if keypaths:
         print("\n")
-        copy(keypaths[1], "{}\\@{}\\key".format(buildpath, PROJECT_NAME))
+        copy(keypaths[1], "{}\\@{}\\key".format(buildpath, CONFIG["name"]))
 
     # Purge the evidence!
     print("\n# Cleaning up")
