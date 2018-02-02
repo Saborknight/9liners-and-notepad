@@ -1,5 +1,5 @@
 <div class="panel-body">
-<img src="https://www.bohemia.net/assets/img/licenses/APL-SA.png" class="img-thumbnail img-responsive pull-right">
+<a href="https://www.bohemia.net/community/licenses/arma-public-license-share-alike"><img src="https://www.bohemia.net/assets/img/licenses/APL-SA.png" class="img-thumbnail img-responsive pull-right"></a>
 
 <h2>Brief summary of this Licence</h2>
 
