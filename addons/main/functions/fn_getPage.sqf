@@ -6,10 +6,10 @@ Description:
 
 Parameters:
     _type - a predefined type <STRING>
-	_id - uid to get values for <NUMBER>
+    _id - uid to get values for <NUMBER>
 
 Returns:
-	Array containing pair values of _id <ARRAY>
+    Array containing pair values of _id <ARRAY>
 
 Examples:
     (begin example)
@@ -20,8 +20,8 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-	["_type", "", [""]],
-	["_id", -1, [0]]
+    ["_type", "", [""]],
+    ["_id", -1, [0]]
 ];
 
 if !(_type in nln_availableTypes) exitWith { []; };

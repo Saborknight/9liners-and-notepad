@@ -1,17 +1,17 @@
 
 class CfgPatches
 {
-	#include "CfgPatches.cpp"
+    #include "CfgPatches.cpp"
 };
 
 class CfgFunctions
 {
-	#include "CfgFunctions.cpp"
+    #include "CfgFunctions.cpp"
 };
 
 class CfgVehicles
 {
-	#include "CfgVehicles.cpp"
+    #include "CfgVehicles.cpp"
 };
 
 class nln_nineliner_medv_picture;
@@ -23,13 +23,13 @@ class nln_nineliner_medv_picture_cross;
 
 class RscTitles
 {
-	#include "gui\RscTitles.cpp"
+    #include "gui\RscTitles.cpp"
 };
 
 class Extended_PreInit_EventHandlers
 {
-	class nln_medevac_nineliner
-	{
-		clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\medevac_nineliner\XEH_clientPreInit.sqf';";
-	};
+    class nln_medevac_nineliner
+    {
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\medevac_nineliner\XEH_clientPreInit.sqf';";
+    };
 };

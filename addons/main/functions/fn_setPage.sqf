@@ -10,7 +10,7 @@ Parameters:
     _values - values to set <ARRAY>
 
 Returns:
-	Set staus <BOOLEAN>
+    Set staus <BOOLEAN>
 
 Examples:
     (begin example)

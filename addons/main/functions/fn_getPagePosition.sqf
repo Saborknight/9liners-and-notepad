@@ -6,10 +6,10 @@ Description:
 
 Parameters:
     _type - a predefined type <STRING>
-	_id - uid to get position for <NUMBER>
+    _id - uid to get position for <NUMBER>
 
 Returns:
-	Array containing the page position and the amount of entries of the sheet <ARRAY>
+    Array containing the page position and the amount of entries of the sheet <ARRAY>
 
 Examples:
     (begin example)
@@ -20,8 +20,8 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-	["_type", "", [""]],
-	["_id", -1, [0]]
+    ["_type", "", [""]],
+    ["_id", -1, [0]]
 ];
 
 if !(_type in nln_availableTypes) exitWith { []; };

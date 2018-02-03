@@ -8,7 +8,7 @@ Parameters:
     _type - a predefined type <STRING>
 
 Returns:
-	Remove status <BOOLEAN>
+    Remove status <BOOLEAN>
 
 Examples:
     (begin example)
@@ -19,7 +19,7 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-	["_type", "", [""]]
+    ["_type", "", [""]]
 ];
 
 if !(_type in nln_availableTypes) exitWith { false; };

@@ -9,7 +9,7 @@ Parameters:
     _id - uid to remove <NUMBER>
 
 Returns:
-	Remove status <BOOLEAN>
+    Remove status <BOOLEAN>
 
 Examples:
     (begin example)

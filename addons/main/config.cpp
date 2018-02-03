@@ -19,8 +19,8 @@ class CfgVehicles
 
 class Extended_PreInit_EventHandlers
 {
-	class nln_sheets
-	{
-		clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\main\XEH_clientPreInit.sqf';";
-	};
+    class nln_sheets
+    {
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\main\XEH_clientPreInit.sqf';";
+    };
 };

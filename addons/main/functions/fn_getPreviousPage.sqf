@@ -6,10 +6,10 @@ Description:
 
 Parameters:
     _type - a predefined type <STRING>
-	_id - a given start uid <NUMBER>
+    _id - a given start uid <NUMBER>
 
 Returns:
-	Next left page uid. If it not exists it returns -1. <NUMBER>
+    Next left page uid. If it not exists it returns -1. <NUMBER>
 
 Examples:
     (begin example)
@@ -20,8 +20,8 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-	["_type", "", [""]],
-	["_id", -1, [0]]
+    ["_type", "", [""]],
+    ["_id", -1, [0]]
 ];
 
 if !(_type in nln_availableTypes) exitWith { -1; };

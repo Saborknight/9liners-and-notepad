@@ -198,14 +198,14 @@ class nln_medevac_nineliner
             h = "0.0283573 * safezoneH";
         };
 
-		class nln_nineliner_medevac_edit_line5_cross_picture3 : nln_nineliner_medv_picture_cross
-		{
-			idc = 2811;
-			x = "0.16875 * safezoneW + safezoneX";
-			y = "0.582407 * safezoneH + safezoneY";
-			w = "0.0161458 * safezoneW";
-			h = "0.0283573 * safezoneH";
-		};
+        class nln_nineliner_medevac_edit_line5_cross_picture3 : nln_nineliner_medv_picture_cross
+        {
+            idc = 2811;
+            x = "0.16875 * safezoneW + safezoneX";
+            y = "0.582407 * safezoneH + safezoneY";
+            w = "0.0161458 * safezoneW";
+            h = "0.0283573 * safezoneH";
+        };
 
         class nln_nineliner_medevac_edit_line6_cross_picture1 : nln_nineliner_medv_picture_cross
         {
@@ -470,15 +470,15 @@ class nln_medevac_nineliner
             action = "[2810] call nln_medevac_nineliner_fnc_action_cross;";
         };
 
-		class nln_nineliner_medevac_edit_line5_cross_button3 : nln_nineliner_medv_button
-		{
-			idc = 3811;
-			x = "0.16875 * safezoneW + safezoneX";
-			y = "0.582407 * safezoneH + safezoneY";
-			w = "0.0161458 * safezoneW";
-			h = "0.0283573 * safezoneH";
+        class nln_nineliner_medevac_edit_line5_cross_button3 : nln_nineliner_medv_button
+        {
+            idc = 3811;
+            x = "0.16875 * safezoneW + safezoneX";
+            y = "0.582407 * safezoneH + safezoneY";
+            w = "0.0161458 * safezoneW";
+            h = "0.0283573 * safezoneH";
             action = "[2811] call nln_medevac_nineliner_fnc_action_cross;";
-		};
+        };
 
         class nln_nineliner_medevac_edit_line6_cross_button1 : nln_nineliner_medv_button
         {

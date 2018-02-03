@@ -1,17 +1,17 @@
 
 class CfgPatches
 {
-	#include "CfgPatches.cpp"
+    #include "CfgPatches.cpp"
 };
 
 class CfgFunctions
 {
-	#include "CfgFunctions.cpp"
+    #include "CfgFunctions.cpp"
 };
 
 class CfgVehicles
 {
-	#include "CfgVehicles.cpp"
+    #include "CfgVehicles.cpp"
 };
 
 class nln_afm_picture;
@@ -22,13 +22,13 @@ class nln_afm_edit;
 
 class RscTitles
 {
-	#include "gui\RscTitles.cpp"
+    #include "gui\RscTitles.cpp"
 };
 
 class Extended_PreInit_EventHandlers
 {
-	class nln_adjust_fire_mission
-	{
-		clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\adjust_fire_mission\XEH_clientPreInit.sqf';";
-	};
+    class nln_adjust_fire_mission
+    {
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\adjust_fire_mission\XEH_clientPreInit.sqf';";
+    };
 };

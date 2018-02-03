@@ -1,17 +1,17 @@
 
 class CfgPatches
 {
-	#include "CfgPatches.cpp"
+    #include "CfgPatches.cpp"
 };
 
 class CfgFunctions
 {
-	#include "CfgFunctions.cpp"
+    #include "CfgFunctions.cpp"
 };
 
 class CfgVehicles
 {
-	#include "CfgVehicles.cpp"
+    #include "CfgVehicles.cpp"
 };
 
 class nln_targetlocationmethods_picture;
@@ -20,13 +20,13 @@ class nln_targetlocationmethods_picture;
 
 class RscTitles
 {
-	#include "gui\RscTitles.cpp"
+    #include "gui\RscTitles.cpp"
 };
 
 class Extended_PreInit_EventHandlers
 {
-	class nln_target_location_methods
-	{
-		clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\target_location_methods\XEH_clientPreInit.sqf';";
-	};
+    class nln_target_location_methods
+    {
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\target_location_methods\XEH_clientPreInit.sqf';";
+    };
 };

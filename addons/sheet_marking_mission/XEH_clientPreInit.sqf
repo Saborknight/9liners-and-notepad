@@ -4,10 +4,10 @@
 [("STR_nln_main_credentials_modName" call BIS_fnc_localize),"nln_marking_mission_keybind_open", ("STR_nln_marking_mission_settings_keybindOpen" call BIS_fnc_localize), { _this call nln_marking_mission_fnc_openMenu; }, {}, [DIK_J, [true, true, false]]] call CBA_fnc_addKeybind;
 
 [
-	"nln_marking_mission_enable",
-	"CHECKBOX",
-	("STR_nln_marking_mission_settings_enable" call BIS_fnc_localize),
-	("STR_nln_main_credentials_modName" call BIS_fnc_localize),
-	true,
-	1
+    "nln_marking_mission_enable",
+    "CHECKBOX",
+    ("STR_nln_marking_mission_settings_enable" call BIS_fnc_localize),
+    ("STR_nln_main_credentials_modName" call BIS_fnc_localize),
+    true,
+    1
 ] call CBA_Settings_fnc_init;

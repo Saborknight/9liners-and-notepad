@@ -1,12 +1,12 @@
 
 params [
-	["_id", -1, [0]]
+    ["_id", -1, [0]]
 ];
 
 private _values = (["notepad", _id] call nln_main_fnc_getPage);
 if ((count _values) != 3) then
 {
-	_values = [[profileName, nln_ui_fonts_defaultFont], "", ""];
+    _values = [[profileName, nln_ui_fonts_defaultFont], "", ""];
 };
 
 missionNamespace setVariable ["nln_ui_fonts_currentFont", ((_values select 0) select 1)];

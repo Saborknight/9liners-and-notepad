@@ -1,7 +1,7 @@
 
 if (isNull (uiNamespace getVariable ["nln_medevac_nineliner", displayNull])) then
 {
-	"nln_medevac_nineliner" cutRsc ["nln_medevac_nineliner", "PLAIN"];
+    "nln_medevac_nineliner" cutRsc ["nln_medevac_nineliner", "PLAIN"];
 };
 
 private _lP = (profileNamespace getVariable ["nln_medevac_nineliner_currentPage", -1]);
