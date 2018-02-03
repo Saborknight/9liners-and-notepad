@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="nineliners_and_notepad">
-    <Package name="nln_sheet_medevac_nineliner">
-        <Container name="Interactions">
-            <Key ID="STR_nln_Interactions_selfActionMedevacNineliner">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="medevac_nineliner">
+        <Container name="interactions">
+            <Key ID="STR_nln_medevac_nineliner_interactions_selfAction">
                 <Original>Medevac 9-Liner</Original>
                 <English>Medevac 9-Liner</English>
                 <German>Medevac 9-Liner</German>
                 <Japanese>Medevac 9ライナー</Japanese>
             </Key>
         </Container>
-        <Container name="Settings">
-            <Key ID="STR_nln_Settings_medevacNinelinerEnable">
+        <Container name="settings">
+            <Key ID="STR_nln_medevac_nineliner_settings_enable">
                 <Original>Disable MedEvac 9-Liner sheet</Original>
                 <English>Disable MedEvac 9-Liner sheet</English>
                 <German>Medevac 9-Liner Blatt deaktivieren</German>
                 <Japanese>Medevac 9ライナーシートを無効化する</Japanese>
             </Key>
-            <Key ID="STR_nln_Settings_keybindOpenNinelinerMedevac">
+            <Key ID="STR_nln_medevac_nineliner_settings_keybindOpen">
                 <Original>Open MEDEVAC 9-Liner</Original>
                 <English>Open MEDEVAC 9-Liner</English>
                 <German>MEDEVAC 9-Liner öffnen</German>

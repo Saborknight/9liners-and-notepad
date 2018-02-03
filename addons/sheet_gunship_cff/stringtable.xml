@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="nineliners_and_notepad">
-    <Package name="nln_sheet_gunship_call_for_fire">
-        <Container name="Interactions">
-            <Key ID="STR_nln_Interactions_selfActionGunshipCallForFire">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="gunship_call_for_fire">
+        <Container name="interactions">
+            <Key ID="STR_nln_gunship_call_for_fire_interactions_selfAction">
                 <Original>Gunship call for fire</Original>
                 <English>Gunship call for fire</English>
                 <German>Gunship Aufruf zu Feuer</German>
                 <Japanese>ガンシップ火力支援要請</Japanese>
             </Key>
         </Container>
-        <Container name="Settings">
-            <Key ID="STR_nln_Settings_gunshipCallForFireEnable">
+        <Container name="settings">
+            <Key ID="STR_nln_gunship_call_for_fire_settings_enable">
                 <Original>Disable gunship call for fire sheet</Original>
                 <English>Disable gunship call for fire sheet</English>
                 <German>Gunship Aufruf zu Feuer Blatt deaktivieren</German>
                 <Japanese>ガンシップ火力支援要請シートを無効化する</Japanese>
             </Key>
-            <Key ID="STR_nln_Settings_keybindOpenFivelinerGunship">
+            <Key ID="STR_nln_gunship_call_for_fire_settings_keybindOpen">
                 <Original>Open Gunship 5-Liner</Original>
                 <English>Open Gunship 5-Liner</English>
                 <German>Gunship 5-Liner öffnen</German>

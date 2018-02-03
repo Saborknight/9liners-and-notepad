@@ -6,8 +6,8 @@ private _def = (_aF find "TahomaB");
 [
 	"nln_ui_fonts_defaultFont",
 	"LIST",
-	"Disable adjust fire mission sheet",
-	("STR_nln_Credentials_modName" call BIS_fnc_localize),
+	["Default Font", "The default font to be used throughout the sheets"],
+	("STR_nln_main_credentials_modName" call BIS_fnc_localize),
 	[_aF, _aF, _def],
 	0
 ] call CBA_Settings_fnc_init;

@@ -8,27 +8,27 @@ class CAManBase : Man
 		{
 			class target_location_methods
 			{
-				displayName = "$STR_nln_Interactions_selfActionTargetLocationMethods";
+				displayName = "$STR_nln_target_location_methods_interactions_selfAction";
 				condition = "nln_target_location_methods_enable";
 				statement = "";
 
 				class edit
 				{
-					displayName = "$STR_nln_Interactions_selfActionEdit";
+					displayName = "$STR_nln_main_interactions_selfActionEdit";
 					condition = "nln_target_location_methods_enable";
 					statement = "call nln_target_location_methods_fnc_openMenu;";
 				};
 
 				class show
 				{
-					displayName = "$STR_nln_Interactions_selfActionShow";
+					displayName = "$STR_nln_main_interactions_selfActionShow";
 					condition = "nln_target_location_methods_enable && (isNull (uiNamespace getVariable ['nln_target_location_methods', displayNull]))";
 					statement = "call nln_target_location_methods_fnc_openBackground;";
 				};
 
 				class hide
 				{
-					displayName = "$STR_nln_Interactions_selfActionHide";
+					displayName = "$STR_nln_main_interactions_selfActionHide";
 					condition = "nln_target_location_methods_enable && !(isNull (uiNamespace getVariable ['nln_target_location_methods', displayNull]))";
 					statement = "call nln_target_location_methods_fnc_closeBackground;";
 				};

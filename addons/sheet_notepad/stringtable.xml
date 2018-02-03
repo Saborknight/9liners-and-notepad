@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="nineliners_and_notepad">
-    <Package name="nln_sheet_notepad">
-        <Container name="Interactions">
-            <Key ID="STR_nln_Interactions_selfActionNotepad">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="notepad">
+        <Container name="interactions">
+            <Key ID="STR_nln_notepad_interactions_selfAction">
                 <Original>Notepad</Original>
                 <English>Notepad</English>
                 <German>Notizbuch</German>
                 <Japanese>ノートパッド</Japanese>
             </Key>
         </Container>
-        <Container name="Settings">
-            <Key ID="STR_nln_Settings_notepadEnable">
-                <Original>Disable notepad</Original>
-                <English>Disable notepad</English>
+        <Container name="settings">
+            <Key ID="STR_nln_notepad_settings_enable">
+                <Original>Disable Notepad</Original>
+                <English>Disable Notepad</English>
                 <German>Notizblock deaktivieren</German>
                 <Japanese>ノートパッドを無効化する</Japanese>
             </Key>
-            <Key ID="STR_nln_Settings_keybindOpenNotepad">
+            <Key ID="STR_nln_notepad_settings_keybindOpen">
                 <Original>Open Notepad</Original>
                 <English>Open Notepad</English>
                 <German>Notizbuch öffnen</German>

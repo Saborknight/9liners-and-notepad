@@ -21,14 +21,14 @@ nln_availableTypes = [
 	};
 } forEach nln_availableTypes;
 
-//[("STR_nln_Credentials_modName" call BIS_fnc_localize),"nln_disable_controls_key", "STR_nln_Settings_keybindDisableControls" call BIS_fnc_localize, {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
+//[("STR_nln_main_credentials_modName" call BIS_fnc_localize),"nln_disable_controls_key", "STR_nln_main_settings_keybindDisableControls" call BIS_fnc_localize, {[] spawn {execVM "nln_nineliner_and_notepad\data\toggleControls.sqf";}}, {}, [DIK_P, [true, true, false]]] call CBA_fnc_addKeybind;
 
 //should dialogs closed be converted to a background display?
 [
 	"nln_dialogToDisplay_enable",
 	"CHECKBOX",
-	("STR_nln_Settings_dialogToDisplayEnable" call BIS_fnc_localize),
-	("STR_nln_Credentials_modName" call BIS_fnc_localize),
+	("STR_nln_main_settings_dialogToDisplayEnable" call BIS_fnc_localize),
+	("STR_nln_main_credentials_modName" call BIS_fnc_localize),
 	true,
 	1
 ] call CBA_Settings_fnc_init;
@@ -336,7 +336,7 @@ if (isNil { (profileNamespace getVariable ["nln_version_v1_used", nil]); }) then
 	[
 		"notepad",
 		_uid,
-		([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])], "", ("STR_nln_General_authorAnnouncement" call BIS_fnc_localize)])
+		([[profileName, (missionNamespace getVariable ["nln_ui_fonts_currentFont", nln_ui_fonts_defaultFont])], "", ("STR_nln_main_general_authorAnnouncement" call BIS_fnc_localize)])
 	] call nln_main_fnc_setPage;
 	profileNamespace setVariable ["nln_notepad_currentPage", _uid];
 };

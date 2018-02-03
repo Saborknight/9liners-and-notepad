@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="nineliners_and_notepad">
-    <Package name="nln_sheet_cas_nineliner">
-        <Container name="Interactions">
-            <Key ID="STR_nln_Interactions_selfActionCASNineliner">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="cas_nineliner">
+        <Container name="interactions">
+            <Key ID="STR_nln_cas_nineliner_interactions_selfAction">
                 <Original>CAS 9-Liner</Original>
                 <English>CAS 9-Liner</English>
                 <German>CAS 9-Liner</German>
                 <Japanese>CAS 9ライナー</Japanese>
             </Key>
         </Container>
-        <Container name="Settings">
-            <Key ID="STR_nln_Settings_CASNinelinerEnable">
+        <Container name="settings">
+            <Key ID="STR_nln_cas_nineliner_settings_enable">
                 <Original>Disable CAS 9-Liner sheet</Original>
                 <English>Disable CAS 9-Liner sheet</English>
                 <German>CAS 9-Liner Blatt deaktivieren</German>
                 <Japanese>CAS 9ライナーシートを無効化する</Japanese>
             </Key>
-            <Key ID="STR_nln_Settings_keybindOpenNinelinerCAS">
+            <Key ID="STR_nln_cas_nineliner_settings_keybindOpen">
                 <Original>Open CAS 9-Liner</Original>
                 <English>Open CAS 9-Liner</English>
                 <German>CAS 9-Liner öffnen</German>

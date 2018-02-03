@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project name="nineliners_and_notepad">
-    <Package name="nln_sheet_cas_checkin">
-        <Container name="Interactions">
-            <Key ID="STR_nln_Interactions_selfActionCASCheckIn">
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="nln">
+    <Package name="cas_checkin">
+        <Container name="interactions">
+            <Key ID="STR_nln_cas_checkin_interactions_selfAction">
                 <Original>CAS Check-in</Original>
                 <English>CAS Check-in</English>
                 <German>CAS Check-in</German>
                 <Japanese>CAS チェックイン</Japanese>
             </Key>
         </Container>
-        <Container name="Settings">
-            <Key ID="STR_nln_Settings_CASCheckInEnable">
+        <Container name="settings">
+            <Key ID="STR_nln_cas_checkin_settings_enable">
                 <Original>Disable CAS check-in sheet</Original>
                 <English>Disable CAS check-in sheet</English>
                 <German>CAS Check-in Blatt deaktivieren</German>
                 <Japanese>CAS チェックインシートを無効化する</Japanese>
             </Key>
-            <Key ID="STR_nln_Settings_keybindOpenCASCheckIn">
+            <Key ID="STR_nln_cas_checkin_settings_keybindOpen">
                 <Original>Open CAS Check-in briefing</Original>
                 <English>Open CAS Check-in briefing</English>
                 <German>CAS Check-in Anweisungen öffnen</German>

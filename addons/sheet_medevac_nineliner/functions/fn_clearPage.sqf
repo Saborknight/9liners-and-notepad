@@ -3,7 +3,7 @@ private _p = (profileNamespace getVariable ["nln_medevac_nineliner_currentPage",
 private _pP = (["medevac_nineliner", _p] call nln_main_fnc_getPreviousPage);
 if (["medevac_nineliner", _p] call nln_main_fnc_removePage) then
 {
-	hint ("STR_nln_Interactions_clearPageHint" call BIS_fnc_localize);
+	hint ("STR_nln_main_interactions_clearPageHint" call BIS_fnc_localize);
 	profileNamespace setVariable ["nln_medevac_nineliner_currentPage", _pP];
 };
 

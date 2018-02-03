@@ -18,9 +18,9 @@ if (_p > -1) then
 	profileNamespace setVariable ["nln_gunship_cff_currentPage", _p];
 
 	private _pP = (["gunship_cff", _p] call nln_main_fnc_getPagePosition);
-	hint format[("STR_nln_Interactions_pageCountHint" call BIS_fnc_localize), (_pP select 0), (_pP select 1)];
+	hint format[("STR_nln_main_interactions_pageCountHint" call BIS_fnc_localize), (_pP select 0), (_pP select 1)];
 }
 else
 {
-	hint ("STR_nln_Interactions_noPrevPagesHint" call BIS_fnc_localize);
+	hint ("STR_nln_main_interactions_noPrevPagesHint" call BIS_fnc_localize);
 };
