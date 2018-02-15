@@ -1,4 +1,8 @@
 # 9Liners & Notepad
+
+[![Build Status](https://travis-ci.org/Saborknight/9liners-and-notepad.svg?branch=master)](https://travis-ci.org/Saborknight/9liners-and-notepad)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/52c686c2b17340eea8599232a4ce3d31)](https://app.codacy.com/app/Saborknight/9liners-and-notepad?utm_source=github.com&utm_medium=referral&utm_content=Saborknight/9liners-and-notepad&utm_campaign=badger)
+
 by: [Chief Wiggum](https://forums.bistudio.com/profile/926664-chief_wiggum/)  
 BI Forum: https://forums.bistudio.com/forums/topic/178540-ingame-9liners-notepad/
 <center>
