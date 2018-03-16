@@ -3,7 +3,7 @@ language: python
 python:
 - '3.5'
 before_script:
-- apt-get install bison flex libssl-dev
+- sudo apt-get install bison flex libssl-dev
 script:
 - make test
 notification:
