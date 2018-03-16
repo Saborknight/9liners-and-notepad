@@ -6,6 +6,7 @@ before_script:
 - sudo apt-get install bison flex libssl-dev
 script:
 - make test
+- make build
 notification:
   email:
     on_success: never
