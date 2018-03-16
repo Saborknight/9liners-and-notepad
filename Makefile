@@ -1,8 +1,7 @@
 
 ARMAKE=bin/armake
 
-all:
-	build_armake \
+all: build_armake \
 	nln_main.pbo \
 	nln_sheet_adjust_fire_mission.pbo \
 	nln_sheet_cas_checkin.pbo \
