@@ -3,10 +3,7 @@ language: python
 python:
 - '3.5'
 script:
-- mkdir .build/
-- git clone https://github.com/TheMysteriousVincent/sqf.git .build/sqf
-- python3 .build/sqf/sqflint.py -d addons/
-- python3 tools/config_style_checker.py
+- make test
 notification:
   email:
     on_success: never
