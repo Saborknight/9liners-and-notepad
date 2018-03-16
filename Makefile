@@ -52,7 +52,7 @@ nln_sheet_notepad.pbo:
 	$(ARMAKE) build --force -e prefix=x\nln\addons\notepad addons/sheet_notepad .build/nln_sheet_notepad.pbo
 
 nln_sheet_target_locatoin_methods.pbo:
-	$(ARMAKE) build --force -e prefix=x\nln\addons\target_locatoin_methods addons/sheet_target_locatoin_methods .build/nln_sheet_target_locatoin_methods.pbo
+	$(ARMAKE) build --force -e prefix=x\nln\addons\target_location_methods addons/sheet_target_location_methods .build/nln_sheet_target_location_methods.pbo
 
 test: prepare
 	git clone https://github.com/TheMysteriousVincent/sqf.git .build/sqf
