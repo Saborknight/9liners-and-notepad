@@ -17,7 +17,7 @@ all: build_armake \
 build_armake: prep
 	git clone https://github.com/jonpas/armake.git .build/armake
 	make -C .build/armake
-	cp -f .build/armake/bin/armake /bin
+	cp -f .build/armake/bin/armake bin/
 
 prep:
 	mkdir -p bin/
