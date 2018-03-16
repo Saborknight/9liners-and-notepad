@@ -1,4 +1,3 @@
-
 ARMAKE=bin/armake
 
 all: build_armake \
