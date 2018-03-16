@@ -23,7 +23,6 @@ build_armake: prep
 prep:
 	mkdir -p bin/
 	mkdir -p .build/
-	apt-get update && apt-get install bison flex libssl-dev
 
 nln_main.pbo:
 	$(ARMAKE) build --force -e prefix=x\nln\addons\main addons/main .build/nln_main.pbo
