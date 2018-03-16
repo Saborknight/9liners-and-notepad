@@ -18,7 +18,6 @@ build_armake: prepare
 	cd .build/armake && git checkout headerExtensions
 	make -C .build/armake
 	cp -f .build/armake/bin/armake .build/bin/
-	rm -R .build/armake
 
 prepare:
 	mkdir -p .build/
