@@ -11,6 +11,7 @@ script:
 - git clone https://github.com/jonpas/armake.git .build/armake
 - cd .build/armake
 - git checkout headerExtensions
+- make --version
 - make
 notification:
   email:
