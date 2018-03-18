@@ -16,7 +16,7 @@ all: build_armake \
 build_armake: prepare
 	git clone https://github.com/jonpas/armake.git .build/armake
 	cd .build/armake && git checkout headerExtensions
-	make -C .build/armake
+	cd .build/armake && make
 	cp -f .build/armake/bin/armake .build/bin/
 
 prepare:
