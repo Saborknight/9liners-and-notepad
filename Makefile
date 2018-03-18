@@ -59,9 +59,9 @@ test: prepare
 	python3 tools/config_style_checker.py
 
 remove:
-	rm -R .build/armake
-	rm -R .build/bin
-	rm -R .build/sqf
+	rm -Rf .build/armake
+	rm -Rf .build/bin
+	rm -Rf .build/sqf
 
 removeAll:
-	rm -R .build/
+	rm -Rf .build/
