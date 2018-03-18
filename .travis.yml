@@ -7,10 +7,11 @@ before_script:
 script:
 # - make test
 # - make
-- mkdir -p .build/armake
+- mkdir -p .build/
 - git clone https://github.com/jonpas/armake.git .build/armake
-- cd .build/armake && git checkout headerExtensions
-- cd .build/armake && make
+- cd .build/armake
+- git checkout headerExtensions
+- make
 notification:
   email:
     on_success: never
