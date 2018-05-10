@@ -6,3 +6,4 @@ archives/
 *texHeaders.bin
 .vscode
 *.log
+.build/
