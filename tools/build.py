@@ -65,6 +65,7 @@ def define_config():
         "mainprefix" : "x",
         "prefix" : "",
         "core_packages" : "main,ui_fonts",
+        "excluded_packages" : False,
         "support_files" : "meta.cpp,mod.cpp",
         "version_files" : "mod.cpp:",
         "includes" : False,
@@ -82,11 +83,12 @@ def define_config():
     for variable in defaults:
         arrayed_variables = [
             "core_packages",
+            "excluded_packages",
             "support_files",
             "version_files"
         ]
 
-        if variable in arrayed_variables:
+        if variable in arrayed_variables and isinstance(arrayed_variables, list):
             defaults[variable] = defaults[variable].split(",")
 
     return defaults
@@ -156,6 +158,13 @@ def parse_params(defaults):
             {
                 "default" : defaults["core_packages"],
                 "help" : "set <core_packages>, a comma(,) separated list defining files/directories that are not sheet packages. Default = {}".format(defaults["core_packages"])
+            }
+        ),
+        "excludedPackages" : (
+            ("-eP", "--excluded-packages"),
+            {
+                "default" : defaults["excluded_packages"],
+                "help" : "set <excluded_packages>, a comma(,) separated list defining files/directories that should not be packaged. Default = {}".format(defaults["excluded_packages"])
             }
         ),
         "supportFiles" : (
@@ -464,16 +473,37 @@ def main():
                 removed += 1
                 print("# Removing obsolete file => " + file)
                 os.remove(os.path.join(addonsbuildpath, file))
+    else:
+        os.mkdir(addonsbuildpath)
 
+    # Process PBOs
     for p in os.listdir(addonspath):
         temppbo = os.path.join(temppath, "nln_" + p.replace("sheet_", ""))
+        builtpbo = os.path.join(addonsbuildpath, "nln_{}.pbo".format(p.replace("sheet_", "")))
         path = os.path.join(addonspath, p)
+        existsbuiltpackage = os.path.exists(builtpbo)
         if not os.path.isdir(path):
             continue
         if p[0] == ".":
             continue
 
-        if os.path.exists(os.path.join(addonsbuildpath, "nln_{}.pbo".format(p.replace("sheet_", "")))):
+        # Make sure it's not a package needed to be excluded
+        if CONFIG["excluded_packages"]:
+            if p in CONFIG["excluded_packages"]:
+                if existsbuiltpackage:
+                    try:
+                        clean(builtpbo)
+                    except:
+                        print("# Unable to remove excluded package {}. Please clean build first".format(p))
+                    else:
+                        removed += 1
+                        print("# Removing {} for exclusion".format(p))
+                else:
+                    skipped += 1
+                    print("# Skipping {} for exclusion.".format(p))
+                continue;
+
+        if existsbuiltpackage:
             if not check_for_changes(addonspath, addonsbuildpath, p):
                 skipped += 1
                 print("# Skipping {}.".format(p))
@@ -500,7 +530,6 @@ def main():
                 ], stderr=subprocess.STDOUT)
             except subprocess.CalledProcessError as e:
                 failed += 1
-
                 print("    Failed to make {}.".format(p))
             else:
                 made += 1
