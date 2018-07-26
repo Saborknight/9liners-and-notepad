@@ -12,6 +12,7 @@ all: build_armake \
 	nln_sheet_medevac_nineliner.pbo \
 	nln_sheet_notepad.pbo \
 	nln_sheet_target_locatoin_methods.pbo \
+	nln_ui_fonts \
 	remove
 
 build_armake: prepare
@@ -52,6 +53,9 @@ nln_sheet_notepad.pbo:
 
 nln_sheet_target_locatoin_methods.pbo:
 	$(ARMAKE) build --force -e prefix=x\\nln\\addons\\target_location_methods addons/sheet_target_location_methods .build/nln_sheet_target_location_methods.pbo
+
+nln_ui_fonts:
+	$(ARMAKE) build --force -e prefix=x\\nln\\addons\\ui_fonts addons/ui_fonts .build/nln_ui_fonts.pbo
 
 test: prepare
 	git clone https://github.com/TheMysteriousVincent/sqf.git .build/sqf
