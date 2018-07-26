@@ -13,7 +13,7 @@ class nln_medevac_nineliner
         class nln_nineliner_medv_background : nln_nineliner_medv_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\medevac_nineliner\data\ui\events\christmas.paa";
+            text = "\x\nln\addons\sheet_medevac_nineliner\data\ui\medevac_nineliner.paa";
             x = "-0.0213542 * safezoneW + safezoneX";
             y = "0.247099 * safezoneH + safezoneY";
             w = "0.4125 * safezoneW";
