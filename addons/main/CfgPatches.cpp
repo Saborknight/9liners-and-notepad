@@ -1,6 +1,5 @@
 
-class nln_main
-{
+class nln_main {
     units[] = {};
     weapons[] = {};
     requiredVersion = 1.76;

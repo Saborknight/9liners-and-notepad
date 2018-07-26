@@ -1,6 +1,5 @@
 
-class SegoeScript
-{
+class SegoeScript {
     fonts[] = {
         "\x\nln\addons\ui_fonts\fonts\SegoeScript\SegoeScript6",
         "\x\nln\addons\ui_fonts\fonts\SegoeScript\SegoeScript7",
@@ -37,8 +36,8 @@ class SegoeScript
     spacing = 0;
 };
 
-class DomesticManners //TODO: add font with size of 10
-{
+//TODO: add font with size of 10
+class DomesticManners {
     fonts[] = {
         "\x\nln\addons\ui_fonts\fonts\DomesticManners\DomesticManners6",
         "\x\nln\addons\ui_fonts\fonts\DomesticManners\DomesticManners7",

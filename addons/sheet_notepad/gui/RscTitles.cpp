@@ -12,7 +12,7 @@ class nln_notepad
         class nln_noteblock_background : nln_noteblock_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\notepad\data\ui\notepad.paa";
+            text = "\x\nln\addons\sheet_notepad\data\ui\notepad.paa";
             x = "-0.0557292 * safezoneW + safezoneX";
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.48125 * safezoneW";

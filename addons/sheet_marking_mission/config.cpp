@@ -29,6 +29,6 @@ class Extended_PreInit_EventHandlers
 {
     class nln_marking_mission
     {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\marking_mission\XEH_clientPreInit.sqf';";
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_marking_mission\XEH_clientPreInit.sqf';";
     };
 };

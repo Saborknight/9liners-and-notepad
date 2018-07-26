@@ -1,6 +1,5 @@
 
-class nln_target_location_methods
-{
+class nln_target_location_methods {
     units[] = {};
     weapons[]= {};
     requiredAddons[] = {

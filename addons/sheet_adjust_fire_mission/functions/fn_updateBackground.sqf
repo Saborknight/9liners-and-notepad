@@ -22,7 +22,7 @@ for "_i" from 1 to 13 do
     (_ui displayCtrl (1399 + _i)) ctrlSetFont nln_ui_fonts_currentFont;
 };
 
-private _sel = ["", "\x\nln\addons\adjust_fire_mission\data\ui\ringle.paa"];
+private _sel = ["", "\x\nln\addons\sheet_adjust_fire_mission\data\ui\ringle.paa"];
 for "_i" from 14 to 21 do
 {
     (_ui displayCtrl (1187 + _i)) ctrlSetText (_sel select (_values select _i));

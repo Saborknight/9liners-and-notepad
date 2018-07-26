@@ -5,7 +5,7 @@ class nln_cas_nineliner
 {
     class functions
     {
-        file = "\x\nln\addons\cas_nineliner\functions";
+        file = "\x\nln\addons\sheet_cas_nineliner\functions";
         class clearAllPages {};
         class clearPage {};
         class closeBackground {};

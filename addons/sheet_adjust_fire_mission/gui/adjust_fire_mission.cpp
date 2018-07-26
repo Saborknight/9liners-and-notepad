@@ -10,7 +10,7 @@ class nln_adjust_fire_mission
         class nln_adjustfiremission_background : nln_afm_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\adjust_fire_mission\data\ui\adjust_fire_mission.paa";
+            text = "\x\nln\addons\sheet_adjust_fire_mission\data\ui\adjust_fire_mission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";

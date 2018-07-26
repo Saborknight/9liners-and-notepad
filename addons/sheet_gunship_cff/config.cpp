@@ -29,6 +29,6 @@ class Extended_PreInit_EventHandlers
 {
     class nln_gunship_cff
     {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\gunship_cff\XEH_clientPreInit.sqf';";
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_gunship_cff\XEH_clientPreInit.sqf';";
     };
 };

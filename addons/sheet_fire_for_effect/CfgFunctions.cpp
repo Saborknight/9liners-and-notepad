@@ -5,7 +5,7 @@ class nln_fire_for_effect
 {
     class functions
     {
-        file = "\x\nln\addons\fire_for_effect\functions";
+        file = "\x\nln\addons\sheet_fire_for_effect\functions";
         class action_ringle {};
         class clearAllPages {};
         class clearPage {};

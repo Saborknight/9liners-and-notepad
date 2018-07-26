@@ -20,7 +20,7 @@ for "_i" from 1 to 8 do
     (_ui displayCtrl (1399 + _i)) ctrlSetFont nln_ui_fonts_currentFont;
 };
 
-private _sel = ["", "\x\nln\addons\marking_mission\data\ui\ringle.paa"];
+private _sel = ["", "\x\nln\addons\sheet_marking_mission\data\ui\ringle.paa"];
 for "_i" from 9 to 20 do
 {
     ctrlSetText [(1192 + _i), (_sel select (_values select _i))];

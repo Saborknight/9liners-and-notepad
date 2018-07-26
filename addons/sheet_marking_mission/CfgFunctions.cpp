@@ -5,7 +5,7 @@ class nln_marking_mission
 {
     class functions
     {
-        file = "\x\nln\addons\marking_mission\functions";
+        file = "\x\nln\addons\sheet_marking_mission\functions";
         class action_ringle {};
         class clearAllPages {};
         class clearPage {};

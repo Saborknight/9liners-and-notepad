@@ -13,7 +13,7 @@ class nln_cas_checkin
         class nln_cas_checkIn_background : nln_cas_check_in_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\cas_checkin\data\ui\cas_check_in.paa";
+            text = "\x\nln\addons\sheet_cas_checkin\data\ui\cas_check_in.paa";
             x = "-0.0843753 * safezoneW + safezoneX";
             y = "0.225107 * safezoneH + safezoneY";
             w = "0.492708 * safezoneW";

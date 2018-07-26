@@ -29,6 +29,6 @@ class Extended_PreInit_EventHandlers
 {
     class nln_fire_for_effect
     {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\fire_for_effect\XEH_clientPreInit.sqf';";
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_fire_for_effect\XEH_clientPreInit.sqf';";
     };
 };

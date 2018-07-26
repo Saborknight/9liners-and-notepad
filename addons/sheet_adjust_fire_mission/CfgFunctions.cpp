@@ -5,7 +5,7 @@ class nln_adjust_fire_mission
 {
     class functions
     {
-        file = "\x\nln\addons\adjust_fire_mission\functions";
+        file = "\x\nln\addons\sheet_adjust_fire_mission\functions";
         class action_ringle {};
         class clearAllPages {};
         class clearPage {};

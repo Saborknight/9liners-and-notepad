@@ -20,7 +20,7 @@ for "_i" from 1 to 9 do
     (_ui displayCtrl (1399 + _i)) ctrlSetFont nln_ui_fonts_currentFont;
 };
 
-private _sel = ["", "\x\nln\addons\medevac_nineliner\data\ui\cross.paa"];
+private _sel = ["", "\x\nln\addons\sheet_medevac_nineliner\data\ui\cross.paa"];
 for "_i" from 10 to 38 do
 {
     ctrlSetText [(2790 + _i), (_sel select (_values select _i))];

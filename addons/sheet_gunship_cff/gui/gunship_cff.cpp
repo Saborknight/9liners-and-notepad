@@ -10,7 +10,7 @@ class nln_gunship_cff
         class nln_gcff_background : nln_fiveliner_gcff_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\gunship_cff\data\ui\gunship_cff.paa";
+            text = "\x\nln\addons\sheet_gunship_cff\data\ui\gunship_cff.paa";
             x = "-0.0843753 * safezoneW + safezoneX";
             y = "0.225107 * safezoneH + safezoneY";
             w = "0.492708 * safezoneW";

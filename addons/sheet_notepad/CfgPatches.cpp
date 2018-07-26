@@ -1,6 +1,5 @@
 
-class nln_notepad
-{
+class nln_notepad {
     units[] = {};
     weapons[]= {};
     requiredAddons[] = {

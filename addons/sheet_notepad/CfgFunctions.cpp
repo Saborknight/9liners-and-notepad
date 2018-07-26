@@ -1,11 +1,9 @@
 
 //preserve the function namespace
 
-class nln_notepad
-{
-    class functions
-    {
-        file = "\x\nln\addons\notepad\functions";
+class nln_notepad {
+    class functions {
+        file = "\x\nln\addons\sheet_notepad\functions";
         class clearAllPages {};
         class clearPage {};
         class closeBackground {};

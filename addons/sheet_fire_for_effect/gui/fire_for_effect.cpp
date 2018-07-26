@@ -10,7 +10,7 @@ class nln_fire_for_effect
         class nln_fire_for_effect_background : nln_ffe_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\fire_for_effect\data\ui\fire_for_effect.paa";
+            text = "\x\nln\addons\sheet_fire_for_effect\data\ui\fire_for_effect.paa";
             x = "-0.0614581 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";

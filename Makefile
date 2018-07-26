@@ -31,14 +31,14 @@ prepare:
 	mkdir -p .build/addons/
 
 createKey: build_armake
-	ifndef PRVKEYFILE
-		cd .build/keys/ && $(ARMAKE) keygen -f nln_$(TAG)
-		$(eval KEY := nln_$(TAG))
-		$(eval PRVKEYFILE := .build/keys/$(KEY).biprivatekey)
-	endif
+ifndef PRVKEYFILE
+	cd .build/keys/ && $(ARMAKE) keygen -f nln_$(TAG)
+	$(eval KEY := nln_$(TAG))
+	$(eval PRVKEYFILE := .build/keys/$(KEY).biprivatekey)
+endif
 
 $(PACKAGES): build_armake createKey
-	$(ARMAKE) build --force -k $(PRVKEYFILE) -e prefix=x\\nln\\addons\\$@ addons/$@ .build/addons/nln_$@.pbo
+	$(ARMAKE) build -p --force -k $(PRVKEYFILE) -e prefix=x\\nln\\addons\\$@ addons/$@ .build/addons/nln_$@.pbo
 
 test: prepare
 	git clone https://github.com/TheMysteriousVincent/sqf.git .build/sqf

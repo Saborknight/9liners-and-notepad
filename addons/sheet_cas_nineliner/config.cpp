@@ -29,6 +29,6 @@ class Extended_PreInit_EventHandlers
 {
     class nln_cas_nineliner
     {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\cas_nineliner\XEH_clientPreInit.sqf';";
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_cas_nineliner\XEH_clientPreInit.sqf';";
     };
 };

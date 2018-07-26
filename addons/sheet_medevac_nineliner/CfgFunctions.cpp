@@ -5,7 +5,7 @@ class nln_medevac_nineliner
 {
     class functions
     {
-        file = "\x\nln\addons\medevac_nineliner\functions";
+        file = "\x\nln\addons\sheet_medevac_nineliner\functions";
         class action_cross {};
         class clearAllPages {};
         class clearPage {};

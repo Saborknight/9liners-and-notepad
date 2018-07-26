@@ -13,7 +13,7 @@ class nln_cas_nineliner
         class nln_nineliner_cas_background : nln_nineliner_cas_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\cas_nineliner\data\ui\cas_nineliner.paa";
+            text = "\x\nln\addons\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
             x = "-0.0786458 * safezoneW + safezoneX";
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.452604 * safezoneW";

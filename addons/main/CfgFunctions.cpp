@@ -1,10 +1,8 @@
 
 //preserve the function namespace
 
-class nln_main
-{
-    class functions
-    {
+class nln_main {
+    class functions {
         file = "\x\nln\addons\main\functions";
         class addPage {};
         class getLastPage {};

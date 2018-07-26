@@ -30,6 +30,6 @@ class Extended_PreInit_EventHandlers
 {
     class nln_medevac_nineliner
     {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\medevac_nineliner\XEH_clientPreInit.sqf';";
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_medevac_nineliner\XEH_clientPreInit.sqf';";
     };
 };

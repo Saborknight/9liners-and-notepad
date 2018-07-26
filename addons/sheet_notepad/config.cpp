@@ -1,16 +1,13 @@
 
-class CfgPatches
-{
+class CfgPatches {
     #include "CfgPatches.cpp"
 };
 
-class CfgFunctions
-{
+class CfgFunctions {
     #include "CfgFunctions.cpp"
 };
 
-class CfgVehicles
-{
+class CfgVehicles {
     #include "CfgVehicles.cpp"
 };
 
@@ -20,15 +17,12 @@ class nln_noteblock_button;
 
 #include "gui\notepad.cpp"
 
-class RscTitles
-{
+class RscTitles {
     #include "gui\RscTitles.cpp"
 };
 
-class Extended_PreInit_EventHandlers
-{
-    class nln_notepad
-    {
-        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\notepad\XEH_clientPreInit.sqf';";
+class Extended_PreInit_EventHandlers {
+    class nln_notepad {
+        clientInit = "call compile preprocessFileLineNumbers '\x\nln\addons\sheet_notepad\XEH_clientPreInit.sqf';";
     };
 };

@@ -11,7 +11,7 @@ class nln_marking_mission
         class nln_mm_background : nln_mm_picture
         {
             idc = 1200;
-            text = "\x\nln\addons\marking_mission\data\ui\marking_mission.paa";
+            text = "\x\nln\addons\sheet_marking_mission\data\ui\marking_mission.paa";
             x = "-0.0614583 * safezoneW + safezoneX";
             y = "0.236103 * safezoneH + safezoneY";
             w = "0.423958 * safezoneW";
