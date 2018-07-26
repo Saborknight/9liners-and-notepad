@@ -9,9 +9,12 @@ all: removeAll \
 
 deploy: all
 	rm -Rf .builds/$(TAG)/
-	mkdir -p .builds/$(TAG)/
-	cp -Rf .build/addons/ .builds/$(TAG)/
+	mkdir -p .builds/$(TAG)/nln/keys
+	cp -Rf .build/addons/ .builds/$(TAG)/nln/
 	cp -Rf .build/keys/ .builds/$(TAG)/
+	cp -f $(PRVKEYFILE) .builds/$(TAG)/nln/keys/
+	tar -czf nln_$(TAG).tar.gz .builds/$(TAG)/
+	zip -r nln_$(TAG).zip .builds/$(TAG)/
 
 deps:
 	sudo apt-get install -y git bison flex libssl-dev python3
