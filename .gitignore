@@ -7,3 +7,4 @@ archives/
 .vscode
 *.log
 .build/
+.builds/
