@@ -1,4 +1,5 @@
 build/
+tools/armake.exe
 tools/tmp/
 tools/inc.tmp
 archives/
