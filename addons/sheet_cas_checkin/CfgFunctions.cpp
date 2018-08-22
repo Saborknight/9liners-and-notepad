@@ -5,7 +5,7 @@ class nln_cas_checkin
 {
     class functions
     {
-        file = "\x\nln\addons\sheet_sheet_cas_checkin\functions";
+        file = "\x\nln\addons\sheet_cas_checkin\functions";
         class clearAllPages {};
         class clearPage {};
         class closeBackground {};
