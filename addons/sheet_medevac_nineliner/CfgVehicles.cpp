@@ -10,7 +10,7 @@ class CAManBase : Man
             {
                 displayName = "$STR_nln_medevac_nineliner_interactions_selfAction";
                 condition = "nln_medevac_nineliner_enable";
-                statement = "";
+                statement = "call nln_medevac_nineliner_fnc_openMenu;";
 
                 class edit
                 {

@@ -10,7 +10,7 @@ class CAManBase : Man
             {
                 displayName = "$STR_nln_gunship_call_for_fire_interactions_selfAction";
                 condition = "nln_gunship_cff_enable";
-                statement = "";
+                statement = "call nln_gunship_cff_fnc_openMenu;";
 
                 class edit
                 {

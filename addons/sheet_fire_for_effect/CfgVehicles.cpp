@@ -10,7 +10,7 @@ class CAManBase : Man
             {
                 displayName = "$STR_nln_fire_for_effect_interactions_selfAction";
                 condition = "nln_fire_for_effect_enable";
-                statement = "";
+                statement = "call nln_fire_for_effect_fnc_openMenu;";
 
                 class edit
                 {

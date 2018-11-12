@@ -10,7 +10,7 @@ class CAManBase : Man
             {
                 displayName = "$STR_nln_cas_checkin_interactions_selfAction";
                 condition = "nln_cas_checkin_enable";
-                statement = "";
+                statement = "call nln_cas_checkin_fnc_openMenu;";
 
                 class edit
                 {

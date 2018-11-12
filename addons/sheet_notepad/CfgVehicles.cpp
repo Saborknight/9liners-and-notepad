@@ -6,7 +6,7 @@ class CAManBase : Man {
             class notepad {
                 displayName = "$STR_nln_notepad_interactions_selfAction";
                 condition = "nln_notepad_enable";
-                statement = "";
+                statement = "call nln_notepad_fnc_openMenu;";
 
                 class edit {
                     displayName = "$STR_nln_main_interactions_selfActionEdit";

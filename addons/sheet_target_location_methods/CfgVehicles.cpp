@@ -6,7 +6,7 @@ class CAManBase : Man {
             class target_location_methods {
                 displayName = "$STR_nln_target_location_methods_interactions_selfAction";
                 condition = "nln_target_location_methods_enable";
-                statement = "";
+                statement = "call nln_target_location_methods_fnc_openMenu;";
 
                 class edit {
                     displayName = "$STR_nln_main_interactions_selfActionEdit";
