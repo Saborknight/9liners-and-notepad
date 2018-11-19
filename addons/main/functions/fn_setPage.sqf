@@ -37,6 +37,6 @@ if !([_hash] call CBA_fnc_isHash) exitWith { false; };
 
 profileNamespace setVariable [_namespaceVar, ([_hash, _id, _values] call CBA_fnc_hashSet)];
 
-hint ((format["STR_nln_main_scripts_pageSaved", _id]) call BIS_fnc_localize);
+hint (format[("STR_nln_main_scripts_pageSaved" call BIS_fnc_localize), _id]);
 
 true;
