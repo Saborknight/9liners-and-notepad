@@ -1,8 +1,11 @@
 
-if (isNull (uiNamespace getVariable ["nln_cas_checkin", displayNull])) then
+if (!nln_cas_checkin_disable) then
 {
-    "nln_cas_checkin" cutRsc ["nln_cas_checkin", "PLAIN"];
-};
+    if (isNull (uiNamespace getVariable ["nln_cas_checkin", displayNull])) then
+    {
+        "nln_cas_checkin" cutRsc ["nln_cas_checkin", "PLAIN"];
+    };
 
-private _lP = (profileNamespace getVariable ["nln_cas_checkin_currentPage", -1]);
-[_lP] call nln_cas_checkin_fnc_updateBackground;
+    private _lP = (profileNamespace getVariable ["nln_cas_checkin_currentPage", -1]);
+    [_lP] call nln_cas_checkin_fnc_updateBackground;
+};

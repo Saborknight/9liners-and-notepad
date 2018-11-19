@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_adjust_fire_mission_settings_enable">
+            <Key ID="STR_nln_adjust_fire_mission_settings_disable">
                 <Original>Disable adjust fire mission sheet</Original>
                 <English>Disable adjust fire mission sheet</English>
                 <German>Feuer MissionsBlatt deaktivieren</German>

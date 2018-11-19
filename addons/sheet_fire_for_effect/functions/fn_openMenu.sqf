@@ -1,8 +1,11 @@
 
-call nln_fire_for_effect_fnc_closeBackground;
-closeDialog 0;
-private _lP = (profileNamespace getVariable ["nln_fire_for_effect_currentPage", -1]);
+if (!nln_fire_for_effect_disable) then
+{
+    call nln_fire_for_effect_fnc_closeBackground;
+    closeDialog 0;
+    private _lP = (profileNamespace getVariable ["nln_fire_for_effect_currentPage", -1]);
 
-createDialog "nln_fire_for_effect";
+    createDialog "nln_fire_for_effect";
 
-[_lP] call nln_fire_for_effect_fnc_updateMenu;
+    [_lP] call nln_fire_for_effect_fnc_updateMenu;
+};

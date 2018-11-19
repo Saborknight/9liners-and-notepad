@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_cas_checkin_settings_enable">
+            <Key ID="STR_nln_cas_checkin_settings_disable">
                 <Original>Disable CAS check-in sheet</Original>
                 <English>Disable CAS check-in sheet</English>
                 <German>CAS Check-in Blatt deaktivieren</German>

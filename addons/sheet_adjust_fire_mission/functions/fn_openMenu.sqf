@@ -1,8 +1,11 @@
 
-call nln_adjust_fire_mission_fnc_closeBackground;
-closeDialog 0;
-private _lP = (profileNamespace getVariable ["nln_adjust_fire_mission_currentPage", -1]);
+if (!nln_adjust_fire_mission_disable) then
+{
+    call nln_adjust_fire_mission_fnc_closeBackground;
+    closeDialog 0;
+    private _lP = (profileNamespace getVariable ["nln_adjust_fire_mission_currentPage", -1]);
 
-createDialog "nln_adjust_fire_mission";
+    createDialog "nln_adjust_fire_mission";
 
-[_lP] call nln_adjust_fire_mission_fnc_updateMenu;
+    [_lP] call nln_adjust_fire_mission_fnc_updateMenu;
+};

@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_gunship_call_for_fire_settings_enable">
+            <Key ID="STR_nln_gunship_call_for_fire_settings_disable">
                 <Original>Disable gunship call for fire sheet</Original>
                 <English>Disable gunship call for fire sheet</English>
                 <German>Gunship Aufruf zu Feuer Blatt deaktivieren</German>

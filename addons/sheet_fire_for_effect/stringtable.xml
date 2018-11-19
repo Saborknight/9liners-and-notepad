@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_fire_for_effect_settings_enable">
+            <Key ID="STR_nln_fire_for_effect_settings_disable">
                 <Original>Disable fire for effect sheet</Original>
                 <English>Disable fire for effect sheet</English>
                 <German>Feuer für Effekt Blatt deaktivieren</German>

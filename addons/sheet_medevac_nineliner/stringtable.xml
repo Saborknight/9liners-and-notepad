@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_medevac_nineliner_settings_enable">
+            <Key ID="STR_nln_medevac_nineliner_settings_disable">
                 <Original>Disable MedEvac 9-Liner sheet</Original>
                 <English>Disable MedEvac 9-Liner sheet</English>
                 <German>Medevac 9-Liner Blatt deaktivieren</German>

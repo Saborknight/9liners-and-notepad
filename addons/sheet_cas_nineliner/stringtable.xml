@@ -10,7 +10,7 @@
             </Key>
         </Container>
         <Container name="settings">
-            <Key ID="STR_nln_cas_nineliner_settings_enable">
+            <Key ID="STR_nln_cas_nineliner_settings_disable">
                 <Original>Disable CAS 9-Liner sheet</Original>
                 <English>Disable CAS 9-Liner sheet</English>
                 <German>CAS 9-Liner Blatt deaktivieren</German>
