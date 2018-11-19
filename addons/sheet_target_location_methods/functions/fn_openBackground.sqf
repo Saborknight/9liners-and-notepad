@@ -1,8 +1,7 @@
 
-if (!nln_target_location_methods_disable) then
+if (nln_target_location_methods_disable) exitWith { -1; };
+
+if (isNull (uiNamespace getVariable ["nln_target_location_methods", displayNull])) then
 {
-    if (isNull (uiNamespace getVariable ["nln_target_location_methods", displayNull])) then
-    {
-        "nln_target_location_methods" cutRsc ["nln_target_location_methods", "PLAIN"];
-    };
+    "nln_target_location_methods" cutRsc ["nln_target_location_methods", "PLAIN"];
 };
