@@ -10,7 +10,7 @@ Parameters:
     _values - values to set <ARRAY>
 
 Returns:
-    Set staus <BOOLEAN>
+    Set status <BOOLEAN>
 
 Examples:
     (begin example)
@@ -37,6 +37,7 @@ if !([_hash] call CBA_fnc_isHash) exitWith { false; };
 
 profileNamespace setVariable [_namespaceVar, ([_hash, _id, _values] call CBA_fnc_hashSet)];
 
-hint (format[("STR_nln_main_scripts_pageSaved" call BIS_fnc_localize), _id]);
+private _pP = ([_type, _id] call nln_main_fnc_getPagePosition);
+hint (format[("STR_nln_main_scripts_pageSaved" call BIS_fnc_localize), (_pP select 0)]);
 
 true;
