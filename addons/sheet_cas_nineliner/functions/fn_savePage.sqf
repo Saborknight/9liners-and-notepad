@@ -25,8 +25,33 @@ private _values = [
     (ctrlText 1419)
 ];
 
+private _defaultValues = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+];
+
 if (_key <= -1) then
 {
+    if ([_values, _defaultValues] call nln_main_fnc_checkPageIsEmpty) exitWith { -1; };
+
     _key = (["cas_nineliner", _values] call nln_main_fnc_addPage);
     profileNamespace setVariable ["nln_cas_nineliner_currentPage", _key];
     private _pP = (["cas_nineliner", _key] call nln_main_fnc_getPagePosition);

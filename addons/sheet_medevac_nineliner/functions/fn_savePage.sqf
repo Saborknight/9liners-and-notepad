@@ -43,8 +43,51 @@ private _values = [
     (if ((ctrlText 2828) == "") then { false; } else { true; })
 ];
 
+private _defaultValues = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+];
+
 if (_key <= -1) then
 {
+    if ([_values, _defaultValues] call nln_main_fnc_checkPageIsEmpty) exitWith { -1; };
+
     _key = (["medevac_nineliner", _values] call nln_main_fnc_addPage);
     profileNamespace setVariable ["nln_medevac_nineliner_currentPage", _key];
     private _pP = (["medevac_nineliner", _key] call nln_main_fnc_getPagePosition);

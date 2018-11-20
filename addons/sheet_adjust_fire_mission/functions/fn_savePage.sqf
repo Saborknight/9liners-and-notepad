@@ -26,8 +26,34 @@ private _values = [
     (if ((ctrlText 1208) == "") then { false; } else { true; })
 ];
 
+private _defaultValues = [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+];
+
 if (_key <= -1) then
 {
+    if ([_values, _defaultValues] call nln_main_fnc_checkPageIsEmpty) exitWith { -1; };
+
     _key = (["adjust_fire_mission", _values] call nln_main_fnc_addPage);
     profileNamespace setVariable ["nln_adjust_fire_mission_currentPage", _key];
     private _pP = (["adjust_fire_mission", _key] call nln_main_fnc_getPagePosition);
