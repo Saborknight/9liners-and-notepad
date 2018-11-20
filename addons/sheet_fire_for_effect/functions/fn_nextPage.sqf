@@ -8,7 +8,7 @@ if (_nP <= -1) then
 
     if ((count _pP) > 0) then
     {
-        hint (format[("STR_nln_main_interactions_pageCountHint" call BIS_fnc_localize), (_pP select 0) + 1, (_pP select 1)]);
+        hint ("STR_nln_main_interactions_newPageHint" call BIS_fnc_localize);
     };
 }
 else
