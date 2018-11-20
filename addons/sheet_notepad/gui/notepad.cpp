@@ -77,15 +77,5 @@ class nln_notepad
             h = "0.043 * safezoneH";
             action = "call nln_notepad_fnc_clearAllPages;";
         };
-
-        class nln_noteblock_btn_close : nln_noteblock_button
-        {
-            idc = 1605;
-            x = "0.3479 * safezoneW + safezoneX";
-            y = "0.931 * safezoneH + safezoneY";
-            w = "0.016 * safezoneW";
-            h = "0.045 * safezoneH";
-            action = "closeDialog 0;";
-        };
     };
 };
