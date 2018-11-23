@@ -10,7 +10,7 @@ class nln_fire_for_effect
 
     class Controls
     {
-        class nln_targetlocationmethods_background : nln_ffe_picture
+        class nln_ffe_background : nln_ffe_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_fire_for_effect\data\ui\fire_for_effect.paa";
