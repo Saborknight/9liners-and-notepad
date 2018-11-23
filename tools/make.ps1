@@ -5,6 +5,7 @@ $downloadPage   = "https://github.com/KoffeinFlummi/armake/releases/download/v{0
 $armake         = "$projectRoot\tools\armake.exe"
 $tag            = iex 'git describe --tag | sed "s/-.*-/-/"'
 $privateKeyFile = "$buildPath\keys\nln_$tag.biprivatekey"
+$timestamp      = Get-Date -UFormat "%T"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 
@@ -51,7 +52,7 @@ function Get-LatestArmakeVersion {
 
     $match = $content -match "<a href="".*?/releases/download/v(.*?)/.*?.zip"".*?>"
     if (!$match) {
-        Write-Error "Failed to find valid armake download link."
+        Write-Error "[$timestamp] Failed to find valid armake download link."
         $version = "0.0.0"
     } else {
         $version = $matches[1]
@@ -90,11 +91,11 @@ function Update-Armake {
 
 
 function Create-Private-Key {
-    Write-Output "  Creating key pairs for $tag"
+    Write-Output "  [$timestamp] Creating key pairs for $tag"
     & $armake keygen -f "keys\nln_$tag"
 
     if (!(Test-Path -Path $privateKeyFile)) {
-        Write-Error "Failed to generate key pairs $privateKeyFile"
+        Write-Error "[$timestamp] Failed to generate key pairs $privateKeyFile"
         return $False
     }
 
@@ -116,16 +117,16 @@ function Build-Directory {
 
     if (Test-Path -Path $binPath) {
         Remove-Item $binPath
-        Write-Output "  Updating PBO $component"
+        Write-Output "  [$timestamp] Updating PBO $component"
         & $armake build -p --force -k $privateKeyFile -e prefix=$prefix $fullPath $binPath
     } else {
-        Write-Output "  Creating PBO $component"
+        Write-Output "  [$timestamp] Creating PBO $component"
         & $armake build -p --force -k $privateKeyFile -e prefix=$prefix $fullPath $binPath
 
     }
 
     if ($LastExitCode -ne 0) {
-        Write-Error "Failed to build $component."
+        Write-Error "[$timestamp] Failed to build $component."
     }
 }
 
