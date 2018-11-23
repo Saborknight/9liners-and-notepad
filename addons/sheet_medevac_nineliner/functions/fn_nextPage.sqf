@@ -13,10 +13,10 @@ if (_nP <= -1) then
 }
 else
 {
-    call nln_medevac_nineliner_fnc_savePage;
     private _pP = (["medevac_nineliner", _nP] call nln_main_fnc_getPagePosition);
     hint (format[("STR_nln_main_interactions_pageCountHint" call BIS_fnc_localize), (_pP select 0), (_pP select 1)]);
 };
 
+call nln_medevac_nineliner_fnc_savePage;
 [_nP] call nln_medevac_nineliner_fnc_updateMenu;
 profileNamespace setVariable ["nln_medevac_nineliner_currentPage", _nP];
