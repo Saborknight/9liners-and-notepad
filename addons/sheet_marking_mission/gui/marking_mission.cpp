@@ -4,6 +4,7 @@ class nln_marking_mission
     idd = 8886;
     movingenable = "true";
     onUnload = "call nln_marking_mission_fnc_onUnload;";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {

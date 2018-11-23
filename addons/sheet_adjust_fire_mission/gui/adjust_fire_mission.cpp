@@ -4,6 +4,7 @@ class nln_adjust_fire_mission
     idd = 8881;
     movingenable = "true";
     onUnload = "call nln_adjust_fire_mission_fnc_onUnload;";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {
@@ -352,7 +353,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0229167 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_adjust_fire_mission_fnc_savePage;"; //TODO: add save function
+            action = "call nln_adjust_fire_mission_fnc_savePage;";
         };
 
         class nln_afm_btn_clearAll : nln_afm_button
@@ -362,7 +363,7 @@ class nln_adjust_fire_mission
             y = "0.26909 * safezoneH + safezoneY";
             w = "0.0515625 * safezoneW";
             h = "0.0219914 * safezoneH";
-            action = "call nln_adjust_fire_mission_fnc_clearAllPages;"; //TODO: add clearall function
+            action = "call nln_adjust_fire_mission_fnc_clearAllPages;";
         };
     };
 };

@@ -5,6 +5,7 @@ class nln_main {
     class functions {
         file = "\x\nln\addons\main\functions";
         class addPage {};
+        class backgroundClick {};
         class checkPageIsEmpty {};
         class getLastPage {};
         class getNextPage {};

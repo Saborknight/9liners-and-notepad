@@ -4,6 +4,7 @@ class nln_cas_checkin
     idd = 8882;
     movingenable = "true";
     onUnload = "call nln_cas_checkin_fnc_onUnload;";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {

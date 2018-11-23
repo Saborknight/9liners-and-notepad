@@ -4,6 +4,7 @@ class nln_notepad
     idd = 8888;
     movingenable = "true";
     onUnload = "call nln_notepad_fnc_onUnload;";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {

@@ -4,6 +4,7 @@ class nln_cas_nineliner
     idd = 8883;
     movingenable = "true";
     onUnload = "call nln_cas_nineliner_fnc_onUnload;";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {

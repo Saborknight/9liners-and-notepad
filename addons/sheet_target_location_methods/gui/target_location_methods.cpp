@@ -3,6 +3,8 @@ class nln_target_location_methods
 {
     idd = -1;
     movingenable = "true";
+    onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
+
     class Controls
     {
         class nln_targetlocationmethods_background : nln_targetlocationmethods_picture
