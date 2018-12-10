@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_cas_check_in_picture;
-class nln_cas_check_in_edit;
-class nln_cas_check_in_button;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\cas_checkin.cpp"
 

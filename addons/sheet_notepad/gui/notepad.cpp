@@ -2,13 +2,13 @@
 class nln_notepad
 {
     idd = 8888;
-    movingenable = "true";
+    movingEnable = 1;
     onUnload = "call nln_notepad_fnc_onUnload;";
     onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {
-        class nln_noteblock_background : nln_noteblock_picture
+        class nln_notepad_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_notepad\data\ui\notepad.paa";
@@ -19,7 +19,7 @@ class nln_notepad
             moving = 1;
         };
 
-        class nln_noteblock_edit : nln_noteblock_edit
+        class nln_notepad_edit : nln_base_edit
         {
             idc = 1400;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -29,7 +29,7 @@ class nln_notepad
             moving = 1;
         };
 
-        class nln_noteblock_btn_nextPage : nln_noteblock_button
+        class nln_notepad_btn_nextPage : nln_base_button
         {
             idc = 1600;
             x = "0.310937 * safezoneW + safezoneX";
@@ -39,7 +39,7 @@ class nln_notepad
             action = "call nln_notepad_fnc_nextPage;";
         };
 
-        class nln_noteblock_btn_previousPage : nln_noteblock_button
+        class nln_notepad_btn_previousPage : nln_base_button
         {
             idc = 1601;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -49,7 +49,7 @@ class nln_notepad
             action = "call nln_notepad_fnc_previousPage;";
         };
 
-        class nln_noteblock_btn_save : nln_noteblock_button
+        class nln_notepad_btn_save : nln_base_button
         {
             idc = 1602;
             x = "0.3479 * safezoneW + safezoneX";
@@ -59,7 +59,7 @@ class nln_notepad
             action = "call nln_notepad_fnc_savePage;";
         };
 
-        class nln_noteblock_btn_clearpage : nln_noteblock_button
+        class nln_notepad_btn_clearpage : nln_base_button
         {
             idc = 1603;
             x = "0.3479 * safezoneW + safezoneX";
@@ -69,7 +69,7 @@ class nln_notepad
             action = "call nln_notepad_fnc_clearPage;";
         };
 
-        class nln_noteblock_btn_clearall : nln_noteblock_button
+        class nln_notepad_btn_clearall : nln_base_button
         {
             idc = 1604;
             x = "0.3479 * safezoneW + safezoneX";

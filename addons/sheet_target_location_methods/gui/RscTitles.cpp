@@ -7,9 +7,10 @@ class nln_target_location_methods
     fadeout = 0;
     name = "nln_target_location_methods";
     onLoad = "uiNamespace setVariable ['nln_target_location_methods', (_this select 0)];";
+
     class Controls
     {
-        class nln_targetlocationmethods_background : nln_targetlocationmethods_picture
+        class nln_targetlocationmethods_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_target_location_methods\data\ui\target_location_methods.paa";

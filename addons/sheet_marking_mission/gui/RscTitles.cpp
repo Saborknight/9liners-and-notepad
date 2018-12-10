@@ -6,9 +6,10 @@ class nln_marking_mission
     fadeout = 0;
     name = "nln_marking_mission";
     onLoad = "uiNamespace setVariable ['nln_marking_mission', (_this select 0)];";
+
     class Controls
     {
-        class nln_mm_background : nln_mm_picture
+        class nln_mm_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_marking_mission\data\ui\marking_mission.paa";
@@ -18,7 +19,7 @@ class nln_marking_mission
             h = "0.758704 * safezoneH";
         };
 
-        class nln_mm_edit_line0_1 : nln_mm_edit
+        class nln_mm_edit_line0_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.01875 * safezoneW + safezoneX";
@@ -27,7 +28,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line0_2 : nln_mm_edit
+        class nln_mm_edit_line0_2 : nln_base_edit
         {
             idc = 1402;
             x = "0.116146 * safezoneW + safezoneX";
@@ -36,7 +37,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line1 : nln_mm_edit
+        class nln_mm_edit_line1 : nln_base_edit
         {
             idc = 1401;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -45,7 +46,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line2 : nln_mm_edit
+        class nln_mm_edit_line2 : nln_base_edit
         {
             idc = 1403;
             x = "0.0703125 * safezoneW + safezoneX";
@@ -54,7 +55,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line3 : nln_mm_edit
+        class nln_mm_edit_line3 : nln_base_edit
         {
             idc = 1404;
             x = "0.121146 * safezoneW + safezoneX";
@@ -63,7 +64,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line4 : nln_mm_edit
+        class nln_mm_edit_line4 : nln_base_edit
         {
             idc = 1405;
             x = "0.0989583 * safezoneW + safezoneX";
@@ -72,7 +73,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line5 : nln_mm_edit
+        class nln_mm_edit_line5 : nln_base_edit
         {
             idc = 1406;
             x = "0.0817708 * safezoneW + safezoneX";
@@ -81,7 +82,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_edit_line6 : nln_mm_edit
+        class nln_mm_edit_line6 : nln_base_edit
         {
             idc = 1407;
             x = "0.0760417 * safezoneW + safezoneX";
@@ -90,7 +91,7 @@ class nln_marking_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_mm_ringle_1 : nln_mm_picture
+        class nln_mm_ringle_1 : nln_base_picture
         {
             idc = 1201;
             x = "0.0130208 * safezoneW + safezoneX";
@@ -99,7 +100,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_2 : nln_mm_picture
+        class nln_mm_ringle_2 : nln_base_picture
         {
             idc = 1202;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -108,7 +109,7 @@ class nln_marking_mission
             h = "0.07697 * safezoneH";
         };
 
-        class nln_mm_ringle_3 : nln_mm_picture
+        class nln_mm_ringle_3 : nln_base_picture
         {
             idc = 1203;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -117,7 +118,7 @@ class nln_marking_mission
             h = "0.07697 * safezoneH";
         };
 
-        class nln_mm_ringle_4 : nln_mm_picture
+        class nln_mm_ringle_4 : nln_base_picture
         {
             idc = 1204;
             x = "0.139062 * safezoneW + safezoneX";
@@ -126,7 +127,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_5 : nln_mm_picture
+        class nln_mm_ringle_5 : nln_base_picture
         {
             idc = 1205;
             x = "0.161979 * safezoneW + safezoneX";
@@ -135,7 +136,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_6 : nln_mm_picture
+        class nln_mm_ringle_6 : nln_base_picture
         {
             idc = 1206;
             x = "0.225 * safezoneW + safezoneX";
@@ -144,7 +145,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_7 : nln_mm_picture
+        class nln_mm_ringle_7 : nln_base_picture
         {
             idc = 1207;
             x = "0.247917 * safezoneW + safezoneX";
@@ -153,7 +154,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_8 : nln_mm_picture
+        class nln_mm_ringle_8 : nln_base_picture
         {
             idc = 1208;
             x = "0.190625 * safezoneW + safezoneX";
@@ -162,7 +163,7 @@ class nln_marking_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_mm_ringle_9 : nln_mm_picture
+        class nln_mm_ringle_9 : nln_base_picture
         {
             idc = 1209;
             x = "0.179167 * safezoneW + safezoneX";
@@ -171,7 +172,7 @@ class nln_marking_mission
             h = "0.07697 * safezoneH";
         };
 
-        class nln_mm_ringle_10 : nln_mm_picture
+        class nln_mm_ringle_10 : nln_base_picture
         {
             idc = 1210;
             x = "0.247917 * safezoneW + safezoneX";
@@ -180,7 +181,7 @@ class nln_marking_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_mm_ringle_11 : nln_mm_picture
+        class nln_mm_ringle_11 : nln_base_picture
         {
             idc = 1211;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -189,7 +190,7 @@ class nln_marking_mission
             h = "0.07697 * safezoneH";
         };
 
-        class nln_mm_ringle_12 : nln_mm_picture
+        class nln_mm_ringle_12 : nln_base_picture
         {
             idc = 1212;
             x = "0.104688 * safezoneW + safezoneX";

@@ -2,13 +2,13 @@
 class nln_adjust_fire_mission
 {
     idd = 8881;
-    movingenable = "true";
+    movingEnable = 0;
     onUnload = "call nln_adjust_fire_mission_fnc_onUnload;";
     onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {
-        class nln_adjustfiremission_background : nln_afm_picture
+        class nln_afm_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_adjust_fire_mission\data\ui\adjust_fire_mission.paa";
@@ -19,7 +19,7 @@ class nln_adjust_fire_mission
             moving = 1;
         };
 
-        class nln_afm_edit_line0_1 : nln_afm_edit
+        class nln_afm_edit_line0_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -28,7 +28,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line0_2 : nln_afm_edit
+        class nlnafm_editline0_2 : nln_base_edit
         {
             idc = 1402;
             x = "0.15625 * safezoneW + safezoneX";
@@ -37,7 +37,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line1 : nln_afm_edit
+        class nln_afm_edit_line1 : nln_base_edit
         {
             idc = 1401;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -46,7 +46,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line2 : nln_afm_edit
+        class nln_afm_edit_line2 : nln_base_edit
         {
             idc = 1403;
             x = "0.104688 * safezoneW + safezoneX";
@@ -55,7 +55,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line3 : nln_afm_edit
+        class nln_afm_edit_line3 : nln_base_edit
         {
             idc = 1404;
             x = "0.0703125 * safezoneW + safezoneX";
@@ -64,7 +64,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line4 : nln_afm_edit
+        class nln_afm_edit_line4 : nln_base_edit
         {
             idc = 1405;
             x = "0.116146 * safezoneW + safezoneX";
@@ -73,7 +73,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line5 : nln_afm_edit
+        class nln_afm_edit_line5 : nln_base_edit
         {
             idc = 1406;
             x = "0.0989583 * safezoneW + safezoneX";
@@ -82,7 +82,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line6 : nln_afm_edit
+        class nln_afm_edit_line6 : nln_base_edit
         {
             idc = 1407;
             x = "0.0817708 * safezoneW + safezoneX";
@@ -91,7 +91,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line7 : nln_afm_edit
+        class nln_afm_edit_line7 : nln_base_edit
         {
             idc = 1408;
             x = "0.0760417 * safezoneW + safezoneX";
@@ -100,7 +100,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line8 : nln_afm_edit
+        class nln_afm_edit_line8 : nln_base_edit
         {
             idc = 1409;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -109,7 +109,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line9 : nln_afm_edit
+        class nln_afm_edit_line9 : nln_base_edit
         {
             idc = 1410;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -118,7 +118,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line10 : nln_afm_edit
+        class nln_afm_edit_line10 : nln_base_edit
         {
             idc = 1411;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -127,7 +127,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_edit_line11 : nln_afm_edit
+        class nln_afm_edit_line11 : nln_base_edit
         {
             idc = 1412;
             x = "0.0932292 * safezoneW + safezoneX";
@@ -136,7 +136,7 @@ class nln_adjust_fire_mission
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_afm_ringle_1 : nln_afm_picture
+        class nln_afm_ringle_1 : nln_base_picture
         {
             idc = 1201;
             text = "";
@@ -146,7 +146,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_afm_ringle_2 : nln_afm_picture
+        class nln_afm_ringle_2 : nln_base_picture
         {
             idc = 1202;
             text = "";
@@ -156,7 +156,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class vnln_afm_ringle_3 : nln_afm_picture
+        class vnln_afm_ringle_3 : nln_base_picture
         {
             idc = 1203;
             text = "";
@@ -166,7 +166,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_afm_ringle_4 : nln_afm_picture
+        class nln_afm_ringle_4 : nln_base_picture
         {
             idc = 1204;
             text = "";
@@ -176,7 +176,7 @@ class nln_adjust_fire_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_afm_ringle_5 : nln_afm_picture
+        class nln_afm_ringle_5 : nln_base_picture
         {
             idc = 1205;
             text = "";
@@ -186,7 +186,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_afm_ringle_6 : nln_afm_picture
+        class nln_afm_ringle_6 : nln_base_picture
         {
             idc = 1206;
             text = "";
@@ -196,7 +196,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_afm_ringle_7 : nln_afm_picture
+        class nln_afm_ringle_7 : nln_base_picture
         {
             idc = 1207;
             text = "";
@@ -206,7 +206,7 @@ class nln_adjust_fire_mission
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_afm_ringle_8 : nln_afm_picture
+        class nln_afm_ringle_8 : nln_base_picture
         {
             idc = 1208;
             text = "";
@@ -216,7 +216,7 @@ class nln_adjust_fire_mission
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_afm_btn_ringle_1 : nln_afm_button
+        class nln_afm_btn_ringle_1 : nln_base_button
         {
             idc = 1604;
             x = "0.167708 * safezoneW + safezoneX";
@@ -226,7 +226,7 @@ class nln_adjust_fire_mission
             action = "[1201] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_2 : nln_afm_button
+        class nln_afm_btn_ringle_2 : nln_base_button
         {
             idc = 1605;
             x = "0.230729 * safezoneW + safezoneX";
@@ -236,7 +236,7 @@ class nln_adjust_fire_mission
             action = "[1202] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_3 : nln_afm_button
+        class nln_afm_btn_ringle_3 : nln_base_button
         {
             idc = 1606;
             x = "0.259375 * safezoneW + safezoneX";
@@ -246,7 +246,7 @@ class nln_adjust_fire_mission
             action = "[1203] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_3_2 : nln_afm_button
+        class nln_afm_btn_ringle_3_2 : nln_base_button
         {
             idc = 1607;
             x = "0.161979 * safezoneW + safezoneX";
@@ -256,7 +256,7 @@ class nln_adjust_fire_mission
             action = "[1203] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_4 : nln_afm_button
+        class nln_afm_btn_ringle_4 : nln_base_button
         {
             idc = 1608;
             x = "0.196354 * safezoneW + safezoneX";
@@ -266,7 +266,7 @@ class nln_adjust_fire_mission
             action = "[1204] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_5 : nln_afm_button
+        class nln_afm_btn_ringle_5 : nln_base_button
         {
             idc = 1609;
             x = "0.184896 * safezoneW + safezoneX";
@@ -276,7 +276,7 @@ class nln_adjust_fire_mission
             action = "[1205] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_6 : nln_afm_button
+        class nln_afm_btn_ringle_6 : nln_base_button
         {
             idc = 1610;
             x = "0.259375 * safezoneW + safezoneX";
@@ -286,7 +286,7 @@ class nln_adjust_fire_mission
             action = "[1206] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_6_2 : nln_afm_button
+        class nln_afm_btn_ringle_6_2 : nln_base_button
         {
             idc = 1611;
             x = "0.01875 * safezoneW + safezoneX";
@@ -296,7 +296,7 @@ class nln_adjust_fire_mission
             action = "[1206] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_7 : nln_afm_button
+        class nln_afm_btn_ringle_7 : nln_base_button
         {
             idc = 1612;
             x = "0.0588542 * safezoneW + safezoneX";
@@ -306,7 +306,7 @@ class nln_adjust_fire_mission
             action = "[1207] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_ringle_8 : nln_afm_button
+        class nln_afm_btn_ringle_8 : nln_base_button
         {
             idc = 1613;
             x = "0.133333 * safezoneW + safezoneX";
@@ -316,7 +316,7 @@ class nln_adjust_fire_mission
             action = "[1208] call nln_adjust_fire_mission_fnc_action_ringle;";
         };
 
-        class nln_afm_btn_previousPage : nln_afm_button
+        class nln_afm_btn_previousPage : nln_base_button
         {
             idc = 1614;
             x = "0.01875 * safezoneW + safezoneX";
@@ -326,7 +326,7 @@ class nln_adjust_fire_mission
             action = "call nln_adjust_fire_mission_fnc_previousPage;";
         };
 
-        class nln_afm_btn_nextPage : nln_afm_button
+        class nln_afm_btn_nextPage : nln_base_button
         {
             idc = 1615;
             x = "0.253646 * safezoneW + safezoneX";
@@ -336,7 +336,7 @@ class nln_adjust_fire_mission
             action = "call nln_adjust_fire_mission_fnc_nextPage;";
         };
 
-        class nln_afm_btn_clearThis : nln_afm_button
+        class nln_afm_btn_clearThis : nln_base_button
         {
             idc = 1616;
             x = "0.0588542 * safezoneW + safezoneX";
@@ -346,7 +346,7 @@ class nln_adjust_fire_mission
             action = "call nln_adjust_fire_mission_fnc_clearPage;";
         };
 
-        class nln_afm_btn_save : nln_afm_button
+        class nln_afm_btn_save : nln_base_button
         {
             idc = 1617;
             x = "0.139062 * safezoneW + safezoneX";
@@ -356,7 +356,7 @@ class nln_adjust_fire_mission
             action = "call nln_adjust_fire_mission_fnc_savePage;";
         };
 
-        class nln_afm_btn_clearAll : nln_afm_button
+        class nln_afm_btn_clearAll : nln_base_button
         {
             idc = 1618;
             x = "0.196354 * safezoneW + safezoneX";

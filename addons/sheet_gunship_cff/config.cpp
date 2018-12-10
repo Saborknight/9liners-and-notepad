@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_fiveliner_gcff_picture;
-class nln_fiveliner_gcff_edit;
-class nln_fiveliner_gcff_button;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\gunship_cff.cpp"
 

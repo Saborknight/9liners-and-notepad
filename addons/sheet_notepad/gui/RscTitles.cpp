@@ -7,9 +7,10 @@ class nln_notepad
     fadeout = 0;
     name = "nln_notepad";
     onLoad = "uiNamespace setVariable ['nln_notepad', _this select 0];";
+
     class Controls
     {
-        class nln_noteblock_background : nln_noteblock_picture
+        class nln_notepad_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_notepad\data\ui\notepad.paa";
@@ -19,7 +20,7 @@ class nln_notepad
             h = "0.747708 * safezoneH";
             moving = 1;
         };
-        class nln_noteblock_edit : nln_noteblock_edit
+        class nln_notepad_edit : nln_base_edit
         {
             idc = 1400;
             x = "0.0416667 * safezoneW + safezoneX";

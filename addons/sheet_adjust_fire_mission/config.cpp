@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_afm_picture;
-class nln_afm_button;
-class nln_afm_edit;
+class nln_base_picture;
+class nln_base_button;
+class nln_base_edit;
 
 #include "gui\adjust_fire_mission.cpp"
 

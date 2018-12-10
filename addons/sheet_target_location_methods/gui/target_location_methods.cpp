@@ -2,12 +2,12 @@
 class nln_target_location_methods
 {
     idd = -1;
-    movingenable = "true";
+    movingEnable = 1;
     onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {
-        class nln_targetlocationmethods_background : nln_targetlocationmethods_picture
+        class nln_targetlocationmethods_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_target_location_methods\data\ui\target_location_methods.paa";

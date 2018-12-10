@@ -10,7 +10,7 @@ class nln_gunship_cff
 
     class Controls
     {
-        class nln_gcff_background : nln_fiveliner_gcff_picture
+        class nln_gcff_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_gunship_cff\data\ui\gunship_cff.paa";
@@ -21,7 +21,7 @@ class nln_gunship_cff
             moving = 1;
         };
 
-        class nln_gcff_line1_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line1_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.139062 * safezoneW + safezoneX";
@@ -30,7 +30,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line1_2 : nln_fiveliner_gcff_edit
+        class nln_gcff_line1_2 : nln_base_edit
         {
             idc = 1401;
             x = "0.225 * safezoneW + safezoneX";
@@ -39,7 +39,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line2_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line2_1 : nln_base_edit
         {
             idc = 1402;
             x = "0.190625 * safezoneW + safezoneX";
@@ -48,7 +48,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line2_2 : nln_fiveliner_gcff_edit
+        class nln_gcff_line2_2 : nln_base_edit
         {
             idc = 1403;
             x = "0.0703121 * safezoneW + safezoneX";
@@ -57,7 +57,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line3_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line3_1 : nln_base_edit
         {
             idc = 1404;
             x = "0.104688 * safezoneW + safezoneX";
@@ -66,7 +66,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line4_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line4_1 : nln_base_edit
         {
             idc = 1405;
             x = "0.184896 * safezoneW + safezoneX";
@@ -75,7 +75,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line5_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line5_1 : nln_base_edit
         {
             idc = 1406;
             x = "0.0760417 * safezoneW + safezoneX";

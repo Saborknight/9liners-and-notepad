@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_nineliner_cas_picture;
-class nln_nineliner_cas_edit;
-class nln_nineliner_cas_button;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\cas_nineliner.cpp"
 

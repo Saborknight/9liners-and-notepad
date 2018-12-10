@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_ffe_picture;
-class nln_ffe_edit;
-class nln_ffe_button;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\fire_for_effect.cpp"
 

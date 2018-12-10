@@ -11,7 +11,7 @@ class CfgVehicles {
     #include "CfgVehicles.cpp"
 };
 
-class nln_targetlocationmethods_picture;
+class nln_base_picture;
 
 #include "gui\target_location_methods.cpp"
 

@@ -11,9 +11,9 @@ class CfgVehicles {
     #include "CfgVehicles.cpp"
 };
 
-class nln_noteblock_picture;
-class nln_noteblock_edit;
-class nln_noteblock_button;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\notepad.cpp"
 

@@ -14,9 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_mm_picture;
-class nln_mm_button;
-class nln_mm_edit;
+class nln_base_picture;
+class nln_base_button;
+class nln_base_edit;
 
 #include "gui\marking_mission.cpp"
 

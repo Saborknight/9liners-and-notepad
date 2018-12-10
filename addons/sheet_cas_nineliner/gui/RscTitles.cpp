@@ -10,7 +10,7 @@ class nln_cas_nineliner
 
     class Controls
     {
-        class nln_nineliner_cas_background : nln_nineliner_cas_picture
+        class nln_nineliner_cas_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_cas_nineliner\data\ui\cas_nineliner.paa";
@@ -21,7 +21,7 @@ class nln_cas_nineliner
             moving = 1;
         };
 
-        class nln_nineliner_cas_line0_1 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line0_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.121875 * safezoneW + safezoneX";
@@ -30,7 +30,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line0_2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line0_2 : nln_base_edit
         {
             idc = 1401;
             x = "0.225 * safezoneW + safezoneX";
@@ -39,7 +39,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line1 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line1 : nln_base_edit
         {
             idc = 1402;
             x = "0.0989583 * safezoneW + safezoneX";
@@ -48,7 +48,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line2 : nln_base_edit
         {
             idc = 1403;
             x = "0.104688 * safezoneW + safezoneX";
@@ -57,7 +57,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line2_2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line2_2 : nln_base_edit
         {
             idc = 1404;
             x = "0.0989583 * safezoneW + safezoneX";
@@ -66,7 +66,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line3 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line3 : nln_base_edit
         {
             idc = 1405;
             x = "0.104688 * safezoneW + safezoneX";
@@ -75,7 +75,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line4 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line4 : nln_base_edit
         {
             idc = 1406;
             x = "0.127604 * safezoneW + safezoneX";
@@ -84,7 +84,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line5 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line5 : nln_base_edit
         {
             idc = 1407;
             x = "0.133333 * safezoneW + safezoneX";
@@ -93,7 +93,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line6 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line6 : nln_base_edit
         {
             idc = 1408;
             x = "0.127604 * safezoneW + safezoneX";
@@ -102,7 +102,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line7_1 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line7_1 : nln_base_edit
         {
             idc = 1409;
             x = "0.110417 * safezoneW + safezoneX";
@@ -111,7 +111,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line7_2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line7_2 : nln_base_edit
         {
             idc = 1410;
             x = "0.225 * safezoneW + safezoneX";
@@ -120,7 +120,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line7_3 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line7_3 : nln_base_edit
         {
             idc = 1411;
             x = "0.133333 * safezoneW + safezoneX";
@@ -129,7 +129,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line8 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line8 : nln_base_edit
         {
             idc = 1412;
             x = "0.150521 * safezoneW + safezoneX";
@@ -138,7 +138,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line8_2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line8_2 : nln_base_edit
         {
             idc = 1413;
             x = "0.139062 * safezoneW + safezoneX";
@@ -147,7 +147,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line9 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line9 : nln_base_edit
         {
             idc = 1414;
             x = "0.104688 * safezoneW + safezoneX";
@@ -156,7 +156,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line10 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line10 : nln_base_edit
         {
             idc = 1415;
             x = "0.0817708 * safezoneW + safezoneX";
@@ -165,7 +165,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line11 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line11 : nln_base_edit
         {
             idc = 1416;
             x = "0.150521 * safezoneW + safezoneX";
@@ -174,7 +174,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line12 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line12 : nln_base_edit
         {
             idc = 1417;
             x = "0.133333 * safezoneW + safezoneX";
@@ -183,7 +183,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line13_1 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line13_1 : nln_base_edit
         {
             idc = 1418;
             x = "0.15625 * safezoneW + safezoneX";
@@ -192,7 +192,7 @@ class nln_cas_nineliner
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_nineliner_cas_line13_2 : nln_nineliner_cas_edit
+        class nln_nineliner_cas_line13_2 : nln_base_edit
         {
             idc = 1419;
             x = "0.207813 * safezoneW + safezoneX";

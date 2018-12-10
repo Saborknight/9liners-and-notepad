@@ -14,10 +14,9 @@ class CfgVehicles
     #include "CfgVehicles.cpp"
 };
 
-class nln_nineliner_medv_picture;
-class nln_nineliner_medv_edit;
-class nln_nineliner_medv_button;
-class nln_nineliner_medv_picture_cross;
+class nln_base_picture;
+class nln_base_edit;
+class nln_base_button;
 
 #include "gui\medevac_nineliner.cpp"
 

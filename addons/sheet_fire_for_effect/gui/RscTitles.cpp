@@ -10,7 +10,7 @@ class nln_fire_for_effect
 
     class Controls
     {
-        class nln_ffe_background : nln_ffe_picture
+        class nln_ffe_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_fire_for_effect\data\ui\fire_for_effect.paa";
@@ -20,7 +20,7 @@ class nln_fire_for_effect
             h = "0.758704 * safezoneH";
         };
 
-        class nln_ffe_edit_line0_1 : nln_ffe_edit
+        class nln_ffe_edit_line0_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.01875 * safezoneW + safezoneX";
@@ -29,7 +29,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line0_2 : nln_ffe_edit
+        class nln_ffe_edit_line0_2 : nln_base_edit
         {
             idc = 1402;
             x = "0.121875 * safezoneW + safezoneX";
@@ -38,7 +38,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line1 : nln_ffe_edit
+        class nln_ffe_edit_line1 : nln_base_edit
         {
             idc = 1401;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -47,7 +47,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line2 : nln_ffe_edit
+        class nln_ffe_edit_line2 : nln_base_edit
         {
             idc = 1403;
             x = "0.104688 * safezoneW + safezoneX";
@@ -56,7 +56,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line3 : nln_ffe_edit
+        class nln_ffe_edit_line3 : nln_base_edit
         {
             idc = 1404;
             x = "0.0703125 * safezoneW + safezoneX";
@@ -65,7 +65,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line4 : nln_ffe_edit
+        class nln_ffe_edit_line4 : nln_base_edit
         {
             idc = 1405;
             x = "0.116146 * safezoneW + safezoneX";
@@ -74,7 +74,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line5 : nln_ffe_edit
+        class nln_ffe_edit_line5 : nln_base_edit
         {
             idc = 1406;
             x = "0.0989583 * safezoneW + safezoneX";
@@ -83,7 +83,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line6 : nln_ffe_edit
+        class nln_ffe_edit_line6 : nln_base_edit
         {
             idc = 1407;
             x = "0.0817708 * safezoneW + safezoneX";
@@ -92,7 +92,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line7 : nln_ffe_edit
+        class nln_ffe_edit_line7 : nln_base_edit
         {
             idc = 1408;
             x = "0.0760417 * safezoneW + safezoneX";
@@ -101,7 +101,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line8 : nln_ffe_edit
+        class nln_ffe_edit_line8 : nln_base_edit
         {
             idc = 1409;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -110,7 +110,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line9 : nln_ffe_edit
+        class nln_ffe_edit_line9 : nln_base_edit
         {
             idc = 1410;
             x = "0.0703125 * safezoneW + safezoneX";
@@ -119,7 +119,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line10 : nln_ffe_edit
+        class nln_ffe_edit_line10 : nln_base_edit
         {
             idc = 1411;
             x = "0.0645833 * safezoneW + safezoneX";
@@ -128,7 +128,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_edit_line11 : nln_ffe_edit
+        class nln_ffe_edit_line11 : nln_base_edit
         {
             idc = 1412;
             x = "0.0932292 * safezoneW + safezoneX";
@@ -137,7 +137,7 @@ class nln_fire_for_effect
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_ffe_ringle_1 : nln_ffe_picture
+        class nln_ffe_ringle_1 : nln_base_picture
         {
             idc = 1201;
             text = "";
@@ -147,7 +147,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_ffe_ringle_2 : nln_ffe_picture
+        class nln_ffe_ringle_2 : nln_base_picture
         {
             idc = 1202;
             text = "";
@@ -157,7 +157,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class vnln_ffe_ringle_3 : nln_ffe_picture
+        class vnln_ffe_ringle_3 : nln_base_picture
         {
             idc = 1203;
             text = "";
@@ -167,7 +167,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_ffe_ringle_4 : nln_ffe_picture
+        class nln_ffe_ringle_4 : nln_base_picture
         {
             idc = 1204;
             text = "";
@@ -177,7 +177,7 @@ class nln_fire_for_effect
             h = "0.0659743 * safezoneH";
         };
 
-        class nln_ffe_ringle_5 : nln_ffe_picture
+        class nln_ffe_ringle_5 : nln_base_picture
         {
             idc = 1205;
             text = "";
@@ -187,7 +187,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_ffe_ringle_6 : nln_ffe_picture
+        class nln_ffe_ringle_6 : nln_base_picture
         {
             idc = 1206;
             text = "";
@@ -197,7 +197,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_ffe_ringle_7 : nln_ffe_picture
+        class nln_ffe_ringle_7 : nln_base_picture
         {
             idc = 1207;
             text = "";
@@ -207,7 +207,7 @@ class nln_fire_for_effect
             h = "0.0549786 * safezoneH";
         };
 
-        class nln_ffe_ringle_8 : nln_ffe_picture
+        class nln_ffe_ringle_8 : nln_base_picture
         {
             idc = 1208;
             text = "";

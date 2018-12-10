@@ -2,13 +2,13 @@
 class nln_gunship_cff
 {
     idd = 8885;
-    movingenable = "true";
+    movingEnable = 1;
     onUnload = "call nln_gunship_cff_fnc_onUnload;";
     onMouseButtonUp = "_this call nln_main_fnc_backgroundClick;";
 
     class Controls
     {
-        class nln_gcff_background : nln_fiveliner_gcff_picture
+        class nln_gcff_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_gunship_cff\data\ui\gunship_cff.paa";
@@ -19,7 +19,7 @@ class nln_gunship_cff
             moving = 1;
         };
 
-        class nln_gcff_line1_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line1_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.139062 * safezoneW + safezoneX";
@@ -28,7 +28,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line1_2 : nln_fiveliner_gcff_edit
+        class nln_gcff_line1_2 : nln_base_edit
         {
             idc = 1401;
             x = "0.225 * safezoneW + safezoneX";
@@ -37,7 +37,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line2_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line2_1 : nln_base_edit
         {
             idc = 1402;
             x = "0.190625 * safezoneW + safezoneX";
@@ -46,7 +46,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line2_2 : nln_fiveliner_gcff_edit
+        class nln_gcff_line2_2 : nln_base_edit
         {
             idc = 1403;
             x = "0.0703121 * safezoneW + safezoneX";
@@ -55,7 +55,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line3_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line3_1 : nln_base_edit
         {
             idc = 1404;
             x = "0.104688 * safezoneW + safezoneX";
@@ -64,7 +64,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line4_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line4_1 : nln_base_edit
         {
             idc = 1405;
             x = "0.184896 * safezoneW + safezoneX";
@@ -73,7 +73,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_line5_1 : nln_fiveliner_gcff_edit
+        class nln_gcff_line5_1 : nln_base_edit
         {
             idc = 1406;
             x = "0.0760417 * safezoneW + safezoneX";
@@ -82,7 +82,7 @@ class nln_gunship_cff
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_gcff_btn_previousPage : nln_fiveliner_gcff_button
+        class nln_gcff_btn_previousPage : nln_base_button
         {
             idc = 1600;
             x = "0.0130208 * safezoneW + safezoneX";
@@ -92,7 +92,7 @@ class nln_gunship_cff
             action = "call nln_gunship_cff_fnc_previousPage;";
         };
 
-        class nln_gcff_btn_nextPage : nln_fiveliner_gcff_button
+        class nln_gcff_btn_nextPage : nln_base_button
         {
             idc = 1601;
             x = "0.276563 * safezoneW + safezoneX";
@@ -102,7 +102,7 @@ class nln_gunship_cff
             action = "call nln_gunship_cff_fnc_nextPage;";
         };
 
-        class nln_gcff_btn_clearPage : nln_fiveliner_gcff_button
+        class nln_gcff_btn_clearPage : nln_base_button
         {
             idc = 1602;
             x = "0.053125 * safezoneW + safezoneX";
@@ -112,7 +112,7 @@ class nln_gunship_cff
             action = "call nln_gunship_cff_fnc_clearPage;";
         };
 
-        class nln_gcff_btn_save : nln_fiveliner_gcff_button
+        class nln_gcff_btn_save : nln_base_button
         {
             idc = 1603;
             x = "0.144792 * safezoneW + safezoneX";
@@ -122,7 +122,7 @@ class nln_gunship_cff
             action = "call nln_gunship_cff_fnc_savePage;";
         };
 
-        class nln_gcff_btn_clearAll : nln_fiveliner_gcff_button
+        class nln_gcff_btn_clearAll : nln_base_button
         {
             idc = 1604;
             x = "0.196354 * safezoneW + safezoneX";

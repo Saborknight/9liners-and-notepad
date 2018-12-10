@@ -10,7 +10,7 @@ class nln_cas_checkin
 
     class Controls
     {
-        class nln_cas_checkIn_background : nln_cas_check_in_picture
+        class nln_cas_checkIn_background : nln_base_picture
         {
             idc = 1200;
             text = "\x\nln\addons\sheet_cas_checkin\data\ui\cas_check_in.paa";
@@ -20,7 +20,7 @@ class nln_cas_checkin
             h = "0.802687 * safezoneH";
         };
 
-        class nln_cas_checkIn_line0_1 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line0_1 : nln_base_edit
         {
             idc = 1400;
             x = "0.0588542 * safezoneW + safezoneX";
@@ -29,7 +29,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line0_2 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line0_2 : nln_base_edit
         {
             idc = 1401;
             x = "0.179167 * safezoneW + safezoneX";
@@ -38,7 +38,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line1 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line1 : nln_base_edit
         {
             idc = 1402;
             x = "0.144792 * safezoneW + safezoneX";
@@ -47,7 +47,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line2 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line2 : nln_base_edit
         {
             idc = 1403;
             x = "0.139062 * safezoneW + safezoneX";
@@ -56,7 +56,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line3 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line3 : nln_base_edit
         {
             idc = 1404;
             x = "0.116146 * safezoneW + safezoneX";
@@ -65,7 +65,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line4 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line4 : nln_base_edit
         {
             idc = 1405;
             x = "0.0760417 * safezoneW + safezoneX";
@@ -74,7 +74,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line5 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line5 : nln_base_edit
         {
             idc = 1406;
             x = "0.0932292 * safezoneW + safezoneX";
@@ -83,7 +83,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line6 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line6 : nln_base_edit
         {
             idc = 1407;
             x = "0.0416667 * safezoneW + safezoneX";
@@ -92,7 +92,7 @@ class nln_cas_checkin
             h = "0.0219914 * safezoneH";
         };
 
-        class nln_cas_checkIn_line7 : nln_cas_check_in_edit
+        class nln_cas_checkIn_line7 : nln_base_edit
         {
             idc = 1408;
             x = "0.0817708 * safezoneW + safezoneX";
